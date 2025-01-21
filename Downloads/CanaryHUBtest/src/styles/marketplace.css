@@ -1,0 +1,437 @@
+:root {
+  --headerandfooterBackroundlinear: linear-gradient(0deg, #fdcc0d, #ff8635 41.67%);
+  --borderwhitestandard: 2px solid white;
+  --whiteStandard: white;
+  --borderZumTesten: 2px solid black;
+
+
+
+  --font-family-dancing-regular: 'DancingScript';
+  --fonts-family-monts500: "Monts500";
+  --fonts-family-poppins500: "Poppins500";
+  --fonts-family-poppins300: "Poppins300";
+  --fonts-family-roboto500: "Roboto500";
+}
+
+@font-face {
+  font-family: 'Roboto500';
+  src: url('/src/fonts/Roboto-Medium.woff2') format('woff2'),
+    url('/src/fonts/Roboto-Medium.woff') format('woff'),
+    url('/src/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Poppins300';
+  src: url('/src/fonts/Poppins-Light.woff2') format('woff2'),
+
+    url('/src/fonts/Poppins-Light.woff') format('woff'),
+
+    url('/src/fonts/Poppins-Light.ttf') format('truetype');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Poppins500';
+  src: url('/src/fonts/Poppins-Medium.woff2') format('woff2'),
+
+    url('/src/fonts/Poppins-Medium.woff') format('woff'),
+
+    url('/src/fonts/Poppins-Medium.ttf') format('truetype');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url('/src/fonts/DancingScript-Regular.woff2') format('woff2'),
+
+    url('/src/fonts/DancingScript-Regular.woff') format('woff'),
+
+    url('/src/fonts/DancingScript-Regular.ttf') format('truetype');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monts500';
+  src: url('/src/fonts/Montserrat-Medium.woff2') format('woff2'),
+
+    url('/src/fonts/Montserrat-Medium.woff') format('woff'),
+
+    url('/src/fonts/Montserrat-Medium.ttf') format('truetype');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+
+  box-sizing: border-box;
+  font-size: 16px;
+  height: auto;
+
+}
+
+.main-container-market {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(270deg, #ffbe57, #ffeb99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.main-container-market-inside {
+  max-width: 1200px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container1-market {
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  border-bottom: 8px solid white;
+
+}
+
+/* Container mit text Votre Puplicite */
+.container1-market-votre-puplicite {
+  width: 100%;
+  max-width: 1185px;
+  height: auto;
+  margin-top: 6%
+}
+
+
+.container1-market-votre-puplicite p {
+  background-color: #fccc0d;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 20%;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #000;
+  font-family: var(--fonts-family-roboto500);
+  margin-bottom: 5%;
+}
+
+
+/* Container mit Text Proposez */
+.container1-market-2 {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+.container1-market-2 h1 {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  display: inline-block;
+  font-family: var(--fonts-family-poppins500);
+  text-align: center;
+}
+
+@media(max-width:410px) {
+  .container1-market-2 h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-auf-backround-bild-container1 p {
+    font-size: .5rem;
+  }
+
+}
+
+
+.container1-market-3 {
+  width: 100%;
+  height: auto;
+  border: var(--borderZumTesten);
+}
+
+
+.backround-bild-container1 {
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  /* Erforderlich für die absolute Positionierung des Bildes */
+  display: flex;
+  align-items: center;
+  /* Zentriert vertikal */
+  justify-content: center;
+  flex-direction: column;
+  /* Zentriert horizontal */
+  border-radius: 20px;
+  background-image: url("../img/marktplace/ImMarket1.svg");
+  /* Hintergrundbild */
+  background-size: cover;
+  /* Bild vollständig abdecken */
+  background-position: center;
+  /* Zentriere das Bild */
+  color: white;
+  margin-bottom: 4%;
+}
+
+.text-auf-backround-bild-container1 {
+  width: 100%;
+  max-width: 918px;
+  height: auto;
+}
+
+
+.text-auf-backround-bild-container1 p {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family: var(--fonts-family-monts500);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 2 Container Market */
+.container2-market {
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1083px;
+  height: auto;
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  padding: 0 0 5% 0;
+  border-bottom: 8px solid white;
+}
+
+.container-links-market {
+  width: 100%;
+  max-width: 539px;
+  height: auto;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container-oben-im-links-container {
+  width: 100%;
+  max-width: 507px;
+  height: auto;
+
+  border-radius: 10px;
+  background-color: #13efe0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+
+
+}
+
+.text-oben-proposez-vos-services {
+  width: 100%;
+  max-width: 480px;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  font-family: var(--fonts-family-poppins500);
+  margin-top: 8%;
+  padding: 20px;
+
+}
+
+.text-unten-vous-aves-des {
+  width: 100%;
+  max-width: 475px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  font-family: var(--fonts-family-poppins500);
+  margin-bottom: 8%;
+  margin-left: 20px 0 20px;
+}
+
+.container-unten-im-linken-container {
+  width: 100%;
+  max-width: 507px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0
+}
+
+.container-unten-im-linken-container a {
+  padding: 10px 51px;
+  box-sizing: border-box;
+  gap: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  font-family: var(--fonts-family-roboto500);
+  border-radius: 50px;
+  background-color: #ff8635;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@media(max-width:350px) {
+  .container-unten-im-linken-container a {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+}
+
+/* Container Rechts Market */
+.container-rechts-market {
+  width: 100%;
+  max-width: 452px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+/* Container Oben mit 2 x Text */
+.container-oben-im-rechts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.text-oben-trouvez-le-service {
+  width: 100%;
+  max-width: 401px;
+  height: auto;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  display: inline-block;
+  font-family: var(--fonts-family-poppins500);
+  font-weight: 600;
+  text-align: center;
+}
+
+.text-unten-utilisez-nos-filtres {
+  width: 100%;
+  max-width: 401px;
+  height: auto;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  font-family: var(--fonts-family-poppins500);
+  color: #000;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/* Container unten Recht im Rechten Container */
+.container-unten-im-rechten-container {
+
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: flex;
+
+}
+
+.categorie-de-service-parent {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.categorie-de-service-parent a {
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+  font-family: var(--fonts-family-poppins500);
+
+  padding: 2%;
+}
+
+/* Container 2 MArket Ende */
+
+/* Container 3 Market */
+.container3-market {
+  border: var(--borderZumTesten);
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1083px;
+  height: auto;
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  padding: 0 0 5% 0;
+  border-bottom: 8px solid white;
+}
+
+.content-box-links-container3{
+  border: var(--borderZumTesten);
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+}
+
+.content-text-oben-links-container3{
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  background-color: orange doux;
+}
+
+.content-text-mittte-links-container3{
+  width: 100%;
+  max-width: 718px;
+  height: auto;
+  background-color: orange doux;
+}

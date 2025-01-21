@@ -1,0 +1,92 @@
+:root {
+    --headerandfooterBackroundlinear: linear-gradient(0deg, #fdcc0d, #ff8635 41.67%);
+    --borderwhitestandard: 2px solid white;
+    --whiteStandard: white;
+    --borderZumTesten: 2px solid black;
+  
+  
+  
+    --font-family-dancing-regular: 'DancingScript';
+    --fonts-family-monts500: "Monts500";
+    --fonts-family-poppins500: "Poppins500";
+    --fonts-family-poppins300: "Poppins300";
+    --fonts-family-roboto500: "Roboto500";
+  }
+  
+  @font-face {
+    font-family: 'Roboto500';
+    src: url('/src/fonts/Roboto-Medium.woff2') format('woff2'),
+      url('/src/fonts/Roboto-Medium.woff') format('woff'),
+      url('/src/fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  
+  @font-face {
+    font-family: 'Poppins300';
+    src: url('/src/fonts/Poppins-Light.woff2') format('woff2'),
+  
+      url('/src/fonts/Poppins-Light.woff') format('woff'),
+  
+      url('/src/fonts/Poppins-Light.ttf') format('truetype');
+  
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Poppins500';
+    src: url('/src/fonts/Poppins-Medium.woff2') format('woff2'),
+  
+      url('/src/fonts/Poppins-Medium.woff') format('woff'),
+  
+      url('/src/fonts/Poppins-Medium.ttf') format('truetype');
+  
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  
+  @font-face {
+    font-family: 'DancingScript';
+    src: url('/src/fonts/DancingScript-Regular.woff2') format('woff2'),
+  
+      url('/src/fonts/DancingScript-Regular.woff') format('woff'),
+  
+      url('/src/fonts/DancingScript-Regular.ttf') format('truetype');
+  
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Monts500';
+    src: url('/src/fonts/Montserrat-Medium.woff2') format('woff2'),
+  
+      url('/src/fonts/Montserrat-Medium.woff') format('woff'),
+  
+      url('/src/fonts/Montserrat-Medium.ttf') format('truetype');
+  
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body,
+  html {
+  
+    box-sizing: border-box;
+    font-size: 16px;
+    height: auto;
+  
+  }

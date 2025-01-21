@@ -1,0 +1,547 @@
+:root {
+  --headerandfooterBackroundlinear: linear-gradient(0deg, #fdcc0d, #ff8635 41.67%);
+  --borderwhitestandard: 2px solid white;
+  --whiteStandard: white;
+  --borderZumTesten: 2px solid black;
+
+
+
+  --font-family-dancing-regular: 'DancingScript';
+  --fonts-family-monts500: "Monts500";
+  --fonts-family-poppins500: "Poppins500";
+  --fonts-family-poppins300: "Poppins300";
+  --fonts-family-roboto500: "Roboto500";
+}
+
+@font-face {
+  font-family: 'Roboto500';
+  src: url('/src/fonts/Roboto-Medium.woff2') format('woff2'),
+    url('/src/fonts/Roboto-Medium.woff') format('woff'),
+    url('/src/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Poppins300';
+  src: url('/src/fonts/Poppins-Light.woff2') format('woff2'),
+
+    url('/src/fonts/Poppins-Light.woff') format('woff'),
+
+    url('/src/fonts/Poppins-Light.ttf') format('truetype');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Poppins500';
+  src: url('/src/fonts/Poppins-Medium.woff2') format('woff2'),
+
+    url('/src/fonts/Poppins-Medium.woff') format('woff'),
+
+    url('/src/fonts/Poppins-Medium.ttf') format('truetype');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url('/src/fonts/DancingScript-Regular.woff2') format('woff2'),
+
+    url('/src/fonts/DancingScript-Regular.woff') format('woff'),
+
+    url('/src/fonts/DancingScript-Regular.ttf') format('truetype');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monts500';
+  src: url('/src/fonts/Montserrat-Medium.woff2') format('woff2'),
+
+    url('/src/fonts/Montserrat-Medium.woff') format('woff'),
+
+    url('/src/fonts/Montserrat-Medium.ttf') format('truetype');
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+
+  box-sizing: border-box;
+  font-size: 16px;
+  height: auto;
+
+}
+
+/* MAin Container */
+
+.main-container-background {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(270deg, #ffbe57, #ffeb99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.main-container {
+
+  max-width: 1200px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container-oben {
+
+  width: 100%;
+  height: auto;
+  /* Dynamisch */
+  max-width: 1087px;
+  /* An spezifische Bedürfnisse angepasst */
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 80px;
+}
+
+.main-container-oben-1 {
+
+  width: 100%;
+  max-width: 1084px;
+  height: auto;
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff8635;
+}
+
+
+.main-container-background-text-2 {
+  position: relative;
+  /* Erforderlich für die absolute Positionierung des Bildes */
+  display: flex;
+  align-items: center;
+  /* Zentriert vertikal */
+  justify-content: center;
+  /* Zentriert horizontal */
+  border-radius: 20px;
+  background-image: url("/src/img/global/background-main-oben.svg");
+  background-size: cover;
+  /* Bild vollständig abdecken */
+  background-position: center;
+  /* Zentriere das Bild */
+  text-align: center;
+
+}
+
+
+
+.main-container-oben-1 p {
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family: var(--fonts-family-roboto500);
+}
+
+.text-auf-background-oben {
+  font-size: 2.5rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family: var(--fonts-family-poppins500);
+  color: #000;
+  margin: 20px 150px;
+  text-align: center;
+  /*  word-wrap: break-word; */
+  height: auto;
+  min-height: 163px;
+}
+
+@media(max-width: 400px) {
+  .text-auf-background-oben {
+    font-size: 1.4rem;
+  }
+}
+
+.text-unten-auf-background {
+  max-width: 1077px;
+  width: 100%;
+  height: 682px;
+  border-radius: 20px;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-container-transparent {
+  max-width: 957px;
+  width: 96%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.text-oben-auf-backgroundimg {
+  background-color: #ff8635;
+  border-radius: 20px;
+  max-width: 1045px;
+  width: 100%;
+  display: flex;
+  margin: 20px 20px 48px;
+  height: auto;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.text-unten-auf-background {
+  max-width: 1077px;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-auf-background-unten {
+
+  max-width: 742px;
+  height: auto;
+  margin: 16px;
+
+}
+
+.text-auf-background-unten p {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+
+  font-family: var(--fonts-family-poppins500);
+  color: #fff;
+}
+
+
+
+.text-auf-background-unten2 {
+  max-width: 957px;
+
+  height: auto;
+  margin: 16px;
+
+}
+
+.text-auf-background-unten2 p {
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family: var(--fonts-family-poppins500);
+  color: #fff;
+}
+
+/* Medai Squaries fü Main-Container Oben  */
+
+/* Main-Container MIttew mit Conatiner 3 text Container links und  Container 4 Bilder rechts */
+
+.main-container-mitte {
+  width: 100%;
+  max-width: 1087px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  /* Horizontale Lücke zwischen Hauptspalten */
+  margin-top: 80px;
+
+}
+
+.main-container-mitte-links {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* Vertikale Anordnung der Boxen */
+  gap: 40px;
+  /* Vertikale Lücke zwischen den Textcontainern */
+}
+
+.main-container-mitte-links-text1,
+.main-container-mitte-links-text2,
+.main-container-mitte-links-text3 {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 55px;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+/* Textstile */
+.main-container-mitte-links-text1 h1,
+.main-container-mitte-links-text2 h3,
+.main-container-mitte-links-text3 h5 {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family: var(--fonts-family-roboto500);
+  color: #000;
+  text-align: center;
+}
+
+
+
+.main-container-mitte-links-text1 h2,
+.main-container-mitte-links-text2 h4,
+.main-container-mitte-links-text3 h6 {
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family: var(--fonts-family-poppins500);
+  color: #000;
+  text-align: center;
+}
+
+.main-container-mitte-links-text1 p,
+.main-container-mitte-links-text2 p,
+.main-container-mitte-links-text3 p {
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family: var(--fonts-family-poppins500);
+  color: #000;
+  text-align: center;
+}
+
+@media(max-width:765px) {
+  .main-container-mitte-rechts img {
+    display: none;
+  }
+
+  .main-container-mitte {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+.main-container-mitte-rechts {
+  width: 100%;
+  max-width: 308px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+  margin: 60px 0;
+}
+
+/* ENDE Main-Container MIttew mit Conatiner 3 text Container links und  Container 4 Bilder rechts */
+
+
+
+/* ================== Main Conatiner unten  mit 2 container mit 1 x 2 und 1 x 1container ===========*/
+.main-container-unten {
+  width: 100%;
+  max-width: 1087px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 80px;
+  /* Horizontale Lücke zwischen Hauptspalten */
+  margin-top: 80px;
+
+}
+
+.container-unten-oben {
+  display: flex;
+  justify-self: center;
+  padding: 32px 34px;
+  align-items: center;
+  width: 100%;
+  max-width: 1085px;
+  height: auto;
+
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+@media(max-width:630px){
+  .container-unten-oben {
+   flex-wrap: wrap;
+  }
+}
+
+.container-unten-oben-links {
+  width: 100%;
+  max-width: 472px;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 47px;
+  padding: 20px;
+
+
+}
+
+.container-unten-oben-links-text-oben h3 {
+
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family: var(--fonts-family-poppins500);
+  color: #000;
+  text-align: center;
+}
+
+.container-unten-oben-links-text-unten {
+  width: 100%;
+  max-width: 480px;
+}
+
+.container-unten-oben-links-text-unten li {
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  list-style: none;
+  font-weight: 500;
+  font-family: var(--fonts-family-roboto500);
+  color: #070707;
+  text-align: left;
+}
+
+.container-unten-oben-recht {
+  width: 100%;
+  max-width: 538px;
+  height: auto;
+}
+
+.container-unten-oben-recht-link-rechts {
+  width: 100%;
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+
+.container-unten-oben-recht-link-rechts a {
+  width: 100%;
+  max-width: 399px;
+  border-radius: 50px;
+  background-color: #13efe0;
+  border: 2px solid #fff;
+  height: auto;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: var(--fonts-family-roboto500);
+
+}
+
+.container-unten-unten {
+  width: 100%;
+  gap:66px;
+  height: auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.container-unten-unten-text1-oben {
+  width: 100%;
+  max-width: 696px;
+  height: auto;
+  display: flex;
+  padding:3% 0 3%;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff8635;
+}
+.container-unten-unten-text1-oben p {
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family:var(--fonts-family-roboto500);
+  color: #000;
+  text-align: left;
+}
+
+@media(max-width:256px)
+ {.container-unten-unten-text1-oben p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+  
+}
+
+
+.container-unten-unten-text2-unten{
+  width: 100%;
+  max-width:265px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-unten-unten-text2-unten a {
+  width: 100%;
+  max-width: 399px;
+  border-radius: 50px;
+  background-color: #13efe0;
+  border: 2px solid #fff;
+  height: auto;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: var(--fonts-family-roboto500);
+}

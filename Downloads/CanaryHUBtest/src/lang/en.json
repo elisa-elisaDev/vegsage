@@ -1,0 +1,99 @@
+{
+    "languageText": "Language",
+    "headerTitle": "Join the Canary Islands expat community",
+    "searchTitle": "Find what you are looking for quickly",
+    "postAd": "Post an ad",
+    "createAccount": "Create an account",
+    "joinCommunity": "Join the community",
+    "nav": {
+        "navHome": "Home",
+        "navMarketplace": "Marketplace",
+        "navGroups": "Groups",
+        "navEvents": "Events",
+        "navAds": "Ads",
+        "navLogin": "Login"
+    },
+    "adBannerMain": "Your advertisement here",
+    "mainHeaderTitle": "CanaryHub: Connect, share, and fully enjoy the Canary Islands",
+    "mainHeaderSubtitle": "Services designed for expats in the Canary Islands",
+    "mainHeaderDescription": "Welcome to CanaryHub, the essential platform for expats and residents in the Canary Islands. Find local services, job ads, accommodations tailored to your needs, and take part in unique events. Join a dynamic community of expats and locals to simplify your daily life and seize the best opportunities.",
+    "announcementsTitle": "Job and housing ads",
+    "announcementsSubtitle": "Easily find opportunities tailored to your needs and skills.",
+    "announcementsDescription": "Access job and housing ads specially curated for expats. Quickly find opportunities that match your skills and start your new life in the Canary Islands with ease.",
+    "eventsTitle": "Local events",
+    "eventsSubtitle": "Participate in gatherings and activities to build connections and explore your island.",
+    "eventsDescription": "Join local events to meet other expats and residents, share experiences, and discover the hidden gems of the Canary Islands. Strengthen your network while enjoying enriching and friendly moments.",
+    "communityTitle": "Join our community",
+    "communitySubtitle": "Join a community that suits you",
+    "communityDescription": "CanaryHub is more than just a platform: it's a community of expats, locals, and visitors passionate about the Canary Islands. Share your experiences, exchange advice, find opportunities, and create lasting connections. Together, let's make your life in the Canary Islands a connected and enriching experience.",
+    "mainBenefitsTitle": "Highlights:",
+    "mainBenefit1": "• Access thematic groups to discuss your interests.",
+    "mainBenefit2": "• Connect directly with other members through our private messaging system.",
+    "mainBenefit3": "• Receive notifications about the latest events, ads, and news.",
+    "mainJoinCommunity": "Join the community",
+    "adBannerBottom": "Your advertisement here",
+    "mainBackToHome": "Back to homepage",
+
+"inscription": {
+    "h1InscriptionTitle": "Create your CanaryHub account",
+    "pInscriptionSubtitle": "Sign up and join our community",
+    "labelNameInscription": "Name",
+    "labelEmailInscription": "Email",
+    "formTitlePasswordInscription": "Create a secure password",
+    "formDescriptionPasswordInscription": "Must be at least 8 characters long, include an uppercase letter, a number, and a special character.",
+    "labelPasswordInscription": "Your password",
+    "formdescriptionconfirmpasswordinscription": "Confirm your password",
+    "labelRepeatPasswordInscription": "Repeat password",
+    "conditionsutilisationtext" :"Terms of Use",
+    "btnCreerComptIncription": "Create my account",
+   "vousAvezDejaUnCompteText": "Already have an account?",
+    "linkVousAvezDejaUnCompte": "Log in here",
+    "besoinAideInscription": "Need help?",
+    "linkContactezNousInscription": "Contact us",
+    "linkRetourAccueilIncription": "Back to home",
+    
+     "inputNameInscription": "Enter your name",
+     "inputEmailInscription": "Enter your email",
+     "inputPassmotInscription": "Make your password",
+     "inputRepetezInscription": "Repeat your password"
+},
+
+"dashboard": {
+    "textDashboardApercuRapide": "Quick overview",
+    "messageTextDashboard": "Messages active",
+    "annonceTextDashboard": "Ads active",
+    "groupesTextDashboard": "Groups active",
+    "dashboardLinkMessages": "Messages",
+    "dashboardLinkNotifications": "Notifications",
+    "dashboardLinkAnnonces": "My ads",
+    "dashboardLinkGroupes": "My groups",
+    "dashboardLinkFavoris": "Favorites",
+    "dashboardLinkSettings": "Account settings",
+    "containerRechtsTextOben": "My friends online"
+},
+
+
+    "footer": {
+        "home": "Home",
+        "ads": "Ads",
+        "events": "Events",
+        "contact": "Contact",
+        "terms": "Terms and Conditions",
+        "legal": "Legal Notice",
+        "privacy": "Privacy Policy",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn",
+        "contactInfo": "Contact Information:",
+        "email": "Email: contact@canaryhub.community",
+        "phone": "Phone: +34 123 456 789",
+        "address": "Address:",
+        "copyright": "© 2024 CanaryHub. All rights reserved.",
+        "credits": "Created with ♥ by",
+        "creditsLink": "K-webdesign.space"
+    }
+    
+
+
+}

@@ -1,0 +1,98 @@
+{
+    "languageText": "Sprache",
+    "headerTitle": "Treten Sie der Gemeinschaft der Auswanderer auf den Kanarischen Inseln bei",
+    "searchTitle": "Finden Sie schnell, was Sie suchen",
+    "postAd": "Anzeige veröffentlichen",
+    "createAccount": "Konto erstellen",
+    "joinCommunity": "Der Gemeinschaft beitreten",
+    
+        "navHome": "Startseite",
+        "navMarketplace": "Marktplatz",
+        "navGroups": "Gruppen",
+        "navEvents": "Veranstaltungen",
+        "navAds": "Anzeigen",
+        "navLogin": "Anmelden",
+    
+    "adBannerMain": "Ihre Werbung hier",
+    "mainHeaderTitle": "CanaryHub: Verbinden, teilen und die Kanarischen Inseln in vollen Zügen genießen",
+    "mainHeaderSubtitle": "Dienste speziell für Auswanderer auf den Kanarischen Inseln",
+    "mainHeaderDescription": "Willkommen bei CanaryHub, der unverzichtbaren Plattform für Auswanderer und Bewohner der Kanarischen Inseln. Finden Sie lokale Dienstleistungen, Jobangebote, Unterkünfte, die auf Ihre Bedürfnisse zugeschnitten sind, und nehmen Sie an einzigartigen Veranstaltungen teil. Treten Sie einer dynamischen Gemeinschaft von Auswanderern und Einheimischen bei, um Ihren Alltag zu vereinfachen und die besten Möglichkeiten zu nutzen.",
+    "announcementsTitle": "Job- und Wohnungsanzeigen",
+    "announcementsSubtitle": "Finden Sie mühelos Möglichkeiten, die auf Ihre Bedürfnisse und Fähigkeiten zugeschnitten sind.",
+    "announcementsDescription": "Greifen Sie auf Job- und Wohnungsanzeigen zu, die speziell für Auswanderer ausgewählt wurden. Finden Sie schnell Möglichkeiten, die zu Ihren Fähigkeiten passen, und starten Sie Ihr neues Leben auf den Kanarischen Inseln mit Leichtigkeit.",
+    "eventsTitle": "Lokale Veranstaltungen",
+    "eventsSubtitle": "Nehmen Sie an Treffen und Aktivitäten teil, um Kontakte zu knüpfen und Ihre Insel zu erkunden.",
+    "eventsDescription": "Treten Sie lokalen Veranstaltungen bei, um andere Auswanderer und Einwohner kennenzulernen, Erfahrungen auszutauschen und die verborgenen Schätze der Kanarischen Inseln zu entdecken. Stärken Sie Ihr Netzwerk, während Sie bereichernde und gesellige Momente genießen.",
+    "communityTitle": "Treten Sie unserer Gemeinschaft bei",
+    "communitySubtitle": "Treten Sie einer Gemeinschaft bei, die zu Ihnen passt",
+    "communityDescription": "CanaryHub ist mehr als nur eine Plattform: Es ist eine Gemeinschaft von Auswanderern, Einheimischen und Besuchern, die sich für die Kanarischen Inseln begeistern. Teilen Sie Ihre Erfahrungen, tauschen Sie Ratschläge aus, finden Sie Möglichkeiten und knüpfen Sie dauerhafte Verbindungen. Lassen Sie uns gemeinsam Ihr Leben auf den Kanarischen Inseln zu einer bereichernden und vernetzten Erfahrung machen.",
+    "mainBenefitsTitle": "Highlights:",
+    "mainJoinCommunity": "Der Gemeinschaft beitreten",
+    "mainBenefit1": "• Treten Sie thematischen Gruppen bei, um Ihre Interessen zu besprechen.",
+    "mainBenefit2": "• Kommunizieren Sie direkt mit anderen Mitgliedern über unser privates Nachrichtensystem.",
+    "mainBenefit3": "• Erhalten Sie Benachrichtigungen über die neuesten Veranstaltungen, Anzeigen und Neuigkeiten.",
+    "adBannerBottom": "Ihre Werbung hier",
+    "mainBackToHome": "Zurück zur Startseite",
+"inscription": {
+    "h1InscriptionTitle": "Erstellen Sie Ihr CanaryHub-Konto",
+    "pInscriptionSubtitle": "Registrieren Sie sich und treten Sie unserer Community bei",
+    "labelNameInscription": "Name",
+    "labelEmailInscription": "E-Mail",
+    "formTitlePasswordInscription": "Erstellen Sie ein sicheres Passwort",
+    "formDescriptionPasswordInscription": "Muss mindestens 8 Zeichen lang sein, einen Großbuchstaben, eine Zahl und ein Sonderzeichen enthalten.",
+    "labelPasswordInscription": "Ihr Passwort",
+    "formdescriptionconfirmpasswordinscription": "Bestätigen Sie Ihr Passwort",
+    "labelRepeatPasswordInscription": "Passwort wiederholen",
+    "conditionsutilisationtext": "Nutzungsbedingungen",
+    "btnCreerComptIncription": "Konto erstellen",
+    "vousAvezDejaUnCompteText": "Haben Sie bereits ein Konto?",
+    "linkVousAvezDejaUnCompte": "Hier einloggen",
+    "besoinAideInscription": "Brauchen Sie Hilfe?",
+    "linkContactezNousInscription": "Kontaktieren Sie uns",
+    "linkRetourAccueilIncription": "Zur Startseite",
+
+    "inputNameInscription": "Geben Sie Ihren Namen ein",
+    "inputEmailInscription": "Geben Sie Ihre E-Mail ein",
+    "inputPassmotInscription": "Erstellen Sie Ihr Passwort",
+    "inputRepetezInscription": "Wiederholen Sie Ihr Passwort"
+},
+
+
+    "dashboard": {
+        "textDashboardApercuRapide": "Schneller Überblick",
+        "messageTextDashboard": "Nachrichten aktiv",
+        "annonceTextDashboard": "Anzeigen aktiv",
+        "groupesTextDashboard": "Gruppen aktiv",
+        "dashboardLinkMessages": "Nachrichten",
+        "dashboardLinkNotifications": "Benachrichtigungen",
+        "dashboardLinkAnnonces": "Meine Anzeigen",
+        "dashboardLinkGroupes": "Meine Gruppen",
+        "dashboardLinkFavoris": "Favoriten",
+        "dashboardLinkSettings": "Kontoeinstellungen",
+        "containerRechtsTextOben": "Meine Freunde online"
+    },
+
+
+
+
+    "footer": {
+        "home": "Startseite",
+        "ads": "Anzeigen",
+        "events": "Veranstaltungen",
+        "contact": "Kontakt",
+        "terms": "Nutzungsbedingungen",
+        "legal": "Impressum",
+        "privacy": "Datenschutzrichtlinie",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn",
+        "contactInfo": "Kontaktinformationen:",
+        "email": "E-Mail: contact@canaryhub.community",
+        "phone": "Telefon: +34 123 456 789",
+        "address": "Adresse:",
+        "copyright": "© 2024 CanaryHub. Alle Rechte vorbehalten.",
+        "credits": "Erstellt mit ♥ von",
+        "creditsLink": "K-webdesign.space"
+    }
+}
