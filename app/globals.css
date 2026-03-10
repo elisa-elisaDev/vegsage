@@ -1,0 +1,118 @@
+/* ── Tailwind directives (required — app uses utility classes) ── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Custom Properties ──────────────────────────────────────
+   Mirrors tailwind.config.ts so styles work even if JIT fails.
+   These are also available for inline CSS and non-Tailwind contexts.
+   ────────────────────────────────────────────────────────────── */
+:root {
+  /* Brand (green) */
+  --brand-50:  #f0fdf4;
+  --brand-100: #dcfce7;
+  --brand-200: #bbf7d0;
+  --brand-300: #86efac;
+  --brand-400: #4ade80;
+  --brand-500: #22c55e;
+  --brand-600: #16a34a;
+  --brand-700: #15803d;
+  --brand-800: #166534;
+  --brand-900: #14532d;
+
+  /* Surfaces */
+  --surface:           #ffffff;
+  --surface-secondary: #f9fafb;
+  --surface-muted:     #f3f4f6;
+
+  /* Text */
+  --text-primary:   #111827;
+  --text-secondary: #6b7280;
+  --text-muted:     #9ca3af;
+}
+
+/* ── Base reset ─────────────────────────────────────────────────
+   @tailwind base (Preflight) already handles most resets,
+   but we redefine critical properties in plain CSS so they hold
+   even when Tailwind's JIT doesn't generate a class.
+   ────────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--surface-secondary);
+  color: var(--text-primary);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Typography fallbacks ───────────────────────────────────────
+   Preflight resets heading sizes to match body text.
+   These rules restore a sensible visual hierarchy as a fallback
+   when Tailwind utility classes (text-3xl, font-bold, …) are
+   absent or not yet generated.
+   ────────────────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem;
+}
+h1 { font-size: 1.875rem; } /* ≈ text-3xl  */
+h2 { font-size: 1.5rem;   } /* ≈ text-2xl  */
+h3 { font-size: 1.25rem;  } /* ≈ text-xl   */
+
+p {
+  margin: 0;
+  line-height: 1.625;
+}
+
+/* ── Links ──────────────────────────────────────────────────────
+   Preflight removes all link colour and underline.
+   Restore sensible defaults; Tailwind classes override as needed.
+   ────────────────────────────────────────────────────────────── */
+a {
+  color: var(--brand-600);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--brand-700);
+}
+
+/* ── Layout helpers ─────────────────────────────────────────────
+   Keep in sync with tailwind.config.ts > theme.extend.
+   ────────────────────────────────────────────────────────────── */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* ── Thin scrollbar (progressive enhancement) ───────────────── */
+@media (hover: hover) {
+  ::-webkit-scrollbar       { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--surface-secondary); }
+  ::-webkit-scrollbar-thumb { background: var(--text-muted); border-radius: 3px; }
+}

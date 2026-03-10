@@ -1,0 +1,232 @@
+[
+  {
+    "canonical": "eggs",
+    "tokens": ["eggs", "egg", "oeuf", "oeufs", "eier", "ei"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "lentils",
+    "tokens": ["lentils", "lentil", "lentille", "lentilles", "linse", "linsen", "lentile", "linzen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "yogurt",
+    "tokens": ["yogurt", "yoghurt", "yoghourt", "yougourt", "yaourt", "joghurt", "jogurt", "yoghrt"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "lettuce",
+    "tokens": ["lettuce", "laitue", "salade", "salat", "romaine", "iceberg"],
+    "category": "leafy"
+  },
+  {
+    "canonical": "pickles",
+    "tokens": ["pickles", "pickle", "cornichon", "cornichons", "essiggurke", "essiggurken", "gherkin"],
+    "category": "condiment"
+  },
+  {
+    "canonical": "fennel",
+    "tokens": ["fennel", "fenouil", "fenchel"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "tofu",
+    "tokens": ["tofu"],
+    "category": "plant_protein"
+  },
+  {
+    "canonical": "spinach",
+    "tokens": ["spinach", "epinards", "spinat", "spinache"],
+    "category": "leafy"
+  },
+  {
+    "canonical": "chickpeas",
+    "tokens": ["chickpeas", "chickpea", "pois chiches", "kichererbsen", "garbanzo"],
+    "category": "legume"
+  },
+  {
+    "canonical": "green peas",
+    "tokens": ["green peas", "peas", "petits pois", "erbsen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "broccoli",
+    "tokens": ["broccoli", "brocoli", "brokkoli", "brocolis"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "cauliflower",
+    "tokens": ["cauliflower", "chou fleur", "blumenkohl"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "carrots",
+    "tokens": ["carrots", "carrot", "carottes", "carotte", "karotten", "karotte"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "tomatoes",
+    "tokens": ["tomatoes", "tomato", "tomates", "tomate", "tomaten"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "potatoes",
+    "tokens": ["potatoes", "potato", "pommes de terre", "pomme de terre", "kartoffeln", "kartoffel"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "mushrooms",
+    "tokens": ["mushrooms", "mushroom", "champignons", "champignon", "pilze"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "avocado",
+    "tokens": ["avocado", "avocat"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "cucumber",
+    "tokens": ["cucumber", "concombre", "gurke"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "bell pepper",
+    "tokens": ["bell pepper", "bell peppers", "poivron", "poivrons", "paprika"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "zucchini",
+    "tokens": ["zucchini", "courgette", "courgettes"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "eggplant",
+    "tokens": ["eggplant", "aubergine"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "celery",
+    "tokens": ["celery", "celeri", "sellerie"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "asparagus",
+    "tokens": ["asparagus", "asperges", "asperge", "spargel"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "corn",
+    "tokens": ["corn", "maize", "mais"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "beet",
+    "tokens": ["beet", "beets", "betterave", "rote bete"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "kale",
+    "tokens": ["kale", "grunkohl", "grunkohl"],
+    "category": "leafy"
+  },
+  {
+    "canonical": "sweet potato",
+    "tokens": ["sweet potato", "patate douce", "sussekartoffel", "yam"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "tempeh",
+    "tokens": ["tempeh"],
+    "category": "plant_protein"
+  },
+  {
+    "canonical": "seitan",
+    "tokens": ["seitan"],
+    "category": "plant_protein"
+  },
+  {
+    "canonical": "milk",
+    "tokens": ["milk", "lait", "milch"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "cheese",
+    "tokens": ["cheese", "fromage", "kase"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "rice",
+    "tokens": ["rice", "riz", "reis"],
+    "category": "grain"
+  },
+  {
+    "canonical": "pasta",
+    "tokens": ["pasta", "pates", "nudeln", "noodles"],
+    "category": "grain"
+  },
+  {
+    "canonical": "oats",
+    "tokens": ["oats", "oatmeal", "avoine", "hafer", "haferflocken"],
+    "category": "grain"
+  },
+  {
+    "canonical": "quinoa",
+    "tokens": ["quinoa"],
+    "category": "grain"
+  },
+  {
+    "canonical": "bread",
+    "tokens": ["bread", "pain", "brot"],
+    "category": "grain"
+  },
+  {
+    "canonical": "walnuts",
+    "tokens": ["walnuts", "walnut", "noix", "walnusse"],
+    "category": "nut_seed"
+  },
+  {
+    "canonical": "almonds",
+    "tokens": ["almonds", "almond", "amandes", "amande", "mandeln"],
+    "category": "nut_seed"
+  },
+  {
+    "canonical": "chia seeds",
+    "tokens": ["chia seeds", "chia", "graines de chia", "chiasamen"],
+    "category": "nut_seed"
+  },
+  {
+    "canonical": "pumpkin seeds",
+    "tokens": ["pumpkin seeds", "graines de courge", "kurbiskerne"],
+    "category": "nut_seed"
+  },
+  {
+    "canonical": "olive oil",
+    "tokens": ["olive oil", "huile d olive", "olivenol"],
+    "category": "oil"
+  },
+  {
+    "canonical": "soybeans",
+    "tokens": ["soybeans", "soybean", "edamame", "soja", "sojabohnen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "red kidney beans",
+    "tokens": ["red kidney beans", "kidney beans", "haricots rouges", "rote bohnen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "white beans",
+    "tokens": ["white beans", "navy beans", "cannellini", "haricots blancs", "weisse bohnen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "black beans",
+    "tokens": ["black beans", "haricots noirs", "schwarze bohnen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "green beans",
+    "tokens": ["green beans", "string beans", "haricots verts", "grune bohnen"],
+    "category": "legume"
+  }
+]

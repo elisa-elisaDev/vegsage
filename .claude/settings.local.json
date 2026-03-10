@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(test:*)",
+      "Bash(ls:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm test:*)",
+      "Bash(node:*)",
+      "Bash(python3:*)",
+      "Bash(rm:*)",
+      "Bash(npx jest:*)",
+      "Bash(npx next:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(grep:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
