@@ -825,19 +825,34 @@
     "note": "raw", "usda_fdc_id": null
   },
   {
-    "canonical": "rice",
+    "canonical": "white rice",
     "category": "grain",
-    "labels": { "en": "Rice", "fr": "Riz", "de": "Reis" },
+    "labels": { "en": "White Rice", "fr": "Riz blanc", "de": "Weisser Reis" },
     "tokens": {
-      "en": ["rice", "white rice", "brown rice"],
-      "fr": ["riz"],
-      "de": ["reis", "weisser reis", "brauner reis"]
+      "en": ["white rice", "rice"],
+      "fr": ["riz blanc", "riz"],
+      "de": ["weisser reis", "weißer reis", "reis"]
     },
     "nutrients": {
       "calories": 130, "protein": 2.69, "fat": 0.28, "carbs": 28.17, "fiber": 0.4, "sugar": 0.0, "sodium": 1,
       "iron": 0.2, "calcium": 10, "zinc": 0.49, "b12": 0, "omega3": 0.01, "vitaminC": 0, "vitaminD": 0
     },
     "note": "cooked", "usda_fdc_id": "168878"
+  },
+  {
+    "canonical": "brown rice",
+    "category": "grain",
+    "labels": { "en": "Brown Rice", "fr": "Riz complet", "de": "Brauner Reis" },
+    "tokens": {
+      "en": ["brown rice", "whole grain rice"],
+      "fr": ["riz complet", "riz brun", "riz intégral", "riz integral"],
+      "de": ["brauner reis", "vollkornreis", "naturreis"]
+    },
+    "nutrients": {
+      "calories": 112, "protein": 2.32, "fat": 0.83, "carbs": 23.51, "fiber": 1.8, "sugar": 0.35, "sodium": 5,
+      "iron": 0.53, "calcium": 10, "zinc": 0.62, "b12": 0, "omega3": 0.02, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "169704"
   },
   {
     "canonical": "pasta",
@@ -853,6 +868,21 @@
       "iron": 0.7, "calcium": 7, "zinc": 0.51, "b12": 0, "omega3": 0.02, "vitaminC": 0, "vitaminD": 0
     },
     "note": "cooked", "usda_fdc_id": "168901"
+  },
+  {
+    "canonical": "whole wheat pasta",
+    "category": "grain",
+    "labels": { "en": "Whole Wheat Pasta", "fr": "Pâtes complètes", "de": "Vollkornnudeln" },
+    "tokens": {
+      "en": ["whole wheat pasta", "whole grain pasta", "wholemeal pasta"],
+      "fr": ["pates completes", "pâtes complètes", "pates integrales", "pâtes intégrales"],
+      "de": ["vollkornnudeln", "vollkorn nudeln", "vollkorn pasta"]
+    },
+    "nutrients": {
+      "calories": 174, "protein": 7.46, "fat": 0.54, "carbs": 35.2, "fiber": 6.3, "sugar": 0.58, "sodium": 1,
+      "iron": 1.06, "calcium": 21, "zinc": 1.13, "b12": 0, "omega3": 0.03, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "169737"
   },
   {
     "canonical": "oats",
@@ -885,19 +915,49 @@
     "note": "cooked", "usda_fdc_id": "168917"
   },
   {
-    "canonical": "bread",
+    "canonical": "white bread",
     "category": "grain",
-    "labels": { "en": "Bread", "fr": "Pain", "de": "Brot" },
+    "labels": { "en": "White Bread", "fr": "Pain blanc", "de": "Weissbrot" },
     "tokens": {
-      "en": ["bread", "whole wheat bread", "sourdough"],
-      "fr": ["pain", "pain complet", "baguette"],
-      "de": ["brot", "vollkornbrot", "baguette"]
+      "en": ["white bread", "bread", "baguette", "sourdough", "toast"],
+      "fr": ["pain blanc", "pain", "baguette", "pain de mie"],
+      "de": ["weissbrot", "weißbrot", "brot", "baguette", "toastbrot"]
+    },
+    "nutrients": {
+      "calories": 265, "protein": 8.85, "fat": 3.29, "carbs": 49.04, "fiber": 2.4, "sugar": 5.34, "sodium": 491,
+      "iron": 2.59, "calcium": 151, "zinc": 0.77, "b12": 0, "omega3": 0.05, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "enriched white bread", "usda_fdc_id": "353217"
+  },
+  {
+    "canonical": "whole wheat bread",
+    "category": "grain",
+    "labels": { "en": "Whole Wheat Bread", "fr": "Pain complet", "de": "Vollkornbrot" },
+    "tokens": {
+      "en": ["whole wheat bread", "whole grain bread", "wholemeal bread"],
+      "fr": ["pain complet", "pain intégral", "pain integral", "pain de blé complet"],
+      "de": ["vollkornbrot", "vollkorn brot", "vollkorntoast"]
     },
     "nutrients": {
       "calories": 247, "protein": 13.4, "fat": 3.5, "carbs": 43.0, "fiber": 7.0, "sugar": 5.0, "sodium": 491,
       "iron": 2.49, "calcium": 107, "zinc": 1.83, "b12": 0, "omega3": 0.14, "vitaminC": 0, "vitaminD": 0
     },
     "note": "whole wheat", "usda_fdc_id": "172276"
+  },
+  {
+    "canonical": "rye bread",
+    "category": "grain",
+    "labels": { "en": "Rye Bread", "fr": "Pain de seigle", "de": "Roggenbrot" },
+    "tokens": {
+      "en": ["rye bread", "rye"],
+      "fr": ["pain de seigle", "seigle", "pain au seigle"],
+      "de": ["roggenbrot", "roggen brot", "roggen"]
+    },
+    "nutrients": {
+      "calories": 259, "protein": 8.46, "fat": 3.3, "carbs": 48.3, "fiber": 5.8, "sugar": 3.85, "sodium": 603,
+      "iron": 2.83, "calcium": 73, "zinc": 1.14, "b12": 0, "omega3": 0.17, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "rye bread", "usda_fdc_id": "172282"
   },
   {
     "canonical": "barley",
@@ -1273,6 +1333,21 @@
       "iron": 11.9, "calcium": 73, "zinc": 3.31, "b12": 0, "omega3": 0.23, "vitaminC": 0, "vitaminD": 0
     },
     "note": "70-85% cacao", "usda_fdc_id": "170273"
+  },
+  {
+    "canonical": "milk chocolate",
+    "category": "condiment",
+    "labels": { "en": "Milk Chocolate", "fr": "Chocolat au lait", "de": "Milchschokolade" },
+    "tokens": {
+      "en": ["milk chocolate"],
+      "fr": ["chocolat au lait"],
+      "de": ["milchschokolade", "vollmilchschokolade"]
+    },
+    "nutrients": {
+      "calories": 535, "protein": 7.65, "fat": 29.66, "carbs": 59.4, "fiber": 3.4, "sugar": 51.5, "sodium": 79,
+      "iron": 2.35, "calcium": 189, "zinc": 1.41, "b12": 0.42, "omega3": 0.15, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "milk chocolate", "usda_fdc_id": "170272"
   },
   {
     "canonical": "soy milk",
