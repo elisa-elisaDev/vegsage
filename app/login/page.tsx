@@ -30,7 +30,14 @@ function LoginInner() {
     });
 
     if (authError) {
-      setError(t.auth.errors.invalid);
+      if (
+        authError.code === "email_not_confirmed" ||
+        authError.message?.toLowerCase().includes("not confirmed")
+      ) {
+        setError(t.auth.errors.emailNotConfirmed);
+      } else {
+        setError(t.auth.errors.invalid);
+      }
       setLoading(false);
       return;
     }

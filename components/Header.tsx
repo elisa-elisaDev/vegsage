@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Dict, Locale } from "@/lib/i18n";
 import { LocaleSwitcher } from "./LocaleSwitcher";
+import { HeaderMobileNav } from "./HeaderMobileNav";
 
 interface HeaderProps {
   t: Dict;
@@ -22,7 +23,7 @@ export function Header({ t, locale, isAuthed, userEmail: _userEmail }: HeaderPro
           <span>{t.common.appName}</span>
         </Link>
 
-        {/* Nav — authenticated */}
+        {/* Nav — authenticated, desktop */}
         {isAuthed && (
           <nav
             aria-label="Main navigation"
@@ -39,6 +40,9 @@ export function Header({ t, locale, isAuthed, userEmail: _userEmail }: HeaderPro
             </Link>
           </nav>
         )}
+
+        {/* Nav — authenticated, mobile (suppressed on protected pages that have their own bottom nav) */}
+        {isAuthed && <HeaderMobileNav t={t} />}
 
         {/* Right side */}
         <div className="flex items-center gap-3 flex-shrink-0">

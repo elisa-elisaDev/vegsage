@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import { getLocaleFromCookie, getT, LOCALE_COOKIE } from "@/lib/i18n";
+import { createServerSupabaseClient } from "@/lib/supabaseServer";
 import Link from "next/link";
 
 export default async function LegalLayout({ children }: { children: React.ReactNode }) {
@@ -7,9 +8,13 @@ export default async function LegalLayout({ children }: { children: React.ReactN
   const locale = getLocaleFromCookie(cookieStore.get(LOCALE_COOKIE)?.value);
   const t = getT(locale);
 
+  const supabase = await createServerSupabaseClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  const backHref = user ? "/dashboard" : "/";
+
   return (
     <div className="max-w-2xl mx-auto px-4 py-12">
-      <Link href="/" className="text-sm text-brand-600 hover:underline block mb-8">
+      <Link href={backHref} className="text-sm text-brand-600 hover:underline block mb-8">
         ← {t.common.backToHome}
       </Link>
       {children}

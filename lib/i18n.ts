@@ -76,6 +76,7 @@ export interface Dict {
       weakPassword: string;
       network: string;
       generic: string;
+      emailNotConfirmed: string;
     };
   };
   dashboard: {
@@ -398,6 +399,7 @@ const en: Dict = {
       weakPassword: "Password must be at least 8 characters.",
       network: "Network error. Please check your connection.",
       generic: "Something went wrong. Please try again.",
+      emailNotConfirmed: "Please confirm your email before signing in. Check your inbox for a confirmation link.",
     },
   },
   dashboard: {
@@ -737,6 +739,7 @@ const fr: Dict = {
       weakPassword: "Le mot de passe doit contenir au moins 8 caractères.",
       network: "Erreur réseau. Vérifiez votre connexion.",
       generic: "Une erreur est survenue. Veuillez réessayer.",
+      emailNotConfirmed: "Veuillez confirmer votre e-mail avant de vous connecter. Vérifiez votre boîte de réception.",
     },
   },
   dashboard: {
@@ -1076,6 +1079,7 @@ const de: Dict = {
       weakPassword: "Das Passwort muss mindestens 8 Zeichen lang sein.",
       network: "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
       generic: "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+      emailNotConfirmed: "Bitte bestätigen Sie Ihre E-Mail vor der Anmeldung. Überprüfen Sie Ihren Posteingang.",
     },
   },
   dashboard: {
