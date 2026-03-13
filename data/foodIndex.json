@@ -228,5 +228,610 @@
     "canonical": "green beans",
     "tokens": ["green beans", "string beans", "haricots verts", "grune bohnen"],
     "category": "legume"
+  },
+  {
+    "canonical": "rice milk",
+    "tokens": ["rice milk", "lait de riz", "reismilch", "boisson riz"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "hazelnut milk",
+    "tokens": ["hazelnut milk", "lait de noisette", "haselnussmilch"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "cashew milk",
+    "tokens": ["cashew milk", "lait de cajou", "cashewmilch"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "hemp milk",
+    "tokens": ["hemp milk", "lait de chanvre", "hanfmilch"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "pea milk",
+    "tokens": ["pea milk", "lait de pois", "erbsenmilch"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "oat cream",
+    "tokens": ["oat cream", "creme d avoine", "haferrahm"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "soy cream",
+    "tokens": ["soy cream", "creme de soja", "sojarahm"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "coconut cream",
+    "tokens": ["coconut cream", "creme de coco", "kokoscreme"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "soy yogurt",
+    "tokens": ["soy yogurt", "soya yogurt", "yaourt de soja", "sojajoghurt"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "coconut yogurt",
+    "tokens": ["coconut yogurt", "yaourt coco", "kokosjoghurt"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "almond yogurt",
+    "tokens": ["almond yogurt", "yaourt amande", "mandeljoghurt"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "oat yogurt",
+    "tokens": ["oat yogurt", "yaourt avoine", "haferjoghurt"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "plant-based cheese",
+    "tokens": ["vegan cheese", "plant-based cheese", "fromage vegetal", "veganer kase"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "textured soy protein",
+    "tokens": ["textured soy protein", "tvp", "tsp", "proteines de soja", "soja texture"],
+    "category": "plant_protein"
+  },
+  {
+    "canonical": "jackfruit",
+    "tokens": ["jackfruit", "jacquier", "jackfrucht"],
+    "category": "plant_protein"
+  },
+  {
+    "canonical": "miso",
+    "tokens": ["miso", "miso paste", "pate miso", "misopaste"],
+    "category": "condiment"
+  },
+  {
+    "canonical": "natto",
+    "tokens": ["natto", "fermented soybeans"],
+    "category": "plant_protein"
+  },
+  {
+    "canonical": "lupins",
+    "tokens": ["lupins", "lupin beans", "lupins", "lupinen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "mung beans",
+    "tokens": ["mung beans", "moong", "haricots mungo", "mungobohnen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "adzuki beans",
+    "tokens": ["adzuki beans", "azuki beans", "haricots adzuki", "adzukibohnen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "fava beans",
+    "tokens": ["fava beans", "broad beans", "feves", "favabohnen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "red lentils",
+    "tokens": ["red lentils", "masoor dal", "lentilles corail", "rote linsen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "black-eyed peas",
+    "tokens": ["black-eyed peas", "cowpeas", "haricots a oeil noir", "schwarzaugenbohnen"],
+    "category": "legume"
+  },
+  {
+    "canonical": "millet",
+    "tokens": ["millet", "hirse"],
+    "category": "grain"
+  },
+  {
+    "canonical": "amaranth",
+    "tokens": ["amaranth", "amarante"],
+    "category": "grain"
+  },
+  {
+    "canonical": "spelt",
+    "tokens": ["spelt", "epeautre", "dinkel"],
+    "category": "grain"
+  },
+  {
+    "canonical": "teff",
+    "tokens": ["teff"],
+    "category": "grain"
+  },
+  {
+    "canonical": "couscous",
+    "tokens": ["couscous"],
+    "category": "grain"
+  },
+  {
+    "canonical": "polenta",
+    "tokens": ["polenta", "cornmeal"],
+    "category": "grain"
+  },
+  {
+    "canonical": "bulgur",
+    "tokens": ["bulgur", "boulgour", "cracked wheat"],
+    "category": "grain"
+  },
+  {
+    "canonical": "semolina",
+    "tokens": ["semolina", "semoule", "griess"],
+    "category": "grain"
+  },
+  {
+    "canonical": "rice cakes",
+    "tokens": ["rice cakes", "galettes de riz", "reiswaffeln"],
+    "category": "grain"
+  },
+  {
+    "canonical": "whole wheat flour",
+    "tokens": ["whole wheat flour", "farine complete", "vollkornmehl"],
+    "category": "grain"
+  },
+  {
+    "canonical": "rice flour",
+    "tokens": ["rice flour", "farine de riz", "reismehl"],
+    "category": "grain"
+  },
+  {
+    "canonical": "chickpea flour",
+    "tokens": ["chickpea flour", "besan", "farine de pois chiches", "kichererbsenmehl"],
+    "category": "grain"
+  },
+  {
+    "canonical": "oat flour",
+    "tokens": ["oat flour", "farine d avoine", "hafermehl"],
+    "category": "grain"
+  },
+  {
+    "canonical": "parsnip",
+    "tokens": ["parsnip", "panais", "pastinake"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "turnip",
+    "tokens": ["turnip", "navet", "rube"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "celeriac",
+    "tokens": ["celeriac", "celery root", "celeri rave", "knollensellerie"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "kohlrabi",
+    "tokens": ["kohlrabi", "chou rave"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "butternut squash",
+    "tokens": ["butternut squash", "butternut", "courge butternut"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "okra",
+    "tokens": ["okra", "gombo", "ladies fingers"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "spring onion",
+    "tokens": ["spring onion", "scallion", "green onion", "oignon vert", "fruhlingszwiebel"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "shallot",
+    "tokens": ["shallot", "echalote", "schalotte"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "endive",
+    "tokens": ["endive", "chicory", "chicorée", "endivie"],
+    "category": "leafy"
+  },
+  {
+    "canonical": "watercress",
+    "tokens": ["watercress", "cresson", "brunnenkresse"],
+    "category": "leafy"
+  },
+  {
+    "canonical": "pak choi",
+    "tokens": ["pak choi", "bok choy", "chinese cabbage", "chou chinois"],
+    "category": "leafy"
+  },
+  {
+    "canonical": "red cabbage",
+    "tokens": ["red cabbage", "chou rouge", "rotkohl", "blaukraut"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "savoy cabbage",
+    "tokens": ["savoy cabbage", "chou de savoie", "wirsing"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "cherry tomatoes",
+    "tokens": ["cherry tomatoes", "tomates cerises", "kirschtomaten"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "sun-dried tomatoes",
+    "tokens": ["sun-dried tomatoes", "tomates sechees", "getrocknete tomaten"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "bamboo shoots",
+    "tokens": ["bamboo shoots", "pousses de bambou", "bambussprossen"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "sauerkraut",
+    "tokens": ["sauerkraut", "choucroute"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "kimchi",
+    "tokens": ["kimchi"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "daikon",
+    "tokens": ["daikon", "radis blanc", "rettich"],
+    "category": "vegetable"
+  },
+  {
+    "canonical": "grapefruit",
+    "tokens": ["grapefruit", "pamplemousse"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "watermelon",
+    "tokens": ["watermelon", "pasteque", "wassermelone"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "melon",
+    "tokens": ["melon", "cantaloupe", "honeydew", "melone"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "fig",
+    "tokens": ["fig", "figs", "figue", "feige"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "apricot",
+    "tokens": ["apricot", "abricot", "aprikose"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "peach",
+    "tokens": ["peach", "peche", "pfirsich"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "plum",
+    "tokens": ["plum", "prune", "pflaume"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "pomegranate",
+    "tokens": ["pomegranate", "grenade", "granatapfel"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "passion fruit",
+    "tokens": ["passion fruit", "fruit de la passion", "maracuja"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "papaya",
+    "tokens": ["papaya", "papaye"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "lychee",
+    "tokens": ["lychee", "litchi", "litschi"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "lime",
+    "tokens": ["lime", "citron vert", "limette"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "pineapple",
+    "tokens": ["pineapple", "ananas"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "raisins",
+    "tokens": ["raisins", "raisins secs", "rosinen"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "dried apricots",
+    "tokens": ["dried apricots", "abricots secs", "getrocknete aprikosen"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "pine nuts",
+    "tokens": ["pine nuts", "pignons de pin", "pinienkerne"],
+    "category": "nut_seed"
+  },
+  {
+    "canonical": "brazil nuts",
+    "tokens": ["brazil nuts", "noix du bresil", "paranuss"],
+    "category": "nut_seed"
+  },
+  {
+    "canonical": "macadamia nuts",
+    "tokens": ["macadamia nuts", "macadamia", "noix de macadamia", "macadamianusse"],
+    "category": "nut_seed"
+  },
+  {
+    "canonical": "pistachios",
+    "tokens": ["pistachios", "pistache", "pistazien"],
+    "category": "nut_seed"
+  },
+  {
+    "canonical": "pecans",
+    "tokens": ["pecans", "noix de pecan", "pekannusse"],
+    "category": "nut_seed"
+  },
+  {
+    "canonical": "poppy seeds",
+    "tokens": ["poppy seeds", "graines de pavot", "mohnsamen"],
+    "category": "nut_seed"
+  },
+  {
+    "canonical": "soy sauce",
+    "tokens": ["soy sauce", "shoyu", "sauce soja", "sojasosse"],
+    "category": "condiment"
+  },
+  {
+    "canonical": "tamari",
+    "tokens": ["tamari"],
+    "category": "condiment"
+  },
+  {
+    "canonical": "apple cider vinegar",
+    "tokens": ["apple cider vinegar", "vinaigre de cidre", "apfelessig"],
+    "category": "condiment"
+  },
+  {
+    "canonical": "balsamic vinegar",
+    "tokens": ["balsamic vinegar", "vinaigre balsamique", "balsamico"],
+    "category": "condiment"
+  },
+  {
+    "canonical": "tomato paste",
+    "tokens": ["tomato paste", "concentre de tomates", "tomatenmark"],
+    "category": "condiment"
+  },
+  {
+    "canonical": "tomato sauce",
+    "tokens": ["tomato sauce", "passata", "sauce tomate", "tomatensauce"],
+    "category": "condiment"
+  },
+  {
+    "canonical": "maple syrup",
+    "tokens": ["maple syrup", "sirop d erable", "ahornsirup"],
+    "category": "condiment"
+  },
+  {
+    "canonical": "agave syrup",
+    "tokens": ["agave syrup", "agave nectar", "sirop d agave", "agavensirup"],
+    "category": "condiment"
+  },
+  {
+    "canonical": "coconut oil",
+    "tokens": ["coconut oil", "huile de coco", "kokosol"],
+    "category": "oil"
+  },
+  {
+    "canonical": "turmeric",
+    "tokens": ["turmeric", "curcuma", "kurkuma"],
+    "category": "herb"
+  },
+  {
+    "canonical": "ginger",
+    "tokens": ["ginger", "gingembre", "ingwer"],
+    "category": "herb"
+  },
+  {
+    "canonical": "cinnamon",
+    "tokens": ["cinnamon", "cannelle", "zimt"],
+    "category": "herb"
+  },
+  {
+    "canonical": "cumin",
+    "tokens": ["cumin", "kreuzkummel"],
+    "category": "herb"
+  },
+  {
+    "canonical": "oregano",
+    "tokens": ["oregano", "origan"],
+    "category": "herb"
+  },
+  {
+    "canonical": "thyme",
+    "tokens": ["thyme", "thym", "thymian"],
+    "category": "herb"
+  },
+  {
+    "canonical": "rosemary",
+    "tokens": ["rosemary", "romarin", "rosmarin"],
+    "category": "herb"
+  },
+  {
+    "canonical": "sage",
+    "tokens": ["sage", "sauge", "salbei"],
+    "category": "herb"
+  },
+  {
+    "canonical": "dill",
+    "tokens": ["dill", "aneth"],
+    "category": "herb"
+  },
+  {
+    "canonical": "chives",
+    "tokens": ["chives", "ciboulette", "schnittlauch"],
+    "category": "herb"
+  },
+  {
+    "canonical": "black pepper",
+    "tokens": ["black pepper", "poivre noir", "pfeffer"],
+    "category": "herb"
+  },
+  {
+    "canonical": "cayenne pepper",
+    "tokens": ["cayenne pepper", "poivre de cayenne", "cayennepfeffer"],
+    "category": "herb"
+  },
+  {
+    "canonical": "spirulina",
+    "tokens": ["spirulina", "spiruline"],
+    "category": "plant_protein"
+  },
+  {
+    "canonical": "green tea",
+    "tokens": ["green tea", "the vert", "gruner tee"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "orange juice",
+    "tokens": ["orange juice", "jus d orange", "orangensaft"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "coconut water",
+    "tokens": ["coconut water", "eau de coco", "kokoswasser"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "kombucha",
+    "tokens": ["kombucha"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "butter",
+    "tokens": ["butter", "beurre"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "cream",
+    "tokens": ["cream", "creme", "sahne", "heavy cream"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "sour cream",
+    "tokens": ["sour cream", "creme aigre", "saure sahne", "schmand"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "cream cheese",
+    "tokens": ["cream cheese", "fromage frais", "frischkase"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "cottage cheese",
+    "tokens": ["cottage cheese", "fromage blanc", "huttenkase"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "ricotta",
+    "tokens": ["ricotta"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "mozzarella",
+    "tokens": ["mozzarella"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "parmesan",
+    "tokens": ["parmesan", "parmigiano"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "gouda",
+    "tokens": ["gouda"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "goat cheese",
+    "tokens": ["goat cheese", "chevre", "fromage de chevre", "ziegenkase"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "quark",
+    "tokens": ["quark", "magerquark"],
+    "category": "dairy_eggs"
+  },
+  {
+    "canonical": "falafel",
+    "tokens": ["falafel"],
+    "category": "plant_protein"
+  },
+  {
+    "canonical": "granola",
+    "tokens": ["granola"],
+    "category": "grain"
+  },
+  {
+    "canonical": "muesli",
+    "tokens": ["muesli", "musli"],
+    "category": "grain"
+  },
+  {
+    "canonical": "goji berries",
+    "tokens": ["goji berries", "baies de goji", "gojibeeren"],
+    "category": "fruit"
+  },
+  {
+    "canonical": "matcha",
+    "tokens": ["matcha"],
+    "category": "beverage"
+  },
+  {
+    "canonical": "wheat germ",
+    "tokens": ["wheat germ", "germe de ble", "weizenkeime"],
+    "category": "grain"
+  },
+  {
+    "canonical": "oat bran",
+    "tokens": ["oat bran", "son d avoine", "haferkleie"],
+    "category": "grain"
+  },
+  {
+    "canonical": "vegan butter",
+    "tokens": ["vegan butter", "plant butter", "beurre vegetal", "vegane butter", "margarine"],
+    "category": "dairy_eggs"
   }
 ]

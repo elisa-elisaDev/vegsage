@@ -81,7 +81,15 @@ function scoreAgainstTokenList(q: string, tokens: string[]): number {
     if (t === q) return 100;
   }
   for (const t of tokens) {
-    if (t.includes(q) || q.includes(t)) return 60;
+    if (t.startsWith(q) || q.startsWith(t)) return 70;
+  }
+  for (const t of tokens) {
+    if (t.includes(q) || q.includes(t)) {
+      // Require the matching part to cover at least 50% of the shorter string
+      // to avoid "de" (2 chars) matching inside "salade" (6 chars) = 33% → rejected
+      const ratio = Math.min(q.length, t.length) / Math.max(q.length, t.length);
+      if (ratio >= 0.5) return 60;
+    }
   }
   const threshold = fuzzyThreshold(q.length);
   for (const t of tokens) {
@@ -108,9 +116,12 @@ function computeScore(q: string, words: string[], tokens: string[]): number {
   if (phraseScore >= 100) return phraseScore + 100; // exact phrase → 200
   if (phraseScore > 0)   return phraseScore + 50;  // partial phrase → 110..160
 
-  // Full phrase didn't match — fall back to best individual word, but at half weight
+  // Full phrase didn't match — fall back to best individual word, but at half weight.
+  // Skip short stopwords (≤ 2 chars: "de", "la", "le", "du", "au", etc.) to avoid
+  // false matches where "de" hits "salade", "de terre", etc.
   let wordBest = 0;
   for (const w of words) {
+    if (w.length <= 2) continue;
     const s = scoreAgainstTokenList(w, tokens);
     if (s > wordBest) wordBest = s;
   }

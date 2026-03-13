@@ -1468,5 +1468,1820 @@
       "iron": 0.4, "calcium": 12, "zinc": 0.02, "b12": 0, "omega3": 0.03, "vitaminC": 1.6, "vitaminD": 0
     },
     "note": "dill pickles", "usda_fdc_id": "169401"
+  },
+  {
+    "canonical": "rice milk",
+    "category": "beverage",
+    "labels": { "en": "Rice Milk", "fr": "Lait de riz", "de": "Reismilch" },
+    "tokens": {
+      "en": ["rice milk", "rice drink"],
+      "fr": ["lait de riz", "boisson riz", "riz milk"],
+      "de": ["reismilch", "reisdrink", "reis milch"]
+    },
+    "nutrients": {
+      "calories": 47, "protein": 0.28, "fat": 1.0, "carbs": 9.17, "fiber": 0.2, "sugar": 4.8, "sodium": 75,
+      "iron": 0.15, "calcium": 118, "zinc": 0.03, "b12": 0.0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 2.5
+    },
+    "note": "fortified", "usda_fdc_id": null
+  },
+  {
+    "canonical": "hazelnut milk",
+    "category": "beverage",
+    "labels": { "en": "Hazelnut Milk", "fr": "Lait de noisette", "de": "Haselnussmilch" },
+    "tokens": {
+      "en": ["hazelnut milk", "hazelnut drink"],
+      "fr": ["lait de noisette", "boisson noisette"],
+      "de": ["haselnussmilch", "haselnuss milch"]
+    },
+    "nutrients": {
+      "calories": 28, "protein": 0.5, "fat": 1.5, "carbs": 3.0, "fiber": 0.5, "sugar": 1.9, "sodium": 60,
+      "iron": 0.15, "calcium": 120, "zinc": 0.1, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 1.0
+    },
+    "note": "fortified", "usda_fdc_id": null
+  },
+  {
+    "canonical": "cashew milk",
+    "category": "beverage",
+    "labels": { "en": "Cashew Milk", "fr": "Lait de cajou", "de": "Cashewmilch" },
+    "tokens": {
+      "en": ["cashew milk", "cashew drink"],
+      "fr": ["lait de cajou", "boisson cajou"],
+      "de": ["cashewmilch", "cashew milch"]
+    },
+    "nutrients": {
+      "calories": 25, "protein": 0.5, "fat": 2.0, "carbs": 1.5, "fiber": 0.0, "sugar": 0.0, "sodium": 120,
+      "iron": 0.3, "calcium": 45, "zinc": 0.1, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 1.0
+    },
+    "note": "unsweetened, fortified", "usda_fdc_id": null
+  },
+  {
+    "canonical": "hemp milk",
+    "category": "beverage",
+    "labels": { "en": "Hemp Milk", "fr": "Lait de chanvre", "de": "Hanfmilch" },
+    "tokens": {
+      "en": ["hemp milk", "hemp drink"],
+      "fr": ["lait de chanvre", "boisson chanvre"],
+      "de": ["hanfmilch", "hanf milch"]
+    },
+    "nutrients": {
+      "calories": 35, "protein": 2.0, "fat": 2.5, "carbs": 1.0, "fiber": 0.0, "sugar": 0.0, "sodium": 100,
+      "iron": 0.5, "calcium": 283, "zinc": 0.2, "b12": 0, "omega3": 0.75, "vitaminC": 0, "vitaminD": 2.5
+    },
+    "note": "fortified", "usda_fdc_id": null
+  },
+  {
+    "canonical": "pea milk",
+    "category": "beverage",
+    "labels": { "en": "Pea Milk", "fr": "Lait de pois", "de": "Erbsenmilch" },
+    "tokens": {
+      "en": ["pea milk", "pea protein milk"],
+      "fr": ["lait de pois", "boisson pois"],
+      "de": ["erbsenmilch", "erbsen milch"]
+    },
+    "nutrients": {
+      "calories": 45, "protein": 8.0, "fat": 4.5, "carbs": 0.0, "fiber": 0.0, "sugar": 0.0, "sodium": 100,
+      "iron": 1.0, "calcium": 440, "zinc": 0.7, "b12": 1.2, "omega3": 0.21, "vitaminC": 0, "vitaminD": 3.0
+    },
+    "note": "fortified", "usda_fdc_id": null
+  },
+  {
+    "canonical": "oat cream",
+    "category": "beverage",
+    "labels": { "en": "Oat Cream", "fr": "Crème d'avoine", "de": "Haferrahm" },
+    "tokens": {
+      "en": ["oat cream", "oat cooking cream"],
+      "fr": ["creme d avoine", "crème d'avoine"],
+      "de": ["haferrahm", "hafercreme"]
+    },
+    "nutrients": {
+      "calories": 150, "protein": 1.0, "fat": 13.0, "carbs": 6.0, "fiber": 0.5, "sugar": 1.0, "sodium": 60,
+      "iron": 0.1, "calcium": 30, "zinc": 0.1, "b12": 0, "omega3": 0.05, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooking cream", "usda_fdc_id": null
+  },
+  {
+    "canonical": "soy cream",
+    "category": "beverage",
+    "labels": { "en": "Soy Cream", "fr": "Crème de soja", "de": "Sojarahm" },
+    "tokens": {
+      "en": ["soy cream", "soya cream"],
+      "fr": ["creme de soja", "crème de soja"],
+      "de": ["sojarahm", "sojacreme"]
+    },
+    "nutrients": {
+      "calories": 148, "protein": 2.0, "fat": 13.0, "carbs": 5.0, "fiber": 0.0, "sugar": 1.5, "sodium": 55,
+      "iron": 0.2, "calcium": 20, "zinc": 0.1, "b12": 0, "omega3": 0.1, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooking cream", "usda_fdc_id": null
+  },
+  {
+    "canonical": "coconut cream",
+    "category": "beverage",
+    "labels": { "en": "Coconut Cream", "fr": "Crème de coco", "de": "Kokosnusscreme" },
+    "tokens": {
+      "en": ["coconut cream"],
+      "fr": ["creme de coco", "crème de coco"],
+      "de": ["kokosnusscreme", "kokosnuss creme", "kokoscreme"]
+    },
+    "nutrients": {
+      "calories": 330, "protein": 3.5, "fat": 34.0, "carbs": 5.6, "fiber": 2.2, "sugar": 3.4, "sodium": 15,
+      "iron": 3.3, "calcium": 11, "zinc": 0.7, "b12": 0, "omega3": 0.0, "vitaminC": 1.0, "vitaminD": 0
+    },
+    "note": "canned", "usda_fdc_id": null
+  },
+  {
+    "canonical": "soy yogurt",
+    "category": "dairy_eggs",
+    "labels": { "en": "Soy Yogurt", "fr": "Yaourt de soja", "de": "Sojajoghurt" },
+    "tokens": {
+      "en": ["soy yogurt", "soya yogurt", "soy yoghurt"],
+      "fr": ["yaourt de soja", "yaourt soja", "yoghourt soja"],
+      "de": ["sojajoghurt", "soja joghurt"]
+    },
+    "nutrients": {
+      "calories": 63, "protein": 3.6, "fat": 1.8, "carbs": 8.4, "fiber": 0.2, "sugar": 6.5, "sodium": 40,
+      "iron": 0.5, "calcium": 120, "zinc": 0.4, "b12": 0.5, "omega3": 0.1, "vitaminC": 0, "vitaminD": 1.0
+    },
+    "note": "plain, fortified", "usda_fdc_id": null
+  },
+  {
+    "canonical": "coconut yogurt",
+    "category": "dairy_eggs",
+    "labels": { "en": "Coconut Yogurt", "fr": "Yaourt coco", "de": "Kokosjoghurt" },
+    "tokens": {
+      "en": ["coconut yogurt", "coconut yoghurt"],
+      "fr": ["yaourt coco", "yaourt a la noix de coco"],
+      "de": ["kokosjoghurt", "kokos joghurt"]
+    },
+    "nutrients": {
+      "calories": 90, "protein": 0.8, "fat": 6.0, "carbs": 7.5, "fiber": 0.0, "sugar": 6.5, "sodium": 20,
+      "iron": 0.2, "calcium": 10, "zinc": 0.1, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "plain", "usda_fdc_id": null
+  },
+  {
+    "canonical": "almond yogurt",
+    "category": "dairy_eggs",
+    "labels": { "en": "Almond Yogurt", "fr": "Yaourt aux amandes", "de": "Mandeljoghurt" },
+    "tokens": {
+      "en": ["almond yogurt", "almond yoghurt"],
+      "fr": ["yaourt aux amandes", "yaourt amande"],
+      "de": ["mandeljoghurt", "mandel joghurt"]
+    },
+    "nutrients": {
+      "calories": 55, "protein": 1.0, "fat": 2.5, "carbs": 7.0, "fiber": 0.5, "sugar": 5.5, "sodium": 35,
+      "iron": 0.2, "calcium": 80, "zinc": 0.1, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "plain", "usda_fdc_id": null
+  },
+  {
+    "canonical": "oat yogurt",
+    "category": "dairy_eggs",
+    "labels": { "en": "Oat Yogurt", "fr": "Yaourt à l'avoine", "de": "Haferjoghurt" },
+    "tokens": {
+      "en": ["oat yogurt", "oat yoghurt"],
+      "fr": ["yaourt avoine", "yaourt a l avoine"],
+      "de": ["haferjoghurt", "hafer joghurt"]
+    },
+    "nutrients": {
+      "calories": 68, "protein": 1.5, "fat": 2.0, "carbs": 10.5, "fiber": 0.8, "sugar": 5.0, "sodium": 45,
+      "iron": 0.3, "calcium": 100, "zinc": 0.2, "b12": 0, "omega3": 0.05, "vitaminC": 0, "vitaminD": 1.0
+    },
+    "note": "plain, fortified", "usda_fdc_id": null
+  },
+  {
+    "canonical": "plant-based cheese",
+    "category": "dairy_eggs",
+    "labels": { "en": "Plant-Based Cheese", "fr": "Fromage végétalien", "de": "Veganer Käse" },
+    "tokens": {
+      "en": ["plant-based cheese", "vegan cheese", "dairy-free cheese"],
+      "fr": ["fromage vegetal", "fromage vegetalien", "fromage vegan"],
+      "de": ["veganer kase", "veganer käse", "pflanzlicher kase"]
+    },
+    "nutrients": {
+      "calories": 280, "protein": 3.0, "fat": 25.0, "carbs": 10.0, "fiber": 0.0, "sugar": 0.5, "sodium": 620,
+      "iron": 0.3, "calcium": 200, "zinc": 0.5, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cashew-based", "usda_fdc_id": null
+  },
+  {
+    "canonical": "textured soy protein",
+    "category": "plant_protein",
+    "labels": { "en": "Textured Soy Protein", "fr": "Protéines de soja texturées", "de": "Texturiertes Sojaprotein" },
+    "tokens": {
+      "en": ["textured soy protein", "tvp", "tsp", "soy mince", "soya mince"],
+      "fr": ["proteines de soja texturees", "proteines de soja", "soja texture", "viande de soja"],
+      "de": ["texturiertes sojaprotein", "sojaprotein", "soja granulat", "soja gehack"]
+    },
+    "nutrients": {
+      "calories": 330, "protein": 51.5, "fat": 1.2, "carbs": 35.5, "fiber": 18.0, "sugar": 8.4, "sodium": 37,
+      "iron": 9.46, "calcium": 241, "zinc": 2.7, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "dry", "usda_fdc_id": "172422"
+  },
+  {
+    "canonical": "jackfruit",
+    "category": "plant_protein",
+    "labels": { "en": "Jackfruit", "fr": "Jacquier", "de": "Jackfrucht" },
+    "tokens": {
+      "en": ["jackfruit", "young jackfruit"],
+      "fr": ["jacquier", "jackfruit"],
+      "de": ["jackfrucht", "jackfruit"]
+    },
+    "nutrients": {
+      "calories": 95, "protein": 1.72, "fat": 0.64, "carbs": 23.25, "fiber": 1.5, "sugar": 19.08, "sodium": 2,
+      "iron": 0.23, "calcium": 24, "zinc": 0.13, "b12": 0, "omega3": 0.05, "vitaminC": 13.7, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "174687"
+  },
+  {
+    "canonical": "miso",
+    "category": "condiment",
+    "labels": { "en": "Miso", "fr": "Miso", "de": "Miso" },
+    "tokens": {
+      "en": ["miso", "miso paste", "white miso", "red miso"],
+      "fr": ["miso", "pate miso"],
+      "de": ["miso", "misopaste"]
+    },
+    "nutrients": {
+      "calories": 199, "protein": 11.69, "fat": 6.01, "carbs": 26.47, "fiber": 5.4, "sugar": 6.2, "sodium": 3728,
+      "iron": 2.49, "calcium": 57, "zinc": 2.56, "b12": 0, "omega3": 0.44, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "172944"
+  },
+  {
+    "canonical": "natto",
+    "category": "plant_protein",
+    "labels": { "en": "Natto", "fr": "Natto", "de": "Natto" },
+    "tokens": {
+      "en": ["natto", "fermented soybeans"],
+      "fr": ["natto"],
+      "de": ["natto"]
+    },
+    "nutrients": {
+      "calories": 211, "protein": 17.7, "fat": 11.0, "carbs": 14.4, "fiber": 5.4, "sugar": 5.2, "sodium": 15,
+      "iron": 8.6, "calcium": 217, "zinc": 3.0, "b12": 0, "omega3": 0.76, "vitaminC": 13.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "172439"
+  },
+  {
+    "canonical": "lupins",
+    "category": "legume",
+    "labels": { "en": "Lupins", "fr": "Lupins", "de": "Lupinen" },
+    "tokens": {
+      "en": ["lupins", "lupin beans", "lupini beans"],
+      "fr": ["lupins", "lupin"],
+      "de": ["lupinen", "lupine"]
+    },
+    "nutrients": {
+      "calories": 119, "protein": 15.6, "fat": 2.94, "carbs": 9.87, "fiber": 4.4, "sugar": 1.14, "sodium": 7,
+      "iron": 1.7, "calcium": 67, "zinc": 2.0, "b12": 0, "omega3": 0.15, "vitaminC": 1.0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "174285"
+  },
+  {
+    "canonical": "mung beans",
+    "category": "legume",
+    "labels": { "en": "Mung Beans", "fr": "Haricots mungo", "de": "Mungobohnen" },
+    "tokens": {
+      "en": ["mung beans", "mung bean", "moong"],
+      "fr": ["haricots mungo", "haricot mungo"],
+      "de": ["mungobohnen", "mungobohne"]
+    },
+    "nutrients": {
+      "calories": 105, "protein": 7.02, "fat": 0.38, "carbs": 19.15, "fiber": 7.6, "sugar": 2.0, "sodium": 2,
+      "iron": 1.4, "calcium": 27, "zinc": 0.84, "b12": 0, "omega3": 0.07, "vitaminC": 1.0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "174257"
+  },
+  {
+    "canonical": "adzuki beans",
+    "category": "legume",
+    "labels": { "en": "Adzuki Beans", "fr": "Haricots adzuki", "de": "Adzukibohnen" },
+    "tokens": {
+      "en": ["adzuki beans", "adzuki bean", "azuki beans"],
+      "fr": ["haricots adzuki", "haricot adzuki"],
+      "de": ["adzukibohnen", "adzukibohne"]
+    },
+    "nutrients": {
+      "calories": 128, "protein": 7.52, "fat": 0.1, "carbs": 24.77, "fiber": 7.3, "sugar": 0.0, "sodium": 8,
+      "iron": 1.96, "calcium": 28, "zinc": 2.03, "b12": 0, "omega3": 0.06, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "175219"
+  },
+  {
+    "canonical": "fava beans",
+    "category": "legume",
+    "labels": { "en": "Fava Beans", "fr": "Fèves", "de": "Favabohnen" },
+    "tokens": {
+      "en": ["fava beans", "fava bean", "broad beans", "broad bean"],
+      "fr": ["feves", "fève", "fèves"],
+      "de": ["favabohnen", "saubohnen", "dicke bohnen"]
+    },
+    "nutrients": {
+      "calories": 110, "protein": 7.92, "fat": 0.4, "carbs": 19.65, "fiber": 5.4, "sugar": 1.8, "sodium": 5,
+      "iron": 1.5, "calcium": 36, "zinc": 1.0, "b12": 0, "omega3": 0.07, "vitaminC": 0.8, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "173752"
+  },
+  {
+    "canonical": "red lentils",
+    "category": "legume",
+    "labels": { "en": "Red Lentils", "fr": "Lentilles corail", "de": "Rote Linsen" },
+    "tokens": {
+      "en": ["red lentils", "red lentil", "masoor dal", "coral lentils"],
+      "fr": ["lentilles corail", "lentilles rouges", "lentille corail"],
+      "de": ["rote linsen", "rote linse", "masoor dal"]
+    },
+    "nutrients": {
+      "calories": 116, "protein": 7.6, "fat": 0.38, "carbs": 19.9, "fiber": 4.0, "sugar": 1.8, "sodium": 2,
+      "iron": 3.3, "calcium": 17, "zinc": 1.2, "b12": 0, "omega3": 0.07, "vitaminC": 1.5, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "172421"
+  },
+  {
+    "canonical": "black-eyed peas",
+    "category": "legume",
+    "labels": { "en": "Black-Eyed Peas", "fr": "Haricots à œil noir", "de": "Schwarzaugenbohnen" },
+    "tokens": {
+      "en": ["black-eyed peas", "black eyed peas", "cowpeas"],
+      "fr": ["haricots a oeil noir", "haricots cornille"],
+      "de": ["schwarzaugenbohnen", "kuhbohnen"]
+    },
+    "nutrients": {
+      "calories": 116, "protein": 7.73, "fat": 0.53, "carbs": 20.76, "fiber": 6.5, "sugar": 3.3, "sodium": 4,
+      "iron": 2.51, "calcium": 24, "zinc": 1.29, "b12": 0, "omega3": 0.09, "vitaminC": 0.4, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "175241"
+  },
+  {
+    "canonical": "millet",
+    "category": "grain",
+    "labels": { "en": "Millet", "fr": "Millet", "de": "Hirse" },
+    "tokens": {
+      "en": ["millet"],
+      "fr": ["millet"],
+      "de": ["hirse"]
+    },
+    "nutrients": {
+      "calories": 119, "protein": 3.51, "fat": 1.0, "carbs": 23.67, "fiber": 1.3, "sugar": 0.0, "sodium": 2,
+      "iron": 0.63, "calcium": 3, "zinc": 0.91, "b12": 0, "omega3": 0.04, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "170285"
+  },
+  {
+    "canonical": "amaranth",
+    "category": "grain",
+    "labels": { "en": "Amaranth", "fr": "Amarante", "de": "Amaranth" },
+    "tokens": {
+      "en": ["amaranth"],
+      "fr": ["amarante"],
+      "de": ["amaranth"]
+    },
+    "nutrients": {
+      "calories": 102, "protein": 3.8, "fat": 1.58, "carbs": 18.69, "fiber": 2.1, "sugar": 0.0, "sodium": 6,
+      "iron": 2.1, "calcium": 47, "zinc": 0.86, "b12": 0, "omega3": 0.02, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "170283"
+  },
+  {
+    "canonical": "spelt",
+    "category": "grain",
+    "labels": { "en": "Spelt", "fr": "Épeautre", "de": "Dinkel" },
+    "tokens": {
+      "en": ["spelt", "dinkel"],
+      "fr": ["epautre", "epeautre"],
+      "de": ["dinkel", "dinkelkorn"]
+    },
+    "nutrients": {
+      "calories": 127, "protein": 5.5, "fat": 0.9, "carbs": 26.0, "fiber": 4.4, "sugar": 0.0, "sodium": 5,
+      "iron": 1.9, "calcium": 19, "zinc": 1.7, "b12": 0, "omega3": 0.04, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": null
+  },
+  {
+    "canonical": "teff",
+    "category": "grain",
+    "labels": { "en": "Teff", "fr": "Teff", "de": "Teff" },
+    "tokens": {
+      "en": ["teff"],
+      "fr": ["teff"],
+      "de": ["teff"]
+    },
+    "nutrients": {
+      "calories": 101, "protein": 3.87, "fat": 0.65, "carbs": 19.86, "fiber": 2.8, "sugar": 0.0, "sodium": 5,
+      "iron": 2.05, "calcium": 60, "zinc": 0.97, "b12": 0, "omega3": 0.03, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "169746"
+  },
+  {
+    "canonical": "couscous",
+    "category": "grain",
+    "labels": { "en": "Couscous", "fr": "Couscous", "de": "Couscous" },
+    "tokens": {
+      "en": ["couscous"],
+      "fr": ["couscous", "semoule de ble"],
+      "de": ["couscous"]
+    },
+    "nutrients": {
+      "calories": 112, "protein": 3.79, "fat": 0.16, "carbs": 23.22, "fiber": 1.4, "sugar": 0.1, "sodium": 5,
+      "iron": 0.38, "calcium": 8, "zinc": 0.42, "b12": 0, "omega3": 0.01, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "169699"
+  },
+  {
+    "canonical": "polenta",
+    "category": "grain",
+    "labels": { "en": "Polenta", "fr": "Polenta", "de": "Polenta" },
+    "tokens": {
+      "en": ["polenta", "cornmeal"],
+      "fr": ["polenta"],
+      "de": ["polenta", "maismehl"]
+    },
+    "nutrients": {
+      "calories": 70, "protein": 1.5, "fat": 0.3, "carbs": 15.6, "fiber": 0.7, "sugar": 0.4, "sodium": 166,
+      "iron": 0.35, "calcium": 2, "zinc": 0.22, "b12": 0, "omega3": 0.01, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "169713"
+  },
+  {
+    "canonical": "bulgur",
+    "category": "grain",
+    "labels": { "en": "Bulgur", "fr": "Boulgour", "de": "Bulgur" },
+    "tokens": {
+      "en": ["bulgur", "bulghur", "cracked wheat"],
+      "fr": ["boulgour", "bulgour"],
+      "de": ["bulgur"]
+    },
+    "nutrients": {
+      "calories": 83, "protein": 3.08, "fat": 0.24, "carbs": 18.58, "fiber": 4.5, "sugar": 0.1, "sodium": 5,
+      "iron": 0.96, "calcium": 10, "zinc": 0.57, "b12": 0, "omega3": 0.03, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "cooked", "usda_fdc_id": "170287"
+  },
+  {
+    "canonical": "semolina",
+    "category": "grain",
+    "labels": { "en": "Semolina", "fr": "Semoule", "de": "Grieß" },
+    "tokens": {
+      "en": ["semolina"],
+      "fr": ["semoule"],
+      "de": ["griess", "grieß"]
+    },
+    "nutrients": {
+      "calories": 360, "protein": 12.68, "fat": 1.05, "carbs": 72.83, "fiber": 3.9, "sugar": 0.0, "sodium": 1,
+      "iron": 4.36, "calcium": 17, "zinc": 1.05, "b12": 0, "omega3": 0.03, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "dry", "usda_fdc_id": "169737"
+  },
+  {
+    "canonical": "rice cakes",
+    "category": "grain",
+    "labels": { "en": "Rice Cakes", "fr": "Galettes de riz", "de": "Reiswaffeln" },
+    "tokens": {
+      "en": ["rice cakes", "rice cake"],
+      "fr": ["galettes de riz", "galette de riz"],
+      "de": ["reiswaffeln", "reiswaffel"]
+    },
+    "nutrients": {
+      "calories": 387, "protein": 7.27, "fat": 2.67, "carbs": 81.5, "fiber": 1.5, "sugar": 0.18, "sodium": 26,
+      "iron": 1.47, "calcium": 8, "zinc": 1.3, "b12": 0, "omega3": 0.03, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "plain", "usda_fdc_id": "168880"
+  },
+  {
+    "canonical": "whole wheat flour",
+    "category": "grain",
+    "labels": { "en": "Whole Wheat Flour", "fr": "Farine complète", "de": "Vollkornmehl" },
+    "tokens": {
+      "en": ["whole wheat flour", "wholemeal flour", "whole grain flour"],
+      "fr": ["farine complete", "farine intégrale"],
+      "de": ["vollkornmehl", "vollkorn mehl"]
+    },
+    "nutrients": {
+      "calories": 340, "protein": 13.21, "fat": 1.87, "carbs": 72.57, "fiber": 10.7, "sugar": 0.41, "sodium": 2,
+      "iron": 3.88, "calcium": 34, "zinc": 2.93, "b12": 0, "omega3": 0.03, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "dry", "usda_fdc_id": "169761"
+  },
+  {
+    "canonical": "rice flour",
+    "category": "grain",
+    "labels": { "en": "Rice Flour", "fr": "Farine de riz", "de": "Reismehl" },
+    "tokens": {
+      "en": ["rice flour"],
+      "fr": ["farine de riz"],
+      "de": ["reismehl", "reisstaerke"]
+    },
+    "nutrients": {
+      "calories": 366, "protein": 5.95, "fat": 1.42, "carbs": 80.13, "fiber": 2.4, "sugar": 0.0, "sodium": 0,
+      "iron": 0.35, "calcium": 10, "zinc": 1.23, "b12": 0, "omega3": 0.03, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "dry", "usda_fdc_id": "168878"
+  },
+  {
+    "canonical": "chickpea flour",
+    "category": "grain",
+    "labels": { "en": "Chickpea Flour", "fr": "Farine de pois chiches", "de": "Kichererbsenmehl" },
+    "tokens": {
+      "en": ["chickpea flour", "besan", "gram flour"],
+      "fr": ["farine de pois chiches", "farine de pois chiche"],
+      "de": ["kichererbsenmehl", "besan"]
+    },
+    "nutrients": {
+      "calories": 387, "protein": 22.4, "fat": 6.7, "carbs": 57.8, "fiber": 10.8, "sugar": 10.8, "sodium": 64,
+      "iron": 6.24, "calcium": 45, "zinc": 2.83, "b12": 0, "omega3": 0.1, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "dry", "usda_fdc_id": "175283"
+  },
+  {
+    "canonical": "oat flour",
+    "category": "grain",
+    "labels": { "en": "Oat Flour", "fr": "Farine d'avoine", "de": "Hafermehl" },
+    "tokens": {
+      "en": ["oat flour"],
+      "fr": ["farine d avoine", "farine d'avoine"],
+      "de": ["hafermehl"]
+    },
+    "nutrients": {
+      "calories": 404, "protein": 14.66, "fat": 8.22, "carbs": 65.7, "fiber": 6.5, "sugar": 0.0, "sodium": 5,
+      "iron": 4.72, "calcium": 54, "zinc": 3.97, "b12": 0, "omega3": 0.11, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "dry", "usda_fdc_id": "173904"
+  },
+  {
+    "canonical": "parsnip",
+    "category": "vegetable",
+    "labels": { "en": "Parsnip", "fr": "Panais", "de": "Pastinake" },
+    "tokens": {
+      "en": ["parsnip", "parsnips"],
+      "fr": ["panais"],
+      "de": ["pastinake", "pastinaken"]
+    },
+    "nutrients": {
+      "calories": 75, "protein": 1.2, "fat": 0.3, "carbs": 17.99, "fiber": 4.9, "sugar": 4.8, "sodium": 10,
+      "iron": 0.59, "calcium": 36, "zinc": 0.59, "b12": 0, "omega3": 0.07, "vitaminC": 17.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170417"
+  },
+  {
+    "canonical": "turnip",
+    "category": "vegetable",
+    "labels": { "en": "Turnip", "fr": "Navet", "de": "Rübe" },
+    "tokens": {
+      "en": ["turnip", "turnips"],
+      "fr": ["navet", "navets"],
+      "de": ["rube", "rübe", "weisse rube"]
+    },
+    "nutrients": {
+      "calories": 28, "protein": 0.9, "fat": 0.1, "carbs": 6.43, "fiber": 1.8, "sugar": 3.8, "sodium": 67,
+      "iron": 0.3, "calcium": 30, "zinc": 0.27, "b12": 0, "omega3": 0.03, "vitaminC": 21.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170465"
+  },
+  {
+    "canonical": "celeriac",
+    "category": "vegetable",
+    "labels": { "en": "Celeriac", "fr": "Céleri-rave", "de": "Knollensellerie" },
+    "tokens": {
+      "en": ["celeriac", "celery root"],
+      "fr": ["celeri rave", "céleri-rave"],
+      "de": ["knollensellerie", "sellerie wurzel"]
+    },
+    "nutrients": {
+      "calories": 42, "protein": 1.5, "fat": 0.3, "carbs": 9.2, "fiber": 1.8, "sugar": 1.6, "sodium": 100,
+      "iron": 0.7, "calcium": 43, "zinc": 0.33, "b12": 0, "omega3": 0.05, "vitaminC": 8.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169997"
+  },
+  {
+    "canonical": "kohlrabi",
+    "category": "vegetable",
+    "labels": { "en": "Kohlrabi", "fr": "Chou-rave", "de": "Kohlrabi" },
+    "tokens": {
+      "en": ["kohlrabi"],
+      "fr": ["chou rave", "chou-rave"],
+      "de": ["kohlrabi"]
+    },
+    "nutrients": {
+      "calories": 27, "protein": 1.7, "fat": 0.1, "carbs": 6.2, "fiber": 3.6, "sugar": 2.6, "sodium": 20,
+      "iron": 0.4, "calcium": 24, "zinc": 0.03, "b12": 0, "omega3": 0.03, "vitaminC": 62.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169228"
+  },
+  {
+    "canonical": "butternut squash",
+    "category": "vegetable",
+    "labels": { "en": "Butternut Squash", "fr": "Courge butternut", "de": "Butternusskürbis" },
+    "tokens": {
+      "en": ["butternut squash", "butternut"],
+      "fr": ["courge butternut", "butternut"],
+      "de": ["butternusskurbis", "butternusskürbis", "butternut"]
+    },
+    "nutrients": {
+      "calories": 45, "protein": 1.0, "fat": 0.1, "carbs": 11.69, "fiber": 2.0, "sugar": 2.2, "sodium": 4,
+      "iron": 0.7, "calcium": 48, "zinc": 0.15, "b12": 0, "omega3": 0.02, "vitaminC": 21.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169288"
+  },
+  {
+    "canonical": "okra",
+    "category": "vegetable",
+    "labels": { "en": "Okra", "fr": "Gombo", "de": "Okra" },
+    "tokens": {
+      "en": ["okra", "ladies' fingers"],
+      "fr": ["gombo", "okra"],
+      "de": ["okra", "gombo"]
+    },
+    "nutrients": {
+      "calories": 33, "protein": 1.93, "fat": 0.19, "carbs": 7.45, "fiber": 3.2, "sugar": 1.48, "sodium": 7,
+      "iron": 0.62, "calcium": 82, "zinc": 0.58, "b12": 0, "omega3": 0.04, "vitaminC": 23.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169260"
+  },
+  {
+    "canonical": "spring onion",
+    "category": "vegetable",
+    "labels": { "en": "Spring Onion", "fr": "Oignon vert", "de": "Frühlingszwiebel" },
+    "tokens": {
+      "en": ["spring onion", "scallion", "green onion"],
+      "fr": ["oignon vert", "oignon nouveau", "ciboule"],
+      "de": ["fruhlingszwiebel", "frühlingszwiebel", "lauchzwiebel"]
+    },
+    "nutrients": {
+      "calories": 32, "protein": 1.83, "fat": 0.19, "carbs": 7.34, "fiber": 2.6, "sugar": 2.33, "sodium": 16,
+      "iron": 1.48, "calcium": 72, "zinc": 0.39, "b12": 0, "omega3": 0.09, "vitaminC": 18.8, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170000"
+  },
+  {
+    "canonical": "shallot",
+    "category": "vegetable",
+    "labels": { "en": "Shallot", "fr": "Échalote", "de": "Schalotte" },
+    "tokens": {
+      "en": ["shallot", "shallots"],
+      "fr": ["echalote", "échalote", "echalotes"],
+      "de": ["schalotte", "schalotten"]
+    },
+    "nutrients": {
+      "calories": 72, "protein": 2.5, "fat": 0.1, "carbs": 16.78, "fiber": 3.2, "sugar": 7.87, "sodium": 12,
+      "iron": 1.2, "calcium": 37, "zinc": 0.4, "b12": 0, "omega3": 0.04, "vitaminC": 8.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170000"
+  },
+  {
+    "canonical": "endive",
+    "category": "leafy",
+    "labels": { "en": "Endive", "fr": "Endive", "de": "Chicorée" },
+    "tokens": {
+      "en": ["endive", "chicory", "belgian endive"],
+      "fr": ["endive", "chicorée", "witloof"],
+      "de": ["chickoree", "chicorée", "endivie"]
+    },
+    "nutrients": {
+      "calories": 17, "protein": 1.25, "fat": 0.2, "carbs": 3.35, "fiber": 3.1, "sugar": 0.25, "sodium": 22,
+      "iron": 0.83, "calcium": 41, "zinc": 0.79, "b12": 0, "omega3": 0.09, "vitaminC": 6.5, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169226"
+  },
+  {
+    "canonical": "watercress",
+    "category": "leafy",
+    "labels": { "en": "Watercress", "fr": "Cresson", "de": "Brunnenkresse" },
+    "tokens": {
+      "en": ["watercress"],
+      "fr": ["cresson"],
+      "de": ["brunnenkresse", "kresse"]
+    },
+    "nutrients": {
+      "calories": 11, "protein": 2.3, "fat": 0.1, "carbs": 1.29, "fiber": 0.5, "sugar": 0.2, "sodium": 41,
+      "iron": 0.2, "calcium": 120, "zinc": 0.11, "b12": 0, "omega3": 0.02, "vitaminC": 43.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170068"
+  },
+  {
+    "canonical": "pak choi",
+    "category": "leafy",
+    "labels": { "en": "Pak Choi", "fr": "Pak-choï", "de": "Pak Choi" },
+    "tokens": {
+      "en": ["pak choi", "bok choy", "chinese cabbage"],
+      "fr": ["pak choi", "pak-choi", "chou chinois"],
+      "de": ["pak choi", "chinesischer kohl"]
+    },
+    "nutrients": {
+      "calories": 13, "protein": 1.5, "fat": 0.2, "carbs": 2.18, "fiber": 1.0, "sugar": 1.18, "sodium": 65,
+      "iron": 0.8, "calcium": 105, "zinc": 0.19, "b12": 0, "omega3": 0.04, "vitaminC": 45.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169974"
+  },
+  {
+    "canonical": "red cabbage",
+    "category": "vegetable",
+    "labels": { "en": "Red Cabbage", "fr": "Chou rouge", "de": "Rotkohl" },
+    "tokens": {
+      "en": ["red cabbage", "purple cabbage"],
+      "fr": ["chou rouge"],
+      "de": ["rotkohl", "blaukraut", "rotkraut"]
+    },
+    "nutrients": {
+      "calories": 31, "protein": 1.43, "fat": 0.16, "carbs": 7.37, "fiber": 2.1, "sugar": 3.83, "sodium": 27,
+      "iron": 0.8, "calcium": 45, "zinc": 0.22, "b12": 0, "omega3": 0.01, "vitaminC": 57.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169975"
+  },
+  {
+    "canonical": "savoy cabbage",
+    "category": "vegetable",
+    "labels": { "en": "Savoy Cabbage", "fr": "Chou de Savoie", "de": "Wirsing" },
+    "tokens": {
+      "en": ["savoy cabbage"],
+      "fr": ["chou de savoie", "chou frise"],
+      "de": ["wirsing", "wirsingkohl"]
+    },
+    "nutrients": {
+      "calories": 27, "protein": 2.0, "fat": 0.1, "carbs": 6.1, "fiber": 3.1, "sugar": 2.27, "sodium": 28,
+      "iron": 0.4, "calcium": 35, "zinc": 0.27, "b12": 0, "omega3": 0.02, "vitaminC": 31.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169975"
+  },
+  {
+    "canonical": "cherry tomatoes",
+    "category": "vegetable",
+    "labels": { "en": "Cherry Tomatoes", "fr": "Tomates cerises", "de": "Kirschtomaten" },
+    "tokens": {
+      "en": ["cherry tomatoes", "cherry tomato", "grape tomatoes"],
+      "fr": ["tomates cerises", "tomate cerise"],
+      "de": ["kirschtomaten", "kirschtomate", "cocktailtomaten"]
+    },
+    "nutrients": {
+      "calories": 18, "protein": 0.88, "fat": 0.2, "carbs": 3.89, "fiber": 1.2, "sugar": 2.63, "sodium": 5,
+      "iron": 0.27, "calcium": 10, "zinc": 0.17, "b12": 0, "omega3": 0.0, "vitaminC": 14.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170457"
+  },
+  {
+    "canonical": "sun-dried tomatoes",
+    "category": "vegetable",
+    "labels": { "en": "Sun-Dried Tomatoes", "fr": "Tomates séchées", "de": "Getrocknete Tomaten" },
+    "tokens": {
+      "en": ["sun-dried tomatoes", "sun dried tomatoes"],
+      "fr": ["tomates sechees", "tomates séchées"],
+      "de": ["getrocknete tomaten", "sonnengetrocknete tomaten"]
+    },
+    "nutrients": {
+      "calories": 258, "protein": 14.11, "fat": 2.97, "carbs": 55.76, "fiber": 12.3, "sugar": 37.59, "sodium": 2095,
+      "iron": 9.09, "calcium": 110, "zinc": 1.99, "b12": 0, "omega3": 0.05, "vitaminC": 39.2, "vitaminD": 0
+    },
+    "note": "dry packed", "usda_fdc_id": "170459"
+  },
+  {
+    "canonical": "bamboo shoots",
+    "category": "vegetable",
+    "labels": { "en": "Bamboo Shoots", "fr": "Pousses de bambou", "de": "Bambussprossen" },
+    "tokens": {
+      "en": ["bamboo shoots", "bamboo shoot"],
+      "fr": ["pousses de bambou", "pousse de bambou"],
+      "de": ["bambussprossen", "bambusspross"]
+    },
+    "nutrients": {
+      "calories": 27, "protein": 2.6, "fat": 0.3, "carbs": 5.2, "fiber": 2.2, "sugar": 3.0, "sodium": 4,
+      "iron": 0.5, "calcium": 13, "zinc": 1.1, "b12": 0, "omega3": 0.04, "vitaminC": 4.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170060"
+  },
+  {
+    "canonical": "sauerkraut",
+    "category": "vegetable",
+    "labels": { "en": "Sauerkraut", "fr": "Choucroute", "de": "Sauerkraut" },
+    "tokens": {
+      "en": ["sauerkraut"],
+      "fr": ["choucroute"],
+      "de": ["sauerkraut"]
+    },
+    "nutrients": {
+      "calories": 19, "protein": 0.91, "fat": 0.14, "carbs": 4.28, "fiber": 2.9, "sugar": 1.8, "sodium": 661,
+      "iron": 1.47, "calcium": 30, "zinc": 0.19, "b12": 0, "omega3": 0.04, "vitaminC": 14.7, "vitaminD": 0
+    },
+    "note": "fermented", "usda_fdc_id": "169279"
+  },
+  {
+    "canonical": "kimchi",
+    "category": "vegetable",
+    "labels": { "en": "Kimchi", "fr": "Kimchi", "de": "Kimchi" },
+    "tokens": {
+      "en": ["kimchi"],
+      "fr": ["kimchi"],
+      "de": ["kimchi"]
+    },
+    "nutrients": {
+      "calories": 15, "protein": 1.1, "fat": 0.5, "carbs": 2.4, "fiber": 1.6, "sugar": 1.1, "sodium": 498,
+      "iron": 0.6, "calcium": 33, "zinc": 0.27, "b12": 0, "omega3": 0.05, "vitaminC": 18.0, "vitaminD": 0
+    },
+    "note": "fermented", "usda_fdc_id": null
+  },
+  {
+    "canonical": "daikon",
+    "category": "vegetable",
+    "labels": { "en": "Daikon", "fr": "Radis blanc", "de": "Daikon" },
+    "tokens": {
+      "en": ["daikon", "daikon radish", "white radish"],
+      "fr": ["radis blanc", "daikon"],
+      "de": ["daikon", "rettich", "weisser rettich"]
+    },
+    "nutrients": {
+      "calories": 18, "protein": 0.6, "fat": 0.1, "carbs": 4.1, "fiber": 1.6, "sugar": 2.5, "sodium": 21,
+      "iron": 0.4, "calcium": 27, "zinc": 0.15, "b12": 0, "omega3": 0.03, "vitaminC": 22.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169276"
+  },
+  {
+    "canonical": "grapefruit",
+    "category": "fruit",
+    "labels": { "en": "Grapefruit", "fr": "Pamplemousse", "de": "Grapefruit" },
+    "tokens": {
+      "en": ["grapefruit"],
+      "fr": ["pamplemousse"],
+      "de": ["grapefruit", "pampelmuse"]
+    },
+    "nutrients": {
+      "calories": 42, "protein": 0.77, "fat": 0.14, "carbs": 10.66, "fiber": 1.6, "sugar": 6.89, "sodium": 0,
+      "iron": 0.06, "calcium": 22, "zinc": 0.07, "b12": 0, "omega3": 0.01, "vitaminC": 31.2, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "174673"
+  },
+  {
+    "canonical": "watermelon",
+    "category": "fruit",
+    "labels": { "en": "Watermelon", "fr": "Pastèque", "de": "Wassermelone" },
+    "tokens": {
+      "en": ["watermelon"],
+      "fr": ["pasteque", "pastèque"],
+      "de": ["wassermelone"]
+    },
+    "nutrients": {
+      "calories": 30, "protein": 0.61, "fat": 0.15, "carbs": 7.55, "fiber": 0.4, "sugar": 6.2, "sodium": 1,
+      "iron": 0.24, "calcium": 7, "zinc": 0.1, "b12": 0, "omega3": 0.05, "vitaminC": 8.1, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "167765"
+  },
+  {
+    "canonical": "melon",
+    "category": "fruit",
+    "labels": { "en": "Melon", "fr": "Melon", "de": "Melone" },
+    "tokens": {
+      "en": ["melon", "cantaloupe", "honeydew"],
+      "fr": ["melon", "melon cantaloup"],
+      "de": ["melone", "zuckermelone", "honigmelone"]
+    },
+    "nutrients": {
+      "calories": 34, "protein": 0.84, "fat": 0.19, "carbs": 8.16, "fiber": 0.9, "sugar": 7.86, "sodium": 16,
+      "iron": 0.21, "calcium": 9, "zinc": 0.18, "b12": 0, "omega3": 0.02, "vitaminC": 36.7, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169092"
+  },
+  {
+    "canonical": "fig",
+    "category": "fruit",
+    "labels": { "en": "Fig", "fr": "Figue", "de": "Feige" },
+    "tokens": {
+      "en": ["fig", "figs"],
+      "fr": ["figue", "figues"],
+      "de": ["feige", "feigen"]
+    },
+    "nutrients": {
+      "calories": 74, "protein": 0.75, "fat": 0.3, "carbs": 19.18, "fiber": 2.9, "sugar": 16.26, "sodium": 1,
+      "iron": 0.37, "calcium": 35, "zinc": 0.15, "b12": 0, "omega3": 0.07, "vitaminC": 2.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169125"
+  },
+  {
+    "canonical": "apricot",
+    "category": "fruit",
+    "labels": { "en": "Apricot", "fr": "Abricot", "de": "Aprikose" },
+    "tokens": {
+      "en": ["apricot", "apricots"],
+      "fr": ["abricot", "abricots"],
+      "de": ["aprikose", "aprikosen"]
+    },
+    "nutrients": {
+      "calories": 48, "protein": 1.4, "fat": 0.39, "carbs": 11.12, "fiber": 2.0, "sugar": 9.24, "sodium": 1,
+      "iron": 0.39, "calcium": 13, "zinc": 0.2, "b12": 0, "omega3": 0.07, "vitaminC": 10.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "171697"
+  },
+  {
+    "canonical": "peach",
+    "category": "fruit",
+    "labels": { "en": "Peach", "fr": "Pêche", "de": "Pfirsich" },
+    "tokens": {
+      "en": ["peach", "peaches"],
+      "fr": ["peche", "pêche", "peches"],
+      "de": ["pfirsich", "pfirsiche"]
+    },
+    "nutrients": {
+      "calories": 39, "protein": 0.91, "fat": 0.25, "carbs": 9.54, "fiber": 1.5, "sugar": 8.39, "sodium": 0,
+      "iron": 0.25, "calcium": 6, "zinc": 0.17, "b12": 0, "omega3": 0.02, "vitaminC": 6.6, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169928"
+  },
+  {
+    "canonical": "plum",
+    "category": "fruit",
+    "labels": { "en": "Plum", "fr": "Prune", "de": "Pflaume" },
+    "tokens": {
+      "en": ["plum", "plums"],
+      "fr": ["prune", "prunes"],
+      "de": ["pflaume", "pflaumen", "zwetschge"]
+    },
+    "nutrients": {
+      "calories": 46, "protein": 0.7, "fat": 0.28, "carbs": 11.42, "fiber": 1.4, "sugar": 9.92, "sodium": 0,
+      "iron": 0.17, "calcium": 6, "zinc": 0.1, "b12": 0, "omega3": 0.02, "vitaminC": 9.5, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169949"
+  },
+  {
+    "canonical": "pomegranate",
+    "category": "fruit",
+    "labels": { "en": "Pomegranate", "fr": "Grenade", "de": "Granatapfel" },
+    "tokens": {
+      "en": ["pomegranate", "pomegranate seeds"],
+      "fr": ["grenade", "grenades"],
+      "de": ["granatapfel"]
+    },
+    "nutrients": {
+      "calories": 83, "protein": 1.67, "fat": 1.17, "carbs": 18.7, "fiber": 4.0, "sugar": 13.67, "sodium": 3,
+      "iron": 0.3, "calcium": 10, "zinc": 0.35, "b12": 0, "omega3": 0.09, "vitaminC": 10.2, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169134"
+  },
+  {
+    "canonical": "passion fruit",
+    "category": "fruit",
+    "labels": { "en": "Passion Fruit", "fr": "Fruit de la passion", "de": "Maracuja" },
+    "tokens": {
+      "en": ["passion fruit", "passionfruit"],
+      "fr": ["fruit de la passion", "maracuja"],
+      "de": ["maracuja", "passionsfrucht"]
+    },
+    "nutrients": {
+      "calories": 97, "protein": 2.2, "fat": 0.7, "carbs": 23.38, "fiber": 10.4, "sugar": 11.2, "sodium": 28,
+      "iron": 1.6, "calcium": 12, "zinc": 0.1, "b12": 0, "omega3": 0.04, "vitaminC": 30.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "167758"
+  },
+  {
+    "canonical": "papaya",
+    "category": "fruit",
+    "labels": { "en": "Papaya", "fr": "Papaye", "de": "Papaya" },
+    "tokens": {
+      "en": ["papaya", "pawpaw"],
+      "fr": ["papaye"],
+      "de": ["papaya"]
+    },
+    "nutrients": {
+      "calories": 43, "protein": 0.47, "fat": 0.26, "carbs": 10.82, "fiber": 1.7, "sugar": 7.82, "sodium": 8,
+      "iron": 0.25, "calcium": 20, "zinc": 0.08, "b12": 0, "omega3": 0.01, "vitaminC": 60.9, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169926"
+  },
+  {
+    "canonical": "lychee",
+    "category": "fruit",
+    "labels": { "en": "Lychee", "fr": "Litchi", "de": "Lychee" },
+    "tokens": {
+      "en": ["lychee", "litchi"],
+      "fr": ["litchi", "lychee"],
+      "de": ["lychee", "litschi"]
+    },
+    "nutrients": {
+      "calories": 66, "protein": 0.83, "fat": 0.44, "carbs": 16.53, "fiber": 1.3, "sugar": 15.23, "sodium": 1,
+      "iron": 0.31, "calcium": 5, "zinc": 0.07, "b12": 0, "omega3": 0.02, "vitaminC": 71.5, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169088"
+  },
+  {
+    "canonical": "lime",
+    "category": "fruit",
+    "labels": { "en": "Lime", "fr": "Citron vert", "de": "Limette" },
+    "tokens": {
+      "en": ["lime", "limes"],
+      "fr": ["citron vert", "lime"],
+      "de": ["limette", "limetten"]
+    },
+    "nutrients": {
+      "calories": 30, "protein": 0.7, "fat": 0.2, "carbs": 10.54, "fiber": 2.8, "sugar": 1.69, "sodium": 2,
+      "iron": 0.6, "calcium": 33, "zinc": 0.09, "b12": 0, "omega3": 0.03, "vitaminC": 29.1, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "167746"
+  },
+  {
+    "canonical": "pineapple",
+    "category": "fruit",
+    "labels": { "en": "Pineapple", "fr": "Ananas", "de": "Ananas" },
+    "tokens": {
+      "en": ["pineapple"],
+      "fr": ["ananas"],
+      "de": ["ananas"]
+    },
+    "nutrients": {
+      "calories": 50, "protein": 0.54, "fat": 0.12, "carbs": 13.12, "fiber": 1.4, "sugar": 9.85, "sodium": 1,
+      "iron": 0.29, "calcium": 13, "zinc": 0.12, "b12": 0, "omega3": 0.02, "vitaminC": 47.8, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169124"
+  },
+  {
+    "canonical": "raisins",
+    "category": "fruit",
+    "labels": { "en": "Raisins", "fr": "Raisins secs", "de": "Rosinen" },
+    "tokens": {
+      "en": ["raisins", "dried grapes", "sultanas"],
+      "fr": ["raisins secs", "raisin sec"],
+      "de": ["rosinen", "rosine", "sultaninen"]
+    },
+    "nutrients": {
+      "calories": 299, "protein": 3.07, "fat": 0.46, "carbs": 79.18, "fiber": 3.7, "sugar": 59.19, "sodium": 11,
+      "iron": 1.88, "calcium": 50, "zinc": 0.22, "b12": 0, "omega3": 0.02, "vitaminC": 2.3, "vitaminD": 0
+    },
+    "note": "dried", "usda_fdc_id": "168165"
+  },
+  {
+    "canonical": "dried apricots",
+    "category": "fruit",
+    "labels": { "en": "Dried Apricots", "fr": "Abricots secs", "de": "Getrocknete Aprikosen" },
+    "tokens": {
+      "en": ["dried apricots", "dried apricot"],
+      "fr": ["abricots secs", "abricot sec"],
+      "de": ["getrocknete aprikosen", "getrocknete aprikose", "dörraprikosen"]
+    },
+    "nutrients": {
+      "calories": 241, "protein": 3.39, "fat": 0.51, "carbs": 62.64, "fiber": 7.3, "sugar": 53.44, "sodium": 10,
+      "iron": 2.66, "calcium": 55, "zinc": 0.39, "b12": 0, "omega3": 0.02, "vitaminC": 1.0, "vitaminD": 0
+    },
+    "note": "dried", "usda_fdc_id": "168165"
+  },
+  {
+    "canonical": "pine nuts",
+    "category": "nut_seed",
+    "labels": { "en": "Pine Nuts", "fr": "Pignons de pin", "de": "Pinienkerne" },
+    "tokens": {
+      "en": ["pine nuts", "pine nut", "pignoli"],
+      "fr": ["pignons de pin", "pignon de pin"],
+      "de": ["pinienkerne", "pinienkern"]
+    },
+    "nutrients": {
+      "calories": 673, "protein": 13.69, "fat": 68.37, "carbs": 13.08, "fiber": 3.7, "sugar": 3.59, "sodium": 2,
+      "iron": 5.53, "calcium": 16, "zinc": 6.45, "b12": 0, "omega3": 0.16, "vitaminC": 0.8, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170184"
+  },
+  {
+    "canonical": "brazil nuts",
+    "category": "nut_seed",
+    "labels": { "en": "Brazil Nuts", "fr": "Noix du Brésil", "de": "Paranüsse" },
+    "tokens": {
+      "en": ["brazil nuts", "brazil nut"],
+      "fr": ["noix du bresil", "noix du brésil"],
+      "de": ["paranuss", "paranüsse", "paranusse"]
+    },
+    "nutrients": {
+      "calories": 659, "protein": 14.32, "fat": 67.1, "carbs": 11.74, "fiber": 7.5, "sugar": 2.33, "sodium": 3,
+      "iron": 2.43, "calcium": 160, "zinc": 4.06, "b12": 0, "omega3": 0.05, "vitaminC": 0.7, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170569"
+  },
+  {
+    "canonical": "macadamia nuts",
+    "category": "nut_seed",
+    "labels": { "en": "Macadamia Nuts", "fr": "Noix de macadamia", "de": "Macadamianüsse" },
+    "tokens": {
+      "en": ["macadamia nuts", "macadamia nut", "macadamia"],
+      "fr": ["noix de macadamia"],
+      "de": ["macadamianuss", "macadamianüsse", "macadamianusse"]
+    },
+    "nutrients": {
+      "calories": 718, "protein": 7.91, "fat": 75.77, "carbs": 13.82, "fiber": 8.6, "sugar": 4.57, "sodium": 5,
+      "iron": 3.69, "calcium": 85, "zinc": 1.3, "b12": 0, "omega3": 0.21, "vitaminC": 1.2, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170178"
+  },
+  {
+    "canonical": "pistachios",
+    "category": "nut_seed",
+    "labels": { "en": "Pistachios", "fr": "Pistaches", "de": "Pistazien" },
+    "tokens": {
+      "en": ["pistachios", "pistachio"],
+      "fr": ["pistaches", "pistache"],
+      "de": ["pistazien", "pistazie"]
+    },
+    "nutrients": {
+      "calories": 562, "protein": 20.27, "fat": 45.39, "carbs": 27.17, "fiber": 10.6, "sugar": 7.66, "sodium": 1,
+      "iron": 3.92, "calcium": 105, "zinc": 2.2, "b12": 0, "omega3": 0.26, "vitaminC": 5.6, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170184"
+  },
+  {
+    "canonical": "pecans",
+    "category": "nut_seed",
+    "labels": { "en": "Pecans", "fr": "Noix de pécan", "de": "Pekannüsse" },
+    "tokens": {
+      "en": ["pecans", "pecan"],
+      "fr": ["noix de pecan", "noix de pécan"],
+      "de": ["pekanuss", "pekannüsse", "pekannusse"]
+    },
+    "nutrients": {
+      "calories": 691, "protein": 9.17, "fat": 71.97, "carbs": 13.86, "fiber": 9.6, "sugar": 3.97, "sodium": 0,
+      "iron": 2.53, "calcium": 70, "zinc": 4.53, "b12": 0, "omega3": 1.01, "vitaminC": 1.1, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170182"
+  },
+  {
+    "canonical": "poppy seeds",
+    "category": "nut_seed",
+    "labels": { "en": "Poppy Seeds", "fr": "Graines de pavot", "de": "Mohnsamen" },
+    "tokens": {
+      "en": ["poppy seeds", "poppy seed"],
+      "fr": ["graines de pavot", "graine de pavot"],
+      "de": ["mohnsamen", "mohn"]
+    },
+    "nutrients": {
+      "calories": 525, "protein": 17.99, "fat": 41.56, "carbs": 28.13, "fiber": 19.5, "sugar": 2.99, "sodium": 26,
+      "iron": 9.76, "calcium": 1438, "zinc": 7.9, "b12": 0, "omega3": 0.0, "vitaminC": 1.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170150"
+  },
+  {
+    "canonical": "soy sauce",
+    "category": "condiment",
+    "labels": { "en": "Soy Sauce", "fr": "Sauce soja", "de": "Sojasoße" },
+    "tokens": {
+      "en": ["soy sauce", "soya sauce", "shoyu"],
+      "fr": ["sauce soja", "sauce de soja"],
+      "de": ["sojasosse", "sojasoße", "sojasauce"]
+    },
+    "nutrients": {
+      "calories": 53, "protein": 8.14, "fat": 0.1, "carbs": 4.93, "fiber": 0.8, "sugar": 1.7, "sodium": 5493,
+      "iron": 2.43, "calcium": 20, "zinc": 0.27, "b12": 0, "omega3": 0.04, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "regular", "usda_fdc_id": "173191"
+  },
+  {
+    "canonical": "tamari",
+    "category": "condiment",
+    "labels": { "en": "Tamari", "fr": "Tamari", "de": "Tamari" },
+    "tokens": {
+      "en": ["tamari", "gluten-free soy sauce"],
+      "fr": ["tamari"],
+      "de": ["tamari"]
+    },
+    "nutrients": {
+      "calories": 60, "protein": 10.51, "fat": 0.1, "carbs": 5.57, "fiber": 0.8, "sugar": 2.2, "sodium": 4966,
+      "iron": 2.86, "calcium": 20, "zinc": 0.5, "b12": 0, "omega3": 0.04, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "gluten-free", "usda_fdc_id": null
+  },
+  {
+    "canonical": "apple cider vinegar",
+    "category": "condiment",
+    "labels": { "en": "Apple Cider Vinegar", "fr": "Vinaigre de cidre", "de": "Apfelessig" },
+    "tokens": {
+      "en": ["apple cider vinegar", "cider vinegar", "acv"],
+      "fr": ["vinaigre de cidre"],
+      "de": ["apfelessig"]
+    },
+    "nutrients": {
+      "calories": 21, "protein": 0.0, "fat": 0.0, "carbs": 0.93, "fiber": 0.0, "sugar": 0.4, "sodium": 5,
+      "iron": 0.2, "calcium": 7, "zinc": 0.04, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "173572"
+  },
+  {
+    "canonical": "balsamic vinegar",
+    "category": "condiment",
+    "labels": { "en": "Balsamic Vinegar", "fr": "Vinaigre balsamique", "de": "Balsamico" },
+    "tokens": {
+      "en": ["balsamic vinegar", "balsamic"],
+      "fr": ["vinaigre balsamique", "balsamique"],
+      "de": ["balsamico", "balsamessig"]
+    },
+    "nutrients": {
+      "calories": 88, "protein": 0.49, "fat": 0.0, "carbs": 17.03, "fiber": 0.0, "sugar": 14.95, "sodium": 23,
+      "iron": 0.72, "calcium": 27, "zinc": 0.08, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": null
+  },
+  {
+    "canonical": "tomato paste",
+    "category": "condiment",
+    "labels": { "en": "Tomato Paste", "fr": "Concentré de tomates", "de": "Tomatenmark" },
+    "tokens": {
+      "en": ["tomato paste", "tomato puree"],
+      "fr": ["concentre de tomates", "concentré de tomates", "puree de tomates"],
+      "de": ["tomatenmark", "tomatenpuree"]
+    },
+    "nutrients": {
+      "calories": 82, "protein": 4.32, "fat": 0.47, "carbs": 18.91, "fiber": 4.1, "sugar": 12.18, "sodium": 1014,
+      "iron": 3.94, "calcium": 36, "zinc": 0.66, "b12": 0, "omega3": 0.03, "vitaminC": 21.9, "vitaminD": 0
+    },
+    "note": "canned", "usda_fdc_id": "170530"
+  },
+  {
+    "canonical": "tomato sauce",
+    "category": "condiment",
+    "labels": { "en": "Tomato Sauce", "fr": "Sauce tomate", "de": "Tomatensoße" },
+    "tokens": {
+      "en": ["tomato sauce", "passata", "marinara"],
+      "fr": ["sauce tomate", "coulis de tomates"],
+      "de": ["tomatensauce", "tomatensosse", "passata"]
+    },
+    "nutrients": {
+      "calories": 29, "protein": 1.57, "fat": 0.18, "carbs": 6.99, "fiber": 1.5, "sugar": 4.99, "sodium": 456,
+      "iron": 0.87, "calcium": 11, "zinc": 0.16, "b12": 0, "omega3": 0.02, "vitaminC": 6.4, "vitaminD": 0
+    },
+    "note": "canned", "usda_fdc_id": "170536"
+  },
+  {
+    "canonical": "maple syrup",
+    "category": "condiment",
+    "labels": { "en": "Maple Syrup", "fr": "Sirop d'érable", "de": "Ahornsirup" },
+    "tokens": {
+      "en": ["maple syrup"],
+      "fr": ["sirop d erable", "sirop d'érable"],
+      "de": ["ahornsirup"]
+    },
+    "nutrients": {
+      "calories": 260, "protein": 0.04, "fat": 0.06, "carbs": 67.04, "fiber": 0.0, "sugar": 60.46, "sodium": 9,
+      "iron": 0.11, "calcium": 102, "zinc": 3.75, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169661"
+  },
+  {
+    "canonical": "agave syrup",
+    "category": "condiment",
+    "labels": { "en": "Agave Syrup", "fr": "Sirop d'agave", "de": "Agavensirup" },
+    "tokens": {
+      "en": ["agave syrup", "agave nectar"],
+      "fr": ["sirop d agave", "sirop d'agave", "nectar d agave"],
+      "de": ["agavensirup", "agavennektar"]
+    },
+    "nutrients": {
+      "calories": 310, "protein": 0.09, "fat": 0.45, "carbs": 76.4, "fiber": 0.2, "sugar": 68.0, "sodium": 4,
+      "iron": 0.18, "calcium": 1, "zinc": 0.09, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": null
+  },
+  {
+    "canonical": "coconut oil",
+    "category": "oil",
+    "labels": { "en": "Coconut Oil", "fr": "Huile de coco", "de": "Kokosöl" },
+    "tokens": {
+      "en": ["coconut oil"],
+      "fr": ["huile de coco", "huile de noix de coco"],
+      "de": ["kokosol", "kokosnussol", "kokosöl"]
+    },
+    "nutrients": {
+      "calories": 892, "protein": 0.0, "fat": 99.1, "carbs": 0.0, "fiber": 0.0, "sugar": 0.0, "sodium": 0,
+      "iron": 0.01, "calcium": 1, "zinc": 0.02, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "172336"
+  },
+  {
+    "canonical": "turmeric",
+    "category": "herb",
+    "labels": { "en": "Turmeric", "fr": "Curcuma", "de": "Kurkuma" },
+    "tokens": {
+      "en": ["turmeric", "ground turmeric"],
+      "fr": ["curcuma"],
+      "de": ["kurkuma", "gelbwurz"]
+    },
+    "nutrients": {
+      "calories": 354, "protein": 7.83, "fat": 9.88, "carbs": 64.93, "fiber": 21.1, "sugar": 3.21, "sodium": 38,
+      "iron": 41.42, "calcium": 183, "zinc": 4.35, "b12": 0, "omega3": 0.48, "vitaminC": 25.9, "vitaminD": 0
+    },
+    "note": "ground, dry", "usda_fdc_id": "172231"
+  },
+  {
+    "canonical": "ginger",
+    "category": "herb",
+    "labels": { "en": "Ginger", "fr": "Gingembre", "de": "Ingwer" },
+    "tokens": {
+      "en": ["ginger", "fresh ginger", "ground ginger"],
+      "fr": ["gingembre"],
+      "de": ["ingwer"]
+    },
+    "nutrients": {
+      "calories": 80, "protein": 1.82, "fat": 0.75, "carbs": 17.77, "fiber": 2.0, "sugar": 1.7, "sodium": 13,
+      "iron": 0.6, "calcium": 16, "zinc": 0.34, "b12": 0, "omega3": 0.11, "vitaminC": 5.0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "169231"
+  },
+  {
+    "canonical": "cinnamon",
+    "category": "herb",
+    "labels": { "en": "Cinnamon", "fr": "Cannelle", "de": "Zimt" },
+    "tokens": {
+      "en": ["cinnamon", "ground cinnamon"],
+      "fr": ["cannelle"],
+      "de": ["zimt"]
+    },
+    "nutrients": {
+      "calories": 247, "protein": 3.99, "fat": 1.24, "carbs": 80.59, "fiber": 53.1, "sugar": 2.17, "sodium": 10,
+      "iron": 8.32, "calcium": 1002, "zinc": 1.83, "b12": 0, "omega3": 0.07, "vitaminC": 3.8, "vitaminD": 0
+    },
+    "note": "ground, dry", "usda_fdc_id": "171320"
+  },
+  {
+    "canonical": "cumin",
+    "category": "herb",
+    "labels": { "en": "Cumin", "fr": "Cumin", "de": "Kreuzkümmel" },
+    "tokens": {
+      "en": ["cumin", "ground cumin", "cumin seeds"],
+      "fr": ["cumin"],
+      "de": ["kreuzkummel", "kreuzkümmel", "cumin"]
+    },
+    "nutrients": {
+      "calories": 375, "protein": 17.81, "fat": 22.27, "carbs": 44.24, "fiber": 10.5, "sugar": 2.25, "sodium": 168,
+      "iron": 66.36, "calcium": 931, "zinc": 4.8, "b12": 0, "omega3": 0.24, "vitaminC": 7.7, "vitaminD": 0
+    },
+    "note": "ground, dry", "usda_fdc_id": "170924"
+  },
+  {
+    "canonical": "oregano",
+    "category": "herb",
+    "labels": { "en": "Oregano", "fr": "Origan", "de": "Oregano" },
+    "tokens": {
+      "en": ["oregano", "dried oregano"],
+      "fr": ["origan", "oregano"],
+      "de": ["oregano"]
+    },
+    "nutrients": {
+      "calories": 265, "protein": 9.0, "fat": 4.28, "carbs": 68.92, "fiber": 42.5, "sugar": 4.09, "sodium": 25,
+      "iron": 36.8, "calcium": 1597, "zinc": 2.69, "b12": 0, "omega3": 0.75, "vitaminC": 2.3, "vitaminD": 0
+    },
+    "note": "dried", "usda_fdc_id": "170921"
+  },
+  {
+    "canonical": "thyme",
+    "category": "herb",
+    "labels": { "en": "Thyme", "fr": "Thym", "de": "Thymian" },
+    "tokens": {
+      "en": ["thyme", "fresh thyme"],
+      "fr": ["thym"],
+      "de": ["thymian"]
+    },
+    "nutrients": {
+      "calories": 101, "protein": 5.56, "fat": 1.68, "carbs": 24.45, "fiber": 14.0, "sugar": 0.0, "sodium": 9,
+      "iron": 17.45, "calcium": 405, "zinc": 1.81, "b12": 0, "omega3": 0.27, "vitaminC": 160.1, "vitaminD": 0
+    },
+    "note": "fresh", "usda_fdc_id": "172236"
+  },
+  {
+    "canonical": "rosemary",
+    "category": "herb",
+    "labels": { "en": "Rosemary", "fr": "Romarin", "de": "Rosmarin" },
+    "tokens": {
+      "en": ["rosemary", "fresh rosemary"],
+      "fr": ["romarin"],
+      "de": ["rosmarin"]
+    },
+    "nutrients": {
+      "calories": 131, "protein": 3.31, "fat": 5.86, "carbs": 20.7, "fiber": 14.1, "sugar": 0.0, "sodium": 26,
+      "iron": 6.65, "calcium": 317, "zinc": 0.93, "b12": 0, "omega3": 0.34, "vitaminC": 21.8, "vitaminD": 0
+    },
+    "note": "fresh", "usda_fdc_id": "172234"
+  },
+  {
+    "canonical": "sage",
+    "category": "herb",
+    "labels": { "en": "Sage", "fr": "Sauge", "de": "Salbei" },
+    "tokens": {
+      "en": ["sage"],
+      "fr": ["sauge"],
+      "de": ["salbei"]
+    },
+    "nutrients": {
+      "calories": 315, "protein": 10.63, "fat": 12.75, "carbs": 60.73, "fiber": 40.3, "sugar": 1.71, "sodium": 11,
+      "iron": 28.12, "calcium": 1652, "zinc": 4.69, "b12": 0, "omega3": 3.23, "vitaminC": 32.4, "vitaminD": 0
+    },
+    "note": "dried", "usda_fdc_id": "172235"
+  },
+  {
+    "canonical": "dill",
+    "category": "herb",
+    "labels": { "en": "Dill", "fr": "Aneth", "de": "Dill" },
+    "tokens": {
+      "en": ["dill", "fresh dill", "dill weed"],
+      "fr": ["aneth"],
+      "de": ["dill"]
+    },
+    "nutrients": {
+      "calories": 43, "protein": 3.46, "fat": 1.12, "carbs": 7.02, "fiber": 2.1, "sugar": 0.0, "sodium": 61,
+      "iron": 6.59, "calcium": 208, "zinc": 0.91, "b12": 0, "omega3": 0.29, "vitaminC": 85.0, "vitaminD": 0
+    },
+    "note": "fresh", "usda_fdc_id": "172233"
+  },
+  {
+    "canonical": "chives",
+    "category": "herb",
+    "labels": { "en": "Chives", "fr": "Ciboulette", "de": "Schnittlauch" },
+    "tokens": {
+      "en": ["chives"],
+      "fr": ["ciboulette"],
+      "de": ["schnittlauch"]
+    },
+    "nutrients": {
+      "calories": 30, "protein": 3.27, "fat": 0.73, "carbs": 4.35, "fiber": 2.5, "sugar": 1.85, "sodium": 3,
+      "iron": 1.6, "calcium": 92, "zinc": 0.56, "b12": 0, "omega3": 0.26, "vitaminC": 58.1, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170921"
+  },
+  {
+    "canonical": "black pepper",
+    "category": "herb",
+    "labels": { "en": "Black Pepper", "fr": "Poivre noir", "de": "Schwarzer Pfeffer" },
+    "tokens": {
+      "en": ["black pepper", "pepper", "ground black pepper"],
+      "fr": ["poivre noir", "poivre"],
+      "de": ["schwarzer pfeffer", "pfeffer"]
+    },
+    "nutrients": {
+      "calories": 255, "protein": 10.39, "fat": 3.26, "carbs": 63.95, "fiber": 25.3, "sugar": 0.64, "sodium": 20,
+      "iron": 9.71, "calcium": 443, "zinc": 1.19, "b12": 0, "omega3": 0.15, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "ground, dry", "usda_fdc_id": "170931"
+  },
+  {
+    "canonical": "cayenne pepper",
+    "category": "herb",
+    "labels": { "en": "Cayenne Pepper", "fr": "Poivre de Cayenne", "de": "Cayennepfeffer" },
+    "tokens": {
+      "en": ["cayenne pepper", "cayenne"],
+      "fr": ["poivre de cayenne", "piment de cayenne"],
+      "de": ["cayennepfeffer", "cayenne"]
+    },
+    "nutrients": {
+      "calories": 318, "protein": 12.01, "fat": 17.27, "carbs": 56.63, "fiber": 27.2, "sugar": 10.34, "sodium": 30,
+      "iron": 7.8, "calcium": 148, "zinc": 2.48, "b12": 0, "omega3": 0.68, "vitaminC": 76.4, "vitaminD": 0
+    },
+    "note": "ground, dry", "usda_fdc_id": "170926"
+  },
+  {
+    "canonical": "spirulina",
+    "category": "plant_protein",
+    "labels": { "en": "Spirulina", "fr": "Spiruline", "de": "Spirulina" },
+    "tokens": {
+      "en": ["spirulina"],
+      "fr": ["spiruline"],
+      "de": ["spirulina"]
+    },
+    "nutrients": {
+      "calories": 290, "protein": 57.47, "fat": 7.72, "carbs": 23.9, "fiber": 3.6, "sugar": 3.1, "sodium": 1048,
+      "iron": 28.5, "calcium": 120, "zinc": 2.0, "b12": 0, "omega3": 0.82, "vitaminC": 10.1, "vitaminD": 0
+    },
+    "note": "dried powder", "usda_fdc_id": "170495"
+  },
+  {
+    "canonical": "green tea",
+    "category": "beverage",
+    "labels": { "en": "Green Tea", "fr": "Thé vert", "de": "Grüner Tee" },
+    "tokens": {
+      "en": ["green tea"],
+      "fr": ["the vert", "thé vert"],
+      "de": ["gruner tee", "grüner tee"]
+    },
+    "nutrients": {
+      "calories": 1, "protein": 0.0, "fat": 0.0, "carbs": 0.0, "fiber": 0.0, "sugar": 0.0, "sodium": 1,
+      "iron": 0.0, "calcium": 0, "zinc": 0.0, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "brewed", "usda_fdc_id": "171917"
+  },
+  {
+    "canonical": "orange juice",
+    "category": "beverage",
+    "labels": { "en": "Orange Juice", "fr": "Jus d'orange", "de": "Orangensaft" },
+    "tokens": {
+      "en": ["orange juice", "oj"],
+      "fr": ["jus d orange", "jus d'orange"],
+      "de": ["orangensaft"]
+    },
+    "nutrients": {
+      "calories": 45, "protein": 0.7, "fat": 0.2, "carbs": 10.4, "fiber": 0.2, "sugar": 8.4, "sodium": 1,
+      "iron": 0.2, "calcium": 11, "zinc": 0.05, "b12": 0, "omega3": 0.0, "vitaminC": 50.0, "vitaminD": 0
+    },
+    "note": "fresh squeezed", "usda_fdc_id": "169098"
+  },
+  {
+    "canonical": "coconut water",
+    "category": "beverage",
+    "labels": { "en": "Coconut Water", "fr": "Eau de coco", "de": "Kokoswasser" },
+    "tokens": {
+      "en": ["coconut water"],
+      "fr": ["eau de coco"],
+      "de": ["kokoswasser"]
+    },
+    "nutrients": {
+      "calories": 19, "protein": 0.72, "fat": 0.2, "carbs": 3.71, "fiber": 1.1, "sugar": 2.61, "sodium": 105,
+      "iron": 0.29, "calcium": 24, "zinc": 0.1, "b12": 0, "omega3": 0.0, "vitaminC": 2.4, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "170174"
+  },
+  {
+    "canonical": "kombucha",
+    "category": "beverage",
+    "labels": { "en": "Kombucha", "fr": "Kombucha", "de": "Kombucha" },
+    "tokens": {
+      "en": ["kombucha"],
+      "fr": ["kombucha"],
+      "de": ["kombucha"]
+    },
+    "nutrients": {
+      "calories": 17, "protein": 0.0, "fat": 0.0, "carbs": 4.2, "fiber": 0.0, "sugar": 4.0, "sodium": 5,
+      "iron": 0.05, "calcium": 5, "zinc": 0.05, "b12": 0, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "fermented", "usda_fdc_id": null
+  },
+  {
+    "canonical": "butter",
+    "category": "dairy_eggs",
+    "labels": { "en": "Butter", "fr": "Beurre", "de": "Butter" },
+    "tokens": {
+      "en": ["butter"],
+      "fr": ["beurre"],
+      "de": ["butter"]
+    },
+    "nutrients": {
+      "calories": 717, "protein": 0.85, "fat": 81.11, "carbs": 0.06, "fiber": 0.0, "sugar": 0.06, "sodium": 643,
+      "iron": 0.02, "calcium": 24, "zinc": 0.09, "b12": 0.17, "omega3": 0.32, "vitaminC": 0, "vitaminD": 0.07
+    },
+    "note": "salted", "usda_fdc_id": "173410"
+  },
+  {
+    "canonical": "cream",
+    "category": "dairy_eggs",
+    "labels": { "en": "Cream", "fr": "Crème", "de": "Sahne" },
+    "tokens": {
+      "en": ["cream", "heavy cream", "whipping cream"],
+      "fr": ["creme", "crème", "creme fraiche"],
+      "de": ["sahne", "schlagsahne", "rahm"]
+    },
+    "nutrients": {
+      "calories": 340, "protein": 2.05, "fat": 36.08, "carbs": 2.96, "fiber": 0.0, "sugar": 2.96, "sodium": 38,
+      "iron": 0.06, "calcium": 65, "zinc": 0.24, "b12": 0.25, "omega3": 0.12, "vitaminC": 0.5, "vitaminD": 0.05
+    },
+    "note": "heavy, whipping", "usda_fdc_id": "170859"
+  },
+  {
+    "canonical": "sour cream",
+    "category": "dairy_eggs",
+    "labels": { "en": "Sour Cream", "fr": "Crème aigre", "de": "Saure Sahne" },
+    "tokens": {
+      "en": ["sour cream"],
+      "fr": ["creme aigre", "creme fraiche"],
+      "de": ["saure sahne", "schmand"]
+    },
+    "nutrients": {
+      "calories": 193, "protein": 2.44, "fat": 19.35, "carbs": 4.63, "fiber": 0.0, "sugar": 3.57, "sodium": 77,
+      "iron": 0.06, "calcium": 141, "zinc": 0.36, "b12": 0.25, "omega3": 0.0, "vitaminC": 0.6, "vitaminD": 0
+    },
+    "note": "cultured", "usda_fdc_id": "170862"
+  },
+  {
+    "canonical": "cream cheese",
+    "category": "dairy_eggs",
+    "labels": { "en": "Cream Cheese", "fr": "Fromage frais", "de": "Frischkäse" },
+    "tokens": {
+      "en": ["cream cheese"],
+      "fr": ["fromage frais", "fromage a la creme"],
+      "de": ["frischkase", "frischkäse"]
+    },
+    "nutrients": {
+      "calories": 342, "protein": 5.93, "fat": 34.24, "carbs": 2.66, "fiber": 0.0, "sugar": 2.66, "sodium": 321,
+      "iron": 0.39, "calcium": 98, "zinc": 0.54, "b12": 0.17, "omega3": 0.07, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "regular", "usda_fdc_id": "171246"
+  },
+  {
+    "canonical": "cottage cheese",
+    "category": "dairy_eggs",
+    "labels": { "en": "Cottage Cheese", "fr": "Fromage blanc", "de": "Hüttenkäse" },
+    "tokens": {
+      "en": ["cottage cheese"],
+      "fr": ["fromage blanc", "cottage cheese"],
+      "de": ["huttenkase", "hüttenkäse", "cottage cheese"]
+    },
+    "nutrients": {
+      "calories": 98, "protein": 11.12, "fat": 4.3, "carbs": 3.38, "fiber": 0.0, "sugar": 2.67, "sodium": 364,
+      "iron": 0.07, "calcium": 83, "zinc": 0.4, "b12": 0.43, "omega3": 0.04, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "lowfat", "usda_fdc_id": "173417"
+  },
+  {
+    "canonical": "ricotta",
+    "category": "dairy_eggs",
+    "labels": { "en": "Ricotta", "fr": "Ricotta", "de": "Ricotta" },
+    "tokens": {
+      "en": ["ricotta", "ricotta cheese"],
+      "fr": ["ricotta"],
+      "de": ["ricotta"]
+    },
+    "nutrients": {
+      "calories": 174, "protein": 11.26, "fat": 12.98, "carbs": 3.04, "fiber": 0.0, "sugar": 0.27, "sodium": 84,
+      "iron": 0.38, "calcium": 207, "zinc": 1.16, "b12": 0.34, "omega3": 0.17, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "whole milk", "usda_fdc_id": "173420"
+  },
+  {
+    "canonical": "mozzarella",
+    "category": "dairy_eggs",
+    "labels": { "en": "Mozzarella", "fr": "Mozzarella", "de": "Mozzarella" },
+    "tokens": {
+      "en": ["mozzarella"],
+      "fr": ["mozzarella"],
+      "de": ["mozzarella"]
+    },
+    "nutrients": {
+      "calories": 280, "protein": 19.42, "fat": 22.35, "carbs": 1.83, "fiber": 0.0, "sugar": 1.03, "sodium": 627,
+      "iron": 0.19, "calcium": 505, "zinc": 2.92, "b12": 1.08, "omega3": 0.22, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "whole milk", "usda_fdc_id": "173451"
+  },
+  {
+    "canonical": "parmesan",
+    "category": "dairy_eggs",
+    "labels": { "en": "Parmesan", "fr": "Parmesan", "de": "Parmesan" },
+    "tokens": {
+      "en": ["parmesan", "parmigiano"],
+      "fr": ["parmesan"],
+      "de": ["parmesan"]
+    },
+    "nutrients": {
+      "calories": 431, "protein": 37.9, "fat": 28.61, "carbs": 4.06, "fiber": 0.0, "sugar": 0.8, "sodium": 1529,
+      "iron": 0.82, "calcium": 1109, "zinc": 2.75, "b12": 2.26, "omega3": 0.08, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "hard", "usda_fdc_id": "173454"
+  },
+  {
+    "canonical": "gouda",
+    "category": "dairy_eggs",
+    "labels": { "en": "Gouda", "fr": "Gouda", "de": "Gouda" },
+    "tokens": {
+      "en": ["gouda"],
+      "fr": ["gouda"],
+      "de": ["gouda"]
+    },
+    "nutrients": {
+      "calories": 356, "protein": 24.94, "fat": 27.44, "carbs": 2.22, "fiber": 0.0, "sugar": 2.22, "sodium": 819,
+      "iron": 0.24, "calcium": 700, "zinc": 3.9, "b12": 1.54, "omega3": 0.35, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "173441"
+  },
+  {
+    "canonical": "goat cheese",
+    "category": "dairy_eggs",
+    "labels": { "en": "Goat Cheese", "fr": "Fromage de chèvre", "de": "Ziegenkäse" },
+    "tokens": {
+      "en": ["goat cheese", "chevre"],
+      "fr": ["fromage de chevre", "fromage de chèvre", "chevre"],
+      "de": ["ziegenkase", "ziegenkäse"]
+    },
+    "nutrients": {
+      "calories": 364, "protein": 21.58, "fat": 29.84, "carbs": 2.54, "fiber": 0.0, "sugar": 0.09, "sodium": 368,
+      "iron": 1.62, "calcium": 140, "zinc": 0.94, "b12": 0.22, "omega3": 0.36, "vitaminC": 0, "vitaminD": 0.22
+    },
+    "note": "soft", "usda_fdc_id": "173440"
+  },
+  {
+    "canonical": "quark",
+    "category": "dairy_eggs",
+    "labels": { "en": "Quark", "fr": "Quark", "de": "Quark" },
+    "tokens": {
+      "en": ["quark", "fromage frais"],
+      "fr": ["quark"],
+      "de": ["quark", "magerquark"]
+    },
+    "nutrients": {
+      "calories": 72, "protein": 12.0, "fat": 0.3, "carbs": 4.1, "fiber": 0.0, "sugar": 3.7, "sodium": 60,
+      "iron": 0.1, "calcium": 86, "zinc": 0.5, "b12": 0.5, "omega3": 0.0, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "low fat", "usda_fdc_id": null
+  },
+  {
+    "canonical": "falafel",
+    "category": "plant_protein",
+    "labels": { "en": "Falafel", "fr": "Falafel", "de": "Falafel" },
+    "tokens": {
+      "en": ["falafel"],
+      "fr": ["falafel"],
+      "de": ["falafel"]
+    },
+    "nutrients": {
+      "calories": 333, "protein": 13.31, "fat": 17.8, "carbs": 31.83, "fiber": 4.9, "sugar": 5.2, "sodium": 294,
+      "iron": 3.4, "calcium": 64, "zinc": 1.2, "b12": 0, "omega3": 0.1, "vitaminC": 2.1, "vitaminD": 0
+    },
+    "note": "fried", "usda_fdc_id": "175188"
+  },
+  {
+    "canonical": "granola",
+    "category": "grain",
+    "labels": { "en": "Granola", "fr": "Granola", "de": "Granola" },
+    "tokens": {
+      "en": ["granola"],
+      "fr": ["granola"],
+      "de": ["granola"]
+    },
+    "nutrients": {
+      "calories": 471, "protein": 10.4, "fat": 20.1, "carbs": 64.2, "fiber": 5.3, "sugar": 24.0, "sodium": 40,
+      "iron": 3.5, "calcium": 44, "zinc": 2.5, "b12": 0, "omega3": 0.35, "vitaminC": 0.4, "vitaminD": 0
+    },
+    "note": "with oats", "usda_fdc_id": "169733"
+  },
+  {
+    "canonical": "muesli",
+    "category": "grain",
+    "labels": { "en": "Muesli", "fr": "Muesli", "de": "Müsli" },
+    "tokens": {
+      "en": ["muesli", "bircher muesli"],
+      "fr": ["muesli"],
+      "de": ["musli", "müsli"]
+    },
+    "nutrients": {
+      "calories": 365, "protein": 9.6, "fat": 6.0, "carbs": 70.0, "fiber": 6.0, "sugar": 25.0, "sodium": 30,
+      "iron": 3.5, "calcium": 50, "zinc": 2.0, "b12": 0, "omega3": 0.2, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "dry", "usda_fdc_id": null
+  },
+  {
+    "canonical": "goji berries",
+    "category": "fruit",
+    "labels": { "en": "Goji Berries", "fr": "Baies de goji", "de": "Goji-Beeren" },
+    "tokens": {
+      "en": ["goji berries", "goji berry"],
+      "fr": ["baies de goji", "baie de goji"],
+      "de": ["goji beeren", "gojibeeren"]
+    },
+    "nutrients": {
+      "calories": 349, "protein": 14.26, "fat": 0.39, "carbs": 77.06, "fiber": 13.0, "sugar": 45.61, "sodium": 298,
+      "iron": 6.8, "calcium": 190, "zinc": 2.0, "b12": 0, "omega3": 0.0, "vitaminC": 48.4, "vitaminD": 0
+    },
+    "note": "dried", "usda_fdc_id": "173032"
+  },
+  {
+    "canonical": "matcha",
+    "category": "beverage",
+    "labels": { "en": "Matcha", "fr": "Matcha", "de": "Matcha" },
+    "tokens": {
+      "en": ["matcha", "matcha green tea"],
+      "fr": ["matcha"],
+      "de": ["matcha"]
+    },
+    "nutrients": {
+      "calories": 328, "protein": 30.5, "fat": 5.1, "carbs": 38.6, "fiber": 37.2, "sugar": 0.0, "sodium": 6,
+      "iron": 17.0, "calcium": 272, "zinc": 6.3, "b12": 0, "omega3": 0.0, "vitaminC": 60.4, "vitaminD": 0
+    },
+    "note": "powder", "usda_fdc_id": null
+  },
+  {
+    "canonical": "wheat germ",
+    "category": "grain",
+    "labels": { "en": "Wheat Germ", "fr": "Germe de blé", "de": "Weizenkeime" },
+    "tokens": {
+      "en": ["wheat germ"],
+      "fr": ["germe de ble", "germe de blé"],
+      "de": ["weizenkeime", "weizenkeim"]
+    },
+    "nutrients": {
+      "calories": 382, "protein": 23.15, "fat": 10.71, "carbs": 51.8, "fiber": 13.2, "sugar": 0.0, "sodium": 12,
+      "iron": 6.26, "calcium": 39, "zinc": 12.29, "b12": 0, "omega3": 0.72, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "toasted", "usda_fdc_id": "168895"
+  },
+  {
+    "canonical": "oat bran",
+    "category": "grain",
+    "labels": { "en": "Oat Bran", "fr": "Son d'avoine", "de": "Haferkleie" },
+    "tokens": {
+      "en": ["oat bran"],
+      "fr": ["son d avoine", "son d'avoine"],
+      "de": ["haferkleie", "hafer kleie"]
+    },
+    "nutrients": {
+      "calories": 246, "protein": 17.3, "fat": 7.03, "carbs": 66.22, "fiber": 15.4, "sugar": 1.45, "sodium": 4,
+      "iron": 5.41, "calcium": 58, "zinc": 3.11, "b12": 0, "omega3": 0.11, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "raw", "usda_fdc_id": "168897"
+  },
+  {
+    "canonical": "vegan butter",
+    "category": "dairy_eggs",
+    "labels": { "en": "Vegan Butter", "fr": "Beurre végétalien", "de": "Vegane Butter" },
+    "tokens": {
+      "en": ["vegan butter", "plant butter", "dairy-free butter"],
+      "fr": ["beurre vegetal", "beurre végétalien", "margarine"],
+      "de": ["vegane butter", "pflanzenbutter", "margarine"]
+    },
+    "nutrients": {
+      "calories": 717, "protein": 0.0, "fat": 80.0, "carbs": 0.0, "fiber": 0.0, "sugar": 0.0, "sodium": 540,
+      "iron": 0.0, "calcium": 0, "zinc": 0.0, "b12": 0, "omega3": 0.5, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "plant-based", "usda_fdc_id": null
   }
 ]
