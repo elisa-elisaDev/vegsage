@@ -4,7 +4,7 @@ import { useState, useCallback, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useLocale } from "@/components/LocaleContext";
 import type { FoodProduct } from "@/lib/usdaClient";
-import { NUTRIENT_UNITS } from "@/lib/nutrition";
+import { NUTRIENT_UNITS, formatNutrient } from "@/lib/nutrition";
 import type { NutrientKey } from "@/lib/nutrition";
 
 type Step = "search" | "quantity";
@@ -135,7 +135,8 @@ function AddFoodInner() {
     }
   }
 
-  const factor = quantity / 100;
+  const safeQty = Number.isFinite(quantity) && quantity >= 1 ? Math.min(quantity, 2000) : 100;
+  const factor = safeQty / 100;
 
   return (
     <div className="flex flex-col gap-6 pt-4 pb-8">
@@ -246,10 +247,28 @@ function AddFoodInner() {
             <input
               id="qty"
               type="number"
+              inputMode="numeric"
               min={1}
-              max={5000}
+              max={2000}
+              step={1}
               value={quantity}
-              onChange={(e) => setQuantity(Math.max(1, Number(e.target.value)))}
+              onKeyDown={(e) => {
+                // Allow Ctrl/Cmd shortcuts (select all, copy, paste, cut, undo, redo)
+                if (e.ctrlKey || e.metaKey) return;
+                const allowed = ["Backspace", "Delete", "Tab", "Escape", "Enter", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"];
+                if (allowed.includes(e.key)) return;
+                if (!/^\d$/.test(e.key)) { e.preventDefault(); return; }
+                const cur = (e.target as HTMLInputElement).value.replace(/\D/g, "");
+                if (cur.length >= 4) e.preventDefault();
+              }}
+              onChange={(e) => {
+                const parsed = parseInt(e.target.value, 10);
+                if (!Number.isFinite(parsed) || parsed < 1) {
+                  setQuantity(100);
+                } else {
+                  setQuantity(Math.min(2000, parsed));
+                }
+              }}
               className="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
             <div className="flex gap-2 mt-2">
@@ -278,7 +297,7 @@ function AddFoodInner() {
               <div className="flex justify-between col-span-2 border-b border-gray-200 pb-1 mb-1">
                 <span className="text-gray-600">{t.nutrients.calories}</span>
                 <span className="font-semibold">
-                  {selected.per100g.calories != null
+                  {selected.per100g.calories != null && Number.isFinite(selected.per100g.calories * factor)
                     ? `${Math.round(selected.per100g.calories * factor)} ${t.nutrients.kcal}`
                     : "—"}
                 </span>
@@ -286,14 +305,14 @@ function AddFoodInner() {
               {/* Macros + micros */}
               {PREVIEW_NUTRIENTS.map((key) => {
                 const raw = selected.per100g[key];
-                const val = raw != null ? raw * factor : null;
+                const val = raw != null && Number.isFinite(raw * factor) ? raw * factor : null;
                 const unit = NUTRIENT_UNITS[key];
                 const label = (t.nutrients as Record<string, string>)[key] ?? key;
                 return (
                   <div key={key} className="flex justify-between">
                     <span className="text-gray-500">{label}</span>
                     <span className="font-medium text-gray-800">
-                      {val != null ? `${val.toFixed(1)}${unit}` : "—"}
+                      {val != null ? `${formatNutrient(val, key)}${unit}` : "—"}
                     </span>
                   </div>
                 );

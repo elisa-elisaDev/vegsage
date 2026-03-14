@@ -151,9 +151,10 @@ export function sumNutrients(items: NutrientsPer100g[]): NutrientsPer100g {
 
 /** Format a number for display */
 export function formatNutrient(value: number | null, key: NutrientKey): string {
-  if (value === null) return "—";
+  if (value === null || !Number.isFinite(value)) return "—";
   if (key === "calories") return Math.round(value).toString();
-  if (key === "sodium")   return Math.round(value).toString();
+  if (key === "sodium" || key === "calcium" || key === "iron" || key === "zinc" || key === "vitaminC") return value.toFixed(1);
+  if (key === "b12" || key === "vitaminD") return value.toFixed(2);
   return value.toFixed(1);
 }
 

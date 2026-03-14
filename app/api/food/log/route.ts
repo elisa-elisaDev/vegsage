@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
     product = body.product;
     quantityG = Number(body.quantityG);
     mealType = MEAL_TYPES.includes(body.mealType) ? body.mealType : "lunch";
-    if (!product || !product.per100g || quantityG <= 0 || quantityG > 5000) {
+    if (!product || !product.per100g || !Number.isFinite(quantityG) || quantityG <= 0 || quantityG > 2000) {
       throw new Error("Invalid body");
     }
   } catch {
