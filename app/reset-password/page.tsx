@@ -60,7 +60,12 @@ export default function ResetPasswordPage() {
     const { error: updateError } = await supabase.auth.updateUser({ password });
 
     if (updateError) {
-      setError(t.auth.resetPasswordError);
+      console.error("[ResetPassword] updateUser failed:", updateError.message);
+      setError(
+        process.env.NODE_ENV === "development"
+          ? updateError.message
+          : t.auth.resetPasswordError
+      );
       setLoading(false);
       return;
     }

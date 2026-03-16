@@ -19,17 +19,27 @@ export default function ForgotPasswordPage() {
     setLoading(true);
     setError(null);
 
-    const redirectTo =
-      typeof window !== "undefined"
-        ? `${window.location.origin}/reset-password`
-        : "/reset-password";
+    // Use the configured app URL so the redirect always points to the
+    // canonical domain — never a Vercel preview URL or arbitrary origin.
+    const base =
+      process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "") ??
+      window.location.origin;
+    const redirectTo = `${base}/reset-password`;
 
     const { error: authError } = await supabase.auth.resetPasswordForEmail(email, {
       redirectTo,
     });
 
     if (authError) {
-      setError(t.auth.forgotPasswordError);
+      // Log the real Supabase error so it's visible in dev/server logs.
+      // The most common cause is `redirectTo` not being in the Supabase
+      // Dashboard → Authentication → URL Configuration → Redirect URLs list.
+      console.error("[ForgotPassword] resetPasswordForEmail failed:", authError.message, "| redirectTo:", redirectTo);
+      setError(
+        process.env.NODE_ENV === "development"
+          ? authError.message
+          : t.auth.forgotPasswordError
+      );
       setLoading(false);
       return;
     }

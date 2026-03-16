@@ -28,10 +28,17 @@ export default function SignupPage() {
     setLoading(true);
     setError(null);
 
+    // Use the configured app URL so the redirect is canonical across environments.
+    // Points to the auth callback route which exchanges the PKCE code for a
+    // session server-side, then redirects to /dashboard.
+    const base =
+      process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "") ??
+      window.location.origin;
+
     const { data, error: authError } = await supabase.auth.signUp({
       email,
       password,
-      options: { emailRedirectTo: `${window.location.origin}/dashboard` },
+      options: { emailRedirectTo: `${base}/auth/callback?next=/dashboard` },
     });
 
     if (authError) {
