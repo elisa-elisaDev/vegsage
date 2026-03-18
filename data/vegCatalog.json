@@ -3283,5 +3283,455 @@
       "iron": 0.0, "calcium": 0, "zinc": 0.0, "b12": 0, "omega3": 0.5, "vitaminC": 0, "vitaminD": 0
     },
     "note": "plant-based", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetarian lasagna",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetarian Lasagna", "fr": "Lasagnes végétariennes", "de": "Vegetarische Lasagne" },
+    "tokens": {
+      "en": ["vegetarian lasagna", "veggie lasagna", "lasagne", "lasagna"],
+      "fr": ["lasagnes végétariennes", "lasagnes legumes", "lasagnes aux légumes", "lasagne végétarienne"],
+      "de": ["vegetarische lasagne", "lasagne", "gemüselasagne"]
+    },
+    "nutrients": {
+      "calories": 155, "protein": 8.0, "fat": 6.5, "carbs": 17.0, "fiber": 1.8, "sugar": 3.5, "sodium": 420,
+      "iron": 1.2, "calcium": 130, "zinc": 0.7, "b12": 0.4, "omega3": 0.1, "vitaminC": 3, "vitaminD": 0.1
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "chili sin carne",
+    "category": "prepared_dish",
+    "labels": { "en": "Chili Sin Carne", "fr": "Chili sin carne", "de": "Chili sin Carne" },
+    "tokens": {
+      "en": ["chili sin carne", "veggie chili", "vegetarian chili", "bean chili"],
+      "fr": ["chili sin carne", "chili végétarien", "chili sans viande", "chili aux haricots"],
+      "de": ["chili sin carne", "vegetarisches chili", "bohnen chili"]
+    },
+    "nutrients": {
+      "calories": 100, "protein": 6.0, "fat": 2.0, "carbs": 15.0, "fiber": 5.5, "sugar": 3.0, "sodium": 310,
+      "iron": 2.5, "calcium": 45, "zinc": 1.0, "b12": 0, "omega3": 0.1, "vitaminC": 15, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetable curry",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetable Curry", "fr": "Curry de légumes", "de": "Gemüsecurry" },
+    "tokens": {
+      "en": ["vegetable curry", "veggie curry", "veg curry", "mixed vegetable curry"],
+      "fr": ["curry de légumes", "curry légumes", "curry végétarien", "curry aux légumes"],
+      "de": ["gemüsecurry", "vegetarisches curry", "curry mit gemüse"]
+    },
+    "nutrients": {
+      "calories": 90, "protein": 2.5, "fat": 4.5, "carbs": 10.0, "fiber": 2.5, "sugar": 4.0, "sodium": 290,
+      "iron": 1.5, "calcium": 40, "zinc": 0.4, "b12": 0, "omega3": 0.1, "vitaminC": 18, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetable fried rice",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetable Fried Rice", "fr": "Riz sauté aux légumes", "de": "Gebratener Gemüsreis" },
+    "tokens": {
+      "en": ["vegetable fried rice", "veggie fried rice", "fried rice vegetables", "stir-fried rice"],
+      "fr": ["riz sauté aux légumes", "riz frit légumes", "riz sauté légumes", "riz wok"],
+      "de": ["gebratener gemüsreis", "gemüse fried rice", "wok reis", "gebratener reis"]
+    },
+    "nutrients": {
+      "calories": 150, "protein": 3.5, "fat": 4.5, "carbs": 24.0, "fiber": 1.5, "sugar": 2.0, "sodium": 450,
+      "iron": 0.8, "calcium": 15, "zinc": 0.6, "b12": 0, "omega3": 0.1, "vitaminC": 6, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetarian pad thai",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetarian Pad Thai", "fr": "Pad thaï végétarien", "de": "Vegetarisches Pad Thai" },
+    "tokens": {
+      "en": ["vegetarian pad thai", "veggie pad thai", "pad thai tofu", "pad thai"],
+      "fr": ["pad thaï végétarien", "pad thai végétarien", "pad thaï tofu", "pad thai"],
+      "de": ["vegetarisches pad thai", "pad thai gemüse", "pad thai"]
+    },
+    "nutrients": {
+      "calories": 170, "protein": 6.0, "fat": 6.0, "carbs": 24.0, "fiber": 1.5, "sugar": 5.0, "sodium": 520,
+      "iron": 1.0, "calcium": 40, "zinc": 0.7, "b12": 0, "omega3": 0.2, "vitaminC": 4, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "spaghetti aglio e olio",
+    "category": "prepared_dish",
+    "labels": { "en": "Spaghetti Aglio e Olio", "fr": "Spaghetti aglio e olio", "de": "Spaghetti Aglio e Olio" },
+    "tokens": {
+      "en": ["spaghetti aglio e olio", "aglio olio", "garlic oil pasta", "garlic spaghetti"],
+      "fr": ["spaghetti aglio e olio", "spaghetti ail huile", "pâtes ail huile", "aglio olio"],
+      "de": ["spaghetti aglio e olio", "knoblauch spaghetti", "aglio olio pasta"]
+    },
+    "nutrients": {
+      "calories": 175, "protein": 5.5, "fat": 7.5, "carbs": 24.0, "fiber": 1.5, "sugar": 0.5, "sodium": 200,
+      "iron": 0.8, "calcium": 10, "zinc": 0.5, "b12": 0, "omega3": 0.2, "vitaminC": 2, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "pasta primavera",
+    "category": "prepared_dish",
+    "labels": { "en": "Pasta Primavera", "fr": "Pasta primavera", "de": "Pasta Primavera" },
+    "tokens": {
+      "en": ["pasta primavera", "spring pasta", "vegetable pasta"],
+      "fr": ["pasta primavera", "pâtes primavera", "pâtes aux légumes printaniers", "pâtes de printemps"],
+      "de": ["pasta primavera", "frühlingsgemüse pasta", "gemüse pasta"]
+    },
+    "nutrients": {
+      "calories": 150, "protein": 5.5, "fat": 5.0, "carbs": 22.0, "fiber": 2.0, "sugar": 3.0, "sodium": 220,
+      "iron": 1.0, "calcium": 35, "zinc": 0.6, "b12": 0, "omega3": 0.2, "vitaminC": 12, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "mushroom risotto",
+    "category": "prepared_dish",
+    "labels": { "en": "Mushroom Risotto", "fr": "Risotto aux champignons", "de": "Pilzrisotto" },
+    "tokens": {
+      "en": ["mushroom risotto", "risotto mushrooms", "funghi risotto", "risotto ai funghi"],
+      "fr": ["risotto aux champignons", "risotto champignons", "risotto fungi"],
+      "de": ["pilzrisotto", "risotto pilze", "champignon risotto"]
+    },
+    "nutrients": {
+      "calories": 138, "protein": 4.0, "fat": 4.5, "carbs": 21.0, "fiber": 1.0, "sugar": 1.0, "sodium": 350,
+      "iron": 0.6, "calcium": 65, "zinc": 0.7, "b12": 0.1, "omega3": 0.1, "vitaminC": 1, "vitaminD": 0.3
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetarian paella",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetarian Paella", "fr": "Paella végétarienne", "de": "Vegetarische Paella" },
+    "tokens": {
+      "en": ["vegetarian paella", "veggie paella", "paella vegetables", "paella verduras"],
+      "fr": ["paella végétarienne", "paella légumes", "paella végétarienne"],
+      "de": ["vegetarische paella", "gemüse paella", "paella gemüse"]
+    },
+    "nutrients": {
+      "calories": 155, "protein": 4.5, "fat": 4.0, "carbs": 27.0, "fiber": 2.0, "sugar": 2.0, "sodium": 350,
+      "iron": 1.5, "calcium": 30, "zinc": 0.7, "b12": 0, "omega3": 0.1, "vitaminC": 15, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetable couscous",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetable Couscous", "fr": "Couscous aux légumes", "de": "Gemüsecouscous" },
+    "tokens": {
+      "en": ["vegetable couscous", "veggie couscous", "couscous vegetables", "moroccan couscous"],
+      "fr": ["couscous aux légumes", "couscous légumes", "couscous végétarien", "couscous marocain"],
+      "de": ["gemüsecouscous", "couscous gemüse", "vegetarisches couscous"]
+    },
+    "nutrients": {
+      "calories": 135, "protein": 4.5, "fat": 2.5, "carbs": 24.0, "fiber": 2.5, "sugar": 2.5, "sodium": 250,
+      "iron": 1.2, "calcium": 25, "zinc": 0.6, "b12": 0, "omega3": 0.1, "vitaminC": 10, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "greek salad",
+    "category": "prepared_dish",
+    "labels": { "en": "Greek Salad", "fr": "Salade grecque", "de": "Griechischer Salat" },
+    "tokens": {
+      "en": ["greek salad", "horiatiki", "feta salad", "mediterranean salad"],
+      "fr": ["salade grecque", "salade grèque", "salade feta", "horiatiki"],
+      "de": ["griechischer salat", "griechisch salat", "feta salat", "horiatiki"]
+    },
+    "nutrients": {
+      "calories": 95, "protein": 3.5, "fat": 7.5, "carbs": 5.0, "fiber": 1.5, "sugar": 3.5, "sodium": 580,
+      "iron": 0.7, "calcium": 120, "zinc": 0.6, "b12": 0.4, "omega3": 0.2, "vitaminC": 10, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "caprese salad",
+    "category": "prepared_dish",
+    "labels": { "en": "Caprese Salad", "fr": "Salade caprese", "de": "Caprese Salat" },
+    "tokens": {
+      "en": ["caprese salad", "caprese", "mozzarella tomato basil", "insalata caprese"],
+      "fr": ["salade caprese", "caprese", "tomate mozzarella", "tomate mozzarella basilic"],
+      "de": ["caprese salat", "caprese", "tomate mozzarella", "insalata caprese"]
+    },
+    "nutrients": {
+      "calories": 165, "protein": 8.5, "fat": 12.0, "carbs": 4.5, "fiber": 0.5, "sugar": 3.0, "sodium": 330,
+      "iron": 0.4, "calcium": 220, "zinc": 0.9, "b12": 0.6, "omega3": 0.1, "vitaminC": 8, "vitaminD": 0.1
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "quinoa vegetable salad",
+    "category": "prepared_dish",
+    "labels": { "en": "Quinoa Vegetable Salad", "fr": "Salade de quinoa aux légumes", "de": "Quinoa-Gemüsesalat" },
+    "tokens": {
+      "en": ["quinoa vegetable salad", "quinoa salad", "quinoa veggie salad"],
+      "fr": ["salade de quinoa aux légumes", "salade quinoa légumes", "salade de quinoa", "quinoa salade"],
+      "de": ["quinoa-gemüsesalat", "quinoa salat gemüse", "quinoasalat"]
+    },
+    "nutrients": {
+      "calories": 120, "protein": 4.5, "fat": 4.0, "carbs": 16.0, "fiber": 2.5, "sugar": 2.0, "sodium": 180,
+      "iron": 1.5, "calcium": 25, "zinc": 0.9, "b12": 0, "omega3": 0.2, "vitaminC": 12, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "lentil salad",
+    "category": "prepared_dish",
+    "labels": { "en": "Lentil Salad", "fr": "Salade de lentilles", "de": "Linsensalat" },
+    "tokens": {
+      "en": ["lentil salad", "french lentil salad", "lentil vegetable salad"],
+      "fr": ["salade de lentilles", "salade lentilles", "lentilles en salade", "salade de lentilles vertes"],
+      "de": ["linsensalat", "linsen salat", "salat mit linsen"]
+    },
+    "nutrients": {
+      "calories": 112, "protein": 7.5, "fat": 3.5, "carbs": 14.0, "fiber": 5.0, "sugar": 1.5, "sodium": 220,
+      "iron": 2.8, "calcium": 25, "zinc": 1.0, "b12": 0, "omega3": 0.2, "vitaminC": 5, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "chickpea salad",
+    "category": "prepared_dish",
+    "labels": { "en": "Chickpea Salad", "fr": "Salade de pois chiches", "de": "Kichererbsensalat" },
+    "tokens": {
+      "en": ["chickpea salad", "garbanzo salad", "chickpea vegetable salad"],
+      "fr": ["salade de pois chiches", "salade pois chiches", "pois chiches en salade"],
+      "de": ["kichererbsensalat", "kichererbsen salat", "salat mit kichererbsen"]
+    },
+    "nutrients": {
+      "calories": 145, "protein": 7.0, "fat": 6.0, "carbs": 17.0, "fiber": 5.0, "sugar": 2.0, "sodium": 230,
+      "iron": 2.0, "calcium": 45, "zinc": 1.1, "b12": 0, "omega3": 0.2, "vitaminC": 8, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "veggie burger",
+    "category": "prepared_dish",
+    "labels": { "en": "Veggie Burger", "fr": "Burger végétarien", "de": "Veggie-Burger" },
+    "tokens": {
+      "en": ["veggie burger", "vegetarian burger", "plant-based burger", "vegetable burger"],
+      "fr": ["burger végétarien", "burger végétal", "burger veggie", "hamburger végétarien"],
+      "de": ["veggie-burger", "vegetarischer burger", "gemüseburger", "pflanzlicher burger"]
+    },
+    "nutrients": {
+      "calories": 235, "protein": 10.5, "fat": 8.5, "carbs": 29.0, "fiber": 3.5, "sugar": 4.0, "sodium": 560,
+      "iron": 2.0, "calcium": 60, "zinc": 1.2, "b12": 0, "omega3": 0.2, "vitaminC": 2, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "falafel",
+    "category": "prepared_dish",
+    "labels": { "en": "Falafel", "fr": "Falafels", "de": "Falafel" },
+    "tokens": {
+      "en": ["falafel", "falafels", "fried chickpea ball", "chickpea fritter"],
+      "fr": ["falafels", "falafel", "boulettes de pois chiches", "falafel maison"],
+      "de": ["falafel", "kichererbsenbällchen", "falafelbällchen"]
+    },
+    "nutrients": {
+      "calories": 333, "protein": 13.3, "fat": 17.8, "carbs": 31.8, "fiber": 4.9, "sugar": 1.5, "sodium": 294,
+      "iron": 2.5, "calcium": 56, "zinc": 1.4, "b12": 0, "omega3": 0.1, "vitaminC": 4, "vitaminD": 0
+    },
+    "note": "fried, per 100g", "usda_fdc_id": "175195"
+  },
+  {
+    "canonical": "vegetarian burrito",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetarian Burrito", "fr": "Burrito végétarien", "de": "Vegetarisches Burrito" },
+    "tokens": {
+      "en": ["vegetarian burrito", "veggie burrito", "bean burrito", "plant burrito"],
+      "fr": ["burrito végétarien", "burrito veggie", "burrito aux haricots", "burrito légumes"],
+      "de": ["vegetarisches burrito", "veggie burrito", "bohnen burrito"]
+    },
+    "nutrients": {
+      "calories": 185, "protein": 7.5, "fat": 5.5, "carbs": 27.0, "fiber": 3.5, "sugar": 2.0, "sodium": 490,
+      "iron": 1.8, "calcium": 75, "zinc": 0.9, "b12": 0.2, "omega3": 0.1, "vitaminC": 5, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetable quesadilla",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetable Quesadilla", "fr": "Quesadilla aux légumes", "de": "Gemüse-Quesadilla" },
+    "tokens": {
+      "en": ["vegetable quesadilla", "veggie quesadilla", "cheese quesadilla", "quesadilla"],
+      "fr": ["quesadilla aux légumes", "quesadilla légumes", "quesadilla végétarienne", "quesadilla"],
+      "de": ["gemüse-quesadilla", "vegetarische quesadilla", "quesadilla"]
+    },
+    "nutrients": {
+      "calories": 255, "protein": 9.5, "fat": 12.5, "carbs": 27.0, "fiber": 2.0, "sugar": 2.0, "sodium": 560,
+      "iron": 1.2, "calcium": 230, "zinc": 1.3, "b12": 0.5, "omega3": 0.1, "vitaminC": 4, "vitaminD": 0.1
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "grilled vegetable wrap",
+    "category": "prepared_dish",
+    "labels": { "en": "Grilled Vegetable Wrap", "fr": "Wrap aux légumes grillés", "de": "Gegrilltes Gemüse-Wrap" },
+    "tokens": {
+      "en": ["grilled vegetable wrap", "veggie wrap", "vegetable wrap", "grilled veggie wrap"],
+      "fr": ["wrap aux légumes grillés", "wrap légumes", "wrap végétarien", "wrap legumes grilles"],
+      "de": ["gegrilltes gemüse-wrap", "gemüse wrap", "veggie wrap", "wrap"]
+    },
+    "nutrients": {
+      "calories": 195, "protein": 5.5, "fat": 7.0, "carbs": 28.0, "fiber": 3.0, "sugar": 3.5, "sodium": 400,
+      "iron": 1.2, "calcium": 55, "zinc": 0.7, "b12": 0, "omega3": 0.2, "vitaminC": 15, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "dal",
+    "category": "prepared_dish",
+    "labels": { "en": "Dal (Indian Lentils)", "fr": "Dal indien (lentilles)", "de": "Dal (Indische Linsen)" },
+    "tokens": {
+      "en": ["dal", "dhal", "indian lentils", "lentil dal", "daal", "tarka dal", "masoor dal", "moong dal"],
+      "fr": ["dal indien", "dal", "dhal", "lentilles indiennes", "dal de lentilles"],
+      "de": ["dal", "dhal", "indische linsen", "linsen dal", "dal suppe"]
+    },
+    "nutrients": {
+      "calories": 98, "protein": 5.5, "fat": 3.0, "carbs": 13.0, "fiber": 3.5, "sugar": 1.0, "sodium": 300,
+      "iron": 2.2, "calcium": 25, "zinc": 0.7, "b12": 0, "omega3": 0.1, "vitaminC": 4, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "shakshuka",
+    "category": "prepared_dish",
+    "labels": { "en": "Shakshuka", "fr": "Shakshuka", "de": "Shakshuka" },
+    "tokens": {
+      "en": ["shakshuka", "shakshouka", "eggs in tomato sauce", "poached eggs tomato"],
+      "fr": ["shakshuka", "chakchouka", "oeufs en sauce tomate", "shakshuka aux oeufs"],
+      "de": ["shakshuka", "shakshouka", "eier in tomatensauce"]
+    },
+    "nutrients": {
+      "calories": 100, "protein": 6.0, "fat": 6.0, "carbs": 7.0, "fiber": 1.5, "sugar": 4.0, "sodium": 380,
+      "iron": 1.8, "calcium": 55, "zinc": 0.8, "b12": 0.5, "omega3": 0.1, "vitaminC": 20, "vitaminD": 0.8
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "ratatouille",
+    "category": "prepared_dish",
+    "labels": { "en": "Ratatouille", "fr": "Ratatouille", "de": "Ratatouille" },
+    "tokens": {
+      "en": ["ratatouille", "french vegetable stew", "provencal vegetables"],
+      "fr": ["ratatouille", "ratatouille provençale", "ragoût de légumes", "légumes provençaux"],
+      "de": ["ratatouille", "provenzalisches gemüse", "gemüseeintopf provenzalisch"]
+    },
+    "nutrients": {
+      "calories": 60, "protein": 1.5, "fat": 3.0, "carbs": 7.0, "fiber": 2.5, "sugar": 4.5, "sodium": 200,
+      "iron": 0.7, "calcium": 25, "zinc": 0.3, "b12": 0, "omega3": 0.2, "vitaminC": 25, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetarian bibimbap",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetarian Bibimbap", "fr": "Bibimbap végétarien", "de": "Vegetarisches Bibimbap" },
+    "tokens": {
+      "en": ["vegetarian bibimbap", "bibimbap", "korean rice bowl", "bibimbap vegetables"],
+      "fr": ["bibimbap végétarien", "bibimbap", "bol de riz coréen", "bibimbap aux légumes"],
+      "de": ["vegetarisches bibimbap", "bibimbap", "koreanische reisschüssel"]
+    },
+    "nutrients": {
+      "calories": 145, "protein": 5.0, "fat": 3.5, "carbs": 24.0, "fiber": 2.0, "sugar": 3.0, "sodium": 420,
+      "iron": 1.8, "calcium": 35, "zinc": 0.8, "b12": 0, "omega3": 0.2, "vitaminC": 10, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "tofu vegetable stir-fry",
+    "category": "prepared_dish",
+    "labels": { "en": "Tofu Vegetable Stir-Fry", "fr": "Sauté de légumes au tofu", "de": "Tofu-Gemüse-Pfanne" },
+    "tokens": {
+      "en": ["tofu vegetable stir-fry", "tofu stir fry", "stir fried tofu vegetables", "tofu wok"],
+      "fr": ["sauté de légumes au tofu", "wok tofu légumes", "tofu sauté légumes", "sauté tofu"],
+      "de": ["tofu-gemüse-pfanne", "tofu wok", "tofu gemüse pfanne", "gebratener tofu gemüse"]
+    },
+    "nutrients": {
+      "calories": 100, "protein": 7.0, "fat": 5.0, "carbs": 7.5, "fiber": 2.0, "sugar": 3.0, "sodium": 420,
+      "iron": 1.8, "calcium": 100, "zinc": 1.0, "b12": 0, "omega3": 0.3, "vitaminC": 15, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetarian shepherd's pie",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetarian Shepherd's Pie", "fr": "Shepherd's pie végétarien", "de": "Vegetarischer Shepherd's Pie" },
+    "tokens": {
+      "en": ["vegetarian shepherd's pie", "veggie shepherd's pie", "lentil shepherd's pie", "cottage pie vegetarian"],
+      "fr": ["shepherd's pie végétarien", "hachis parmentier végétarien", "hachis veggie", "pie végétarien"],
+      "de": ["vegetarischer shepherd's pie", "veggie shepherd's pie", "linsen shepherd's pie"]
+    },
+    "nutrients": {
+      "calories": 115, "protein": 5.0, "fat": 3.5, "carbs": 17.0, "fiber": 3.0, "sugar": 2.5, "sodium": 310,
+      "iron": 1.8, "calcium": 30, "zinc": 0.8, "b12": 0, "omega3": 0.1, "vitaminC": 12, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetable gratin",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetable Gratin", "fr": "Gratin de légumes", "de": "Gemüsegratin" },
+    "tokens": {
+      "en": ["vegetable gratin", "veggie gratin", "gratin vegetables", "baked vegetable gratin"],
+      "fr": ["gratin de légumes", "gratin légumes", "gratin végétarien", "gratin de courgettes", "gratin dauphinois"],
+      "de": ["gemüsegratin", "gemüse gratin", "überbackenes gemüse", "gratin"]
+    },
+    "nutrients": {
+      "calories": 135, "protein": 6.0, "fat": 8.5, "carbs": 10.0, "fiber": 2.0, "sugar": 3.5, "sodium": 320,
+      "iron": 0.7, "calcium": 165, "zinc": 0.8, "b12": 0.4, "omega3": 0.1, "vitaminC": 10, "vitaminD": 0.2
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "spinach ricotta cannelloni",
+    "category": "prepared_dish",
+    "labels": { "en": "Spinach Ricotta Cannelloni", "fr": "Cannelloni ricotta-épinards", "de": "Spinat-Ricotta-Cannelloni" },
+    "tokens": {
+      "en": ["spinach ricotta cannelloni", "cannelloni spinach", "ricotta cannelloni", "stuffed cannelloni"],
+      "fr": ["cannelloni ricotta-épinards", "cannelloni épinards ricotta", "cannelloni végétariens", "cannelloni"],
+      "de": ["spinat-ricotta-cannelloni", "cannelloni spinat", "ricotta cannelloni", "gefüllte cannelloni"]
+    },
+    "nutrients": {
+      "calories": 165, "protein": 10.0, "fat": 7.5, "carbs": 15.0, "fiber": 1.5, "sugar": 3.0, "sodium": 380,
+      "iron": 1.5, "calcium": 210, "zinc": 1.1, "b12": 0.6, "omega3": 0.1, "vitaminC": 3, "vitaminD": 0.1
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "vegetarian stuffed peppers",
+    "category": "prepared_dish",
+    "labels": { "en": "Vegetarian Stuffed Peppers", "fr": "Poivrons farcis végétariens", "de": "Vegetarisch gefüllte Paprika" },
+    "tokens": {
+      "en": ["vegetarian stuffed peppers", "stuffed bell peppers", "stuffed peppers rice", "stuffed capsicum"],
+      "fr": ["poivrons farcis végétariens", "poivrons farcis", "poivrons farcis riz", "poivrons farcis au riz"],
+      "de": ["vegetarisch gefüllte paprika", "gefüllte paprika", "gefüllte paprikaschoten", "paprika gefüllt"]
+    },
+    "nutrients": {
+      "calories": 105, "protein": 4.0, "fat": 3.5, "carbs": 15.0, "fiber": 2.5, "sugar": 5.5, "sodium": 280,
+      "iron": 1.2, "calcium": 40, "zinc": 0.6, "b12": 0, "omega3": 0.1, "vitaminC": 75, "vitaminD": 0
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "pizza margherita",
+    "category": "prepared_dish",
+    "labels": { "en": "Pizza Margherita", "fr": "Pizza margherita", "de": "Pizza Margherita" },
+    "tokens": {
+      "en": ["pizza margherita", "margherita pizza", "cheese pizza", "tomato mozzarella pizza"],
+      "fr": ["pizza margherita", "pizza margarita", "pizza tomate mozzarella", "pizza fromage"],
+      "de": ["pizza margherita", "margherita pizza", "käsepizza", "tomaten mozzarella pizza"]
+    },
+    "nutrients": {
+      "calories": 250, "protein": 11.0, "fat": 9.5, "carbs": 32.0, "fiber": 2.0, "sugar": 3.0, "sodium": 600,
+      "iron": 1.2, "calcium": 210, "zinc": 1.3, "b12": 0.6, "omega3": 0.1, "vitaminC": 3, "vitaminD": 0.1
+    },
+    "note": "prepared, per 100g", "usda_fdc_id": null
   }
 ]

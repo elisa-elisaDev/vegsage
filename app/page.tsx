@@ -1,11 +1,15 @@
 import Link from "next/link";
 import { cookies } from "next/headers";
 import { getLocaleFromCookie, getT, LOCALE_COOKIE } from "@/lib/i18n";
+import { createServerSupabaseClient } from "@/lib/supabaseServer";
 
 export default async function LandingPage() {
   const cookieStore = await cookies();
   const locale = getLocaleFromCookie(cookieStore.get(LOCALE_COOKIE)?.value);
   const t = getT(locale);
+
+  const supabase = await createServerSupabaseClient();
+  const { data: { user } } = await supabase.auth.getUser();
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] px-4 text-center">
@@ -51,21 +55,23 @@ export default async function LandingPage() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="flex flex-col sm:flex-row gap-3 w-full">
-          <Link
-            href="/signup"
-            className="flex-1 rounded-xl bg-brand-600 text-white py-3.5 text-sm font-semibold text-center hover:bg-brand-700 transition-colors"
-          >
-            {t.auth.signUpCTA}
-          </Link>
-          <Link
-            href="/login"
-            className="flex-1 rounded-xl border border-gray-200 text-gray-700 py-3.5 text-sm font-semibold text-center hover:bg-gray-50 transition-colors"
-          >
-            {t.nav.signIn}
-          </Link>
-        </div>
+        {/* CTA — only shown to unauthenticated visitors */}
+        {!user && (
+          <div className="flex flex-col sm:flex-row gap-3 w-full">
+            <Link
+              href="/signup"
+              className="flex-1 rounded-xl bg-brand-600 text-white py-3.5 text-sm font-semibold text-center hover:bg-brand-700 transition-colors"
+            >
+              {t.auth.signUpCTA}
+            </Link>
+            <Link
+              href="/login"
+              className="flex-1 rounded-xl border border-gray-200 text-gray-700 py-3.5 text-sm font-semibold text-center hover:bg-gray-50 transition-colors"
+            >
+              {t.nav.signIn}
+            </Link>
+          </div>
+        )}
 
         <p className="text-xs text-gray-400">{t.common.notMedicalAdvice}</p>
       </div>
