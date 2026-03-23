@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Dict } from "@/lib/i18n";
+import { openPaddleCheckout } from "@/lib/paddleClient";
 
 export function PricingClient({ t }: { t: Dict }) {
   const [loading, setLoading] = useState<"monthly" | "yearly" | null>(null);
@@ -11,17 +12,7 @@ export function PricingClient({ t }: { t: Dict }) {
     setLoading(plan);
     setError(null);
     try {
-      const res = await fetch("/api/paddle/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ plan }),
-      });
-      const data = await res.json();
-      if (data.checkoutUrl) {
-        window.location.href = data.checkoutUrl;
-      } else {
-        setError(data.error ?? t.errors.serverError);
-      }
+      await openPaddleCheckout(plan);
     } catch {
       setError(t.errors.network);
     } finally {
