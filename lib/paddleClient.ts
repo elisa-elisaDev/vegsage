@@ -3,7 +3,10 @@ declare global {
     Paddle?: {
       Initialize: (opts: { token: string }) => void;
       Checkout: {
-        open: (opts: { items: { priceId: string; quantity: number }[] }) => void;
+        open: (opts: {
+          items: { priceId: string; quantity: number }[];
+          customer?: { email: string };
+        }) => void;
       };
     };
   }
@@ -25,7 +28,7 @@ function loadPaddleScript(): Promise<void> {
   });
 }
 
-export async function openPaddleCheckout(plan: "monthly" | "yearly") {
+export async function openPaddleCheckout(plan: "monthly" | "yearly", email?: string) {
   if (!window.Paddle) {
     await loadPaddleScript();
     window.Paddle!.Initialize({
@@ -34,5 +37,6 @@ export async function openPaddleCheckout(plan: "monthly" | "yearly") {
   }
   window.Paddle!.Checkout.open({
     items: [{ priceId: PRICE_IDS[plan], quantity: 1 }],
+    ...(email ? { customer: { email } } : {}),
   });
 }

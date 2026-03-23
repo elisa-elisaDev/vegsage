@@ -8,9 +8,10 @@ interface PaywallProps {
   feature: string;
   features?: string[];
   t: Dict;
+  userEmail?: string;
 }
 
-export function Paywall({ feature, features, t }: PaywallProps) {
+export function Paywall({ feature, features, t, userEmail }: PaywallProps) {
   const [loading, setLoading] = useState<"monthly" | "yearly" | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -18,7 +19,7 @@ export function Paywall({ feature, features, t }: PaywallProps) {
     setLoading(plan);
     setError(null);
     try {
-      await openPaddleCheckout(plan);
+      await openPaddleCheckout(plan, userEmail);
     } catch {
       setError(t.errors.network);
     } finally {

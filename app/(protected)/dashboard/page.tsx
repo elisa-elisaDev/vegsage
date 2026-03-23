@@ -399,6 +399,7 @@ export default async function DashboardPage() {
             feature={t.dashboard.upgradePrompt}
             features={t.dashboard.upgradeFeatures}
             t={t}
+            userEmail={user.email ?? undefined}
           />
           </div>
         )}
