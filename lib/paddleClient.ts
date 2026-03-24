@@ -1,7 +1,7 @@
 declare global {
   interface Window {
     Paddle?: {
-      Initialize: (opts: { token: string }) => void;
+      Initialize: (opts: { token: string; pwCustomer?: { email: string } }) => void;
       Checkout: {
         open: (opts: {
           items: { priceId: string; quantity: number }[];
@@ -33,6 +33,7 @@ export async function openPaddleCheckout(plan: "monthly" | "yearly", email?: str
     await loadPaddleScript();
     window.Paddle!.Initialize({
       token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN!,
+      ...(email ? { pwCustomer: { email } } : {}),
     });
   }
   window.Paddle!.Checkout.open({
