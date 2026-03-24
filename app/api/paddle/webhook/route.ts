@@ -57,6 +57,7 @@ export async function POST(req: NextRequest) {
   }
 
   const supabase = createAdminSupabaseClient();
+  console.info("[paddle] admin client initialised, service key present:", !!process.env.SUPABASE_SERVICE_ROLE_KEY);
 
   // ── 3. Idempotency ──────────────────────────────────────────
   const { data: existing } = await supabase
@@ -70,16 +71,35 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true, skipped: true });
   }
 
-  // ── 4. Extract user ID from custom_data ─────────────────────
-  // custom_data is set in createCheckoutUrl and propagated by Paddle
-  // to all subscription/transaction events.
+  // ── 4. Resolve userId ────────────────────────────────────────
+  // Primary:  custom_data.userId  (set by Paddle.Checkout.open customData)
+  // Fallback: paddle_customer_id lookup (covers renewals / replayed events)
   const rawCustomData = data.custom_data as Record<string, string> | undefined;
-  const userId = rawCustomData?.userId;
+  let userId = rawCustomData?.userId;
 
-  console.info("[paddle] custom_data:", JSON.stringify(rawCustomData), "userId:", userId);
+  // customerId must be extracted here (before the early-return below)
+  // so it can be used both for the fallback lookup and for the profile update.
+  const customerId = data.customer_id as string | undefined;
+
+  console.info("[paddle] custom_data:", JSON.stringify(rawCustomData), "userId:", userId, "customerId:", customerId);
+
+  if (!userId && customerId) {
+    // Fallback: find the profile that owns this Paddle customer ID.
+    // Only safe because paddle_customer_id is set exclusively by our webhook.
+    const { data: fallbackProfile } = await supabase
+      .from("profiles")
+      .select("id")
+      .eq("paddle_customer_id", customerId)
+      .maybeSingle();
+    if (fallbackProfile?.id) {
+      userId = fallbackProfile.id;
+      console.info("[paddle] userId resolved via paddle_customer_id fallback:", customerId, "→", userId);
+    }
+  }
 
   if (!userId) {
-    console.warn("[paddle] no userId in custom_data — cannot update profile. event:", eventType, eventId);
+    console.warn("[paddle] no userId — cannot update profile. event:", eventType, eventId,
+      "Ensure Paddle.Checkout.open passes customData: { userId }.");
     return NextResponse.json({ ok: true, note: "no userId in custom_data" });
   }
 
@@ -93,7 +113,7 @@ export async function POST(req: NextRequest) {
       : (data.subscription_id ?? null)
   ) as string | undefined;
 
-  const customerId = data.customer_id as string | undefined;
+  // customerId already extracted above (section 4)
 
   // Items / price
   const items = data.items as Array<Record<string, unknown>> | undefined;

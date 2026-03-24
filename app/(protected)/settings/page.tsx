@@ -2,6 +2,7 @@ import { createServerSupabaseClient } from "@/lib/supabaseServer";
 import { cookies } from "next/headers";
 import { getLocaleFromCookie, getT, LOCALE_COOKIE } from "@/lib/i18n";
 import { SignOutButton } from "../SignOutButton";
+import { PremiumRefresher } from "@/components/PremiumRefresher";
 import Link from "next/link";
 import { GoalsForm } from "@/components/GoalsForm";
 import { parseGoals, GOAL_KEYS } from "@/lib/goals";
@@ -26,11 +27,16 @@ export default async function SettingsPage({
   const params = await searchParams;
   const showUpgradeBanner = params.upgraded === "1";
 
-  const { data: profile } = await supabase
+  const { data: profile, error: profileErr } = await supabase
     .from("profiles")
     .select("is_premium, premium_expires_at, vegetarian_type, locale, daily_goals_json")
     .eq("id", user.id)
     .single();
+
+  if (profileErr) {
+    console.error("[settings] profile query failed:", profileErr.code, profileErr.message,
+      "— is_premium will default to false. Check that all migrations have been run.");
+  }
 
   const isPremium = profile?.is_premium ?? false;
   const vegType = profile?.vegetarian_type ?? "ovo_lacto";
@@ -53,13 +59,16 @@ export default async function SettingsPage({
 
       {/* Upgrade success banner */}
       {showUpgradeBanner && (
-        <div className="bg-green-50 border border-green-200 rounded-2xl px-5 py-4 flex items-start gap-3">
-          <span className="text-green-500 text-xl leading-none mt-0.5">✓</span>
-          <div>
-            <p className="text-sm font-semibold text-green-700">{t.settings.premiumActive}</p>
-            <p className="text-xs text-green-600 mt-0.5">{t.pricing.paddleNote}</p>
+        <>
+          <PremiumRefresher isPremium={isPremium} />
+          <div className="bg-green-50 border border-green-200 rounded-2xl px-5 py-4 flex items-start gap-3">
+            <span className="text-green-500 text-xl leading-none mt-0.5">✓</span>
+            <div>
+              <p className="text-sm font-semibold text-green-700">{t.settings.premiumActive}</p>
+              <p className="text-xs text-green-600 mt-0.5">{t.pricing.paddleNote}</p>
+            </div>
           </div>
-        </div>
+        </>
       )}
 
       {/* Account */}

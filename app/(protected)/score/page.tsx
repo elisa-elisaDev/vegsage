@@ -84,11 +84,17 @@ export default async function ScorePage() {
     : null;
 
   // Fetch profile to gate Premium vitamin section
-  const { data: profile } = await supabase
+  const { data: profile, error: profileErr } = await supabase
     .from("profiles")
     .select("is_premium")
     .eq("id", user.id)
     .single();
+
+  if (profileErr) {
+    console.error("[score] profile query failed:", profileErr.code, profileErr.message,
+      "— is_premium will default to false. Check that all migrations have been run.");
+  }
+
   const isPremium = profile?.is_premium ?? false;
 
   // Compute Premium vitamin totals from today's food_logs

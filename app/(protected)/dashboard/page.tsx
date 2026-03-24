@@ -65,11 +65,16 @@ export default async function DashboardPage() {
     .order("summary_date", { ascending: false });
 
   // Profile
-  const { data: profile } = await supabase
+  const { data: profile, error: profileErr } = await supabase
     .from("profiles")
     .select("is_premium, premium_expires_at, daily_goals_json")
     .eq("id", user.id)
     .single();
+
+  if (profileErr) {
+    console.error("[dashboard] profile query failed:", profileErr.code, profileErr.message,
+      "— is_premium will default to false. Check that all migrations have been run.");
+  }
 
   const isPremium = profile?.is_premium ?? false;
 
