@@ -44,7 +44,7 @@ export default async function PricingPage() {
           </Link>
         </div>
       ) : (
-        <PricingClient t={t} userEmail={user?.email ?? undefined} />
+        <PricingClient t={t} userEmail={user?.email ?? undefined} userId={user?.id} />
       )}
 
       {/* Free tier */}

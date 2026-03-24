@@ -400,6 +400,7 @@ export default async function DashboardPage() {
             features={t.dashboard.upgradeFeatures}
             t={t}
             userEmail={user.email ?? undefined}
+            userId={user.id}
           />
           </div>
         )}

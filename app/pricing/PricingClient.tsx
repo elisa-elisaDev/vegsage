@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { Dict } from "@/lib/i18n";
 import { openPaddleCheckout } from "@/lib/paddleClient";
 
-export function PricingClient({ t, userEmail }: { t: Dict; userEmail?: string }) {
+export function PricingClient({ t, userEmail, userId }: { t: Dict; userEmail?: string; userId?: string }) {
   const [loading, setLoading] = useState<"monthly" | "yearly" | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -12,7 +12,7 @@ export function PricingClient({ t, userEmail }: { t: Dict; userEmail?: string })
     setLoading(plan);
     setError(null);
     try {
-      await openPaddleCheckout(plan, userEmail);
+      await openPaddleCheckout(plan, userEmail, userId);
     } catch {
       setError(t.errors.network);
     } finally {

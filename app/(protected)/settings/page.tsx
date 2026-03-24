@@ -52,7 +52,7 @@ export default async function SettingsPage({
       <h1 className="text-xl font-bold text-gray-900">{t.settings.title}</h1>
 
       {/* Upgrade success banner */}
-      {showUpgradeBanner && isPremium && (
+      {showUpgradeBanner && (
         <div className="bg-green-50 border border-green-200 rounded-2xl px-5 py-4 flex items-start gap-3">
           <span className="text-green-500 text-xl leading-none mt-0.5">✓</span>
           <div>

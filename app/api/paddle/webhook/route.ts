@@ -20,9 +20,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { createAdminSupabaseClient } from "@/lib/supabaseServer";
 import { verifyPaddleWebhook, resolvePlan } from "@/lib/paddle";
 
+// Fallback to hardcoded IDs so the guard works even when env vars are absent.
 const OUR_PRICE_IDS = new Set([
-  process.env.PADDLE_PRICE_MONTHLY,
-  process.env.PADDLE_PRICE_YEARLY,
+  process.env.PADDLE_PRICE_MONTHLY ?? "pri_01kjvxwzppnmmvz44qk306hk22",
+  process.env.PADDLE_PRICE_YEARLY  ?? "pri_01kjvy0jc2pmeh57v8ympzcjyk",
 ]);
 
 export async function POST(req: NextRequest) {
@@ -48,7 +49,10 @@ export async function POST(req: NextRequest) {
   const eventType = event.event_type as string | undefined;
   const data      = event.data as Record<string, unknown> | undefined;
 
+  console.info("[paddle] event_type:", eventType, "event_id:", eventId);
+
   if (!eventId || !eventType || !data) {
+    console.warn("[paddle] missing eventId/eventType/data — skipping");
     return NextResponse.json({ ok: true }); // unknown shape — acknowledge
   }
 
@@ -62,6 +66,7 @@ export async function POST(req: NextRequest) {
     .maybeSingle();
 
   if (existing) {
+    console.info("[paddle] duplicate event_id — skipped:", eventId);
     return NextResponse.json({ ok: true, skipped: true });
   }
 
@@ -71,8 +76,10 @@ export async function POST(req: NextRequest) {
   const rawCustomData = data.custom_data as Record<string, string> | undefined;
   const userId = rawCustomData?.userId;
 
+  console.info("[paddle] custom_data:", JSON.stringify(rawCustomData), "userId:", userId);
+
   if (!userId) {
-    console.warn("Paddle webhook: no userId in custom_data for event", eventId, eventType);
+    console.warn("[paddle] no userId in custom_data — cannot update profile. event:", eventType, eventId);
     return NextResponse.json({ ok: true, note: "no userId in custom_data" });
   }
 
@@ -97,8 +104,11 @@ export async function POST(req: NextRequest) {
     (item0?.price_id ?? item0price?.id) as string | undefined
   );
 
+  console.info("[paddle] priceId:", priceId, "subscriptionId:", subscriptionId, "customerId:", customerId);
+
   // Guard: ignore events for other products
   if (priceId && !OUR_PRICE_IDS.has(priceId)) {
+    console.warn("[paddle] priceId not in OUR_PRICE_IDS — skipping. priceId:", priceId);
     return NextResponse.json({ ok: true, note: "Not our product" });
   }
 
@@ -219,15 +229,22 @@ export async function POST(req: NextRequest) {
   }
 
   // ── 7. Update profiles ──────────────────────────────────────
-  const { error: profileErr } = await supabase
+  console.info("[paddle] updating profile for userId:", userId, "update:", JSON.stringify(profileUpdate));
+  const { data: updatedRows, error: profileErr } = await supabase
     .from("profiles")
     .update(profileUpdate)
-    .eq("id", userId);
+    .eq("id", userId)
+    .select("id");
 
   if (profileErr) {
-    console.error("Paddle webhook: profile update failed", profileErr);
+    console.error("[paddle] profile update error:", profileErr);
     return NextResponse.json({ error: profileErr.message }, { status: 500 });
   }
+  if (!updatedRows || updatedRows.length === 0) {
+    console.error("[paddle] profile update matched 0 rows — userId not found in profiles:", userId);
+    return NextResponse.json({ error: "profile not found" }, { status: 500 });
+  }
+  console.info("[paddle] profile updated successfully for userId:", userId);
 
   // ── 8. Upsert subscriptions table ──────────────────────────
   // Only upsert when we have both a subscription ID and a price ID;
