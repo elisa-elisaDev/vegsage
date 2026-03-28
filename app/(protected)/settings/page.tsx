@@ -17,7 +17,10 @@ export default async function SettingsPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const supabase = await createServerSupabaseClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
   if (!user) return null;
 
   const cookieStore = await cookies();
@@ -25,7 +28,8 @@ export default async function SettingsPage({
   const t = getT(locale);
 
   const params = await searchParams;
-  const showUpgradeBanner = params.upgraded === "1";
+  const upgradedParam = params.upgraded;
+  const showUpgradeBannerParam = upgradedParam === "1";
 
   const { data: profile, error: profileErr } = await supabase
     .from("profiles")
@@ -34,22 +38,28 @@ export default async function SettingsPage({
     .single();
 
   if (profileErr) {
-    console.error("[settings] profile query failed:", profileErr.code, profileErr.message,
-      "— is_premium will default to false. Check that all migrations have been run.");
+    console.error(
+      "[settings] profile query failed:",
+      profileErr.code,
+      profileErr.message,
+      "— is_premium will default to false. Check that all migrations have been run."
+    );
   }
 
   const isPremium = profile?.is_premium ?? false;
+  const showUpgradeBanner = showUpgradeBannerParam && isPremium;
   const vegType = profile?.vegetarian_type ?? "ovo_lacto";
 
   const userGoals = parseGoals(profile?.daily_goals_json ?? null);
-  const resolved  = resolveGoals(userGoals);
+  const resolved = resolveGoals(userGoals);
   const initialGoals = Object.fromEntries(
     GOAL_KEYS.map((k) => [k, resolved[k]])
   ) as Record<GoalKey, number>;
+
   const premiumExpires = profile?.premium_expires_at
     ? new Date(profile.premium_expires_at).toLocaleDateString(
         locale === "fr" ? "fr-FR" : locale === "de" ? "de-DE" : "en-US",
-        { year: "numeric", month: "short", day: "numeric" },
+        { year: "numeric", month: "short", day: "numeric" }
       )
     : null;
 
@@ -57,18 +67,20 @@ export default async function SettingsPage({
     <div className="flex flex-col gap-6 pt-4 pb-8">
       <h1 className="text-xl font-bold text-gray-900">{t.settings.title}</h1>
 
-      {/* Upgrade success banner */}
+      {/* Poll for webhook update if user just paid but DB not yet updated */}
+      {showUpgradeBannerParam && <PremiumRefresher isPremium={isPremium} />}
+
+      {/* Upgrade success banner — shown only once DB confirms is_premium */}
       {showUpgradeBanner && (
-        <>
-          <PremiumRefresher isPremium={isPremium} />
-          <div className="bg-green-50 border border-green-200 rounded-2xl px-5 py-4 flex items-start gap-3">
+        <div className="bg-green-50 border border-green-200 rounded-2xl px-5 py-4 flex items-start gap-3">
             <span className="text-green-500 text-xl leading-none mt-0.5">✓</span>
             <div>
-              <p className="text-sm font-semibold text-green-700">{t.settings.premiumActive}</p>
+              <p className="text-sm font-semibold text-green-700">
+                {t.settings.premiumActive}
+              </p>
               <p className="text-xs text-green-600 mt-0.5">{t.pricing.paddleNote}</p>
             </div>
           </div>
-        </>
       )}
 
       {/* Account */}
@@ -85,7 +97,8 @@ export default async function SettingsPage({
         <div>
           <p className="text-xs text-gray-500 mb-1">{t.settings.vegTypeLabel}</p>
           <p className="text-sm text-gray-700">
-            {t.settings.vegTypeOptions[vegType as keyof typeof t.settings.vegTypeOptions] ?? vegType}
+            {t.settings.vegTypeOptions[vegType as keyof typeof t.settings.vegTypeOptions] ??
+              vegType}
           </p>
         </div>
       </section>
@@ -158,10 +171,18 @@ export default async function SettingsPage({
           {t.settings.legalSection}
         </p>
         <div className="flex flex-wrap gap-3 text-sm text-brand-600">
-          <Link href="/legal/terms" className="hover:underline">{t.footer.terms}</Link>
-          <Link href="/legal/privacy" className="hover:underline">{t.footer.privacy}</Link>
-          <Link href="/legal/refunds" className="hover:underline">{t.footer.refunds}</Link>
-          <Link href="/legal/contact" className="hover:underline">{t.footer.contact}</Link>
+          <Link href="/legal/terms" className="hover:underline">
+            {t.footer.terms}
+          </Link>
+          <Link href="/legal/privacy" className="hover:underline">
+            {t.footer.privacy}
+          </Link>
+          <Link href="/legal/refunds" className="hover:underline">
+            {t.footer.refunds}
+          </Link>
+          <Link href="/legal/contact" className="hover:underline">
+            {t.footer.contact}
+          </Link>
         </div>
       </section>
 

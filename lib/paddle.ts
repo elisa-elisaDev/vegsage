@@ -5,11 +5,51 @@
  * Docs: https://developer.paddle.com/api-reference/transactions/create-transaction
  */
 
-const PADDLE_API_BASE = "https://api.paddle.com";
+function getRequiredEnv(value: string | undefined, name: string): string {
+  if (!value) {
+    throw new Error(`Missing required environment variable: ${name}`);
+  }
+  return value;
+}
+
+function getPaddleEnvironment(): "sandbox" | "production" {
+  const environment = getRequiredEnv(
+    process.env.NEXT_PUBLIC_PADDLE_ENV,
+    "NEXT_PUBLIC_PADDLE_ENV"
+  );
+
+  if (environment !== "sandbox" && environment !== "production") {
+    throw new Error(
+      "Invalid NEXT_PUBLIC_PADDLE_ENV value. Expected 'sandbox' or 'production'."
+    );
+  }
+
+  return environment;
+}
+
+function toArrayBuffer(bytes: Uint8Array): ArrayBuffer {
+  return bytes.buffer.slice(
+    bytes.byteOffset,
+    bytes.byteOffset + bytes.byteLength
+  ) as ArrayBuffer;
+}
+
+const PADDLE_ENV = getPaddleEnvironment();
+
+const PADDLE_API_BASE =
+  PADDLE_ENV === "sandbox"
+    ? "https://sandbox-api.paddle.com"
+    : "https://api.paddle.com";
 
 export const PRICE_IDS: Record<"monthly" | "yearly", string> = {
-  monthly: process.env.PADDLE_PRICE_MONTHLY ?? "",
-  yearly:  process.env.PADDLE_PRICE_YEARLY  ?? "",
+  monthly: getRequiredEnv(
+    process.env.NEXT_PUBLIC_PADDLE_PRICE_MONTHLY,
+    "NEXT_PUBLIC_PADDLE_PRICE_MONTHLY"
+  ),
+  yearly: getRequiredEnv(
+    process.env.NEXT_PUBLIC_PADDLE_PRICE_YEARLY,
+    "NEXT_PUBLIC_PADDLE_PRICE_YEARLY"
+  ),
 };
 
 /**
@@ -17,8 +57,8 @@ export const PRICE_IDS: Record<"monthly" | "yearly", string> = {
  * The user is redirected to this URL to complete payment.
  *
  * Return URL after payment: configure in Paddle Dashboard →
- *   Developer Tools → Checkout settings → Return URL
- *   Recommended value: https://<your-domain>/settings?upgraded=1
+ * Developer Tools → Checkout settings → Return URL
+ * Recommended value: https://<your-domain>/settings?upgraded=1
  */
 export async function createCheckoutUrl(opts: {
   plan: "monthly" | "yearly";
@@ -26,16 +66,8 @@ export async function createCheckoutUrl(opts: {
   email: string;
 }): Promise<string> {
   const priceId = PRICE_IDS[opts.plan];
-  if (!priceId) {
-    throw new Error(`No price ID configured for plan "${opts.plan}". Set PADDLE_PRICE_MONTHLY / PADDLE_PRICE_YEARLY.`);
-  }
+  const apiKey = getRequiredEnv(process.env.PADDLE_API_KEY, "PADDLE_API_KEY");
 
-  const apiKey = process.env.PADDLE_API_KEY;
-  if (!apiKey) throw new Error("PADDLE_API_KEY is not set");
-
-  // Paddle Billing API v2 — POST /transactions
-  // customer_email  : pre-fills the checkout email field
-  // custom_data     : forwarded to every webhook for this transaction/subscription
   const body = {
     items: [{ price_id: priceId, quantity: 1 }],
     customer_email: opts.email,
@@ -57,9 +89,14 @@ export async function createCheckoutUrl(opts: {
   }
 
   const json = await res.json();
-  // Paddle Billing v2 response: { data: { checkout: { url: "https://..." } } }
   const url = (json?.data?.checkout?.url as string | undefined) ?? null;
-  if (!url) throw new Error("Paddle returned no checkout URL — check API key and price IDs");
+
+  if (!url) {
+    throw new Error(
+      "Paddle returned no checkout URL — check API key and price IDs."
+    );
+  }
+
   return url;
 }
 
@@ -70,13 +107,12 @@ export async function createCheckoutUrl(opts: {
  */
 export async function verifyPaddleWebhook(
   rawBody: string,
-  signatureHeader: string,
+  signatureHeader: string
 ): Promise<boolean> {
-  const secret = process.env.PADDLE_WEBHOOK_SECRET;
-  if (!secret) {
-    console.error("PADDLE_WEBHOOK_SECRET is not set — webhook verification disabled");
-    return false;
-  }
+  const secret = getRequiredEnv(
+    process.env.PADDLE_WEBHOOK_SECRET,
+    "PADDLE_WEBHOOK_SECRET"
+  );
 
   try {
     const encoder = new TextEncoder();
@@ -85,46 +121,58 @@ export async function verifyPaddleWebhook(
       encoder.encode(secret),
       { name: "HMAC", hash: "SHA-256" },
       false,
-      ["verify"],
+      ["verify"]
     );
 
-    // Parse "ts=1234;h1=abcd..." safely (value may contain "=")
     const parts: Record<string, string> = {};
+
     for (const segment of signatureHeader.split(";")) {
       const eq = segment.indexOf("=");
-      if (eq > 0) parts[segment.slice(0, eq)] = segment.slice(eq + 1);
+      if (eq > 0) {
+        parts[segment.slice(0, eq)] = segment.slice(eq + 1);
+      }
     }
 
-    const ts = parts["ts"];
-    const h1 = parts["h1"];
-    if (!ts || !h1) return false;
+    const ts = parts.ts;
+    const h1 = parts.h1;
+
+    if (!ts || !h1) {
+      return false;
+    }
 
     const signedPayload = `${ts}:${rawBody}`;
-    const sigBytes = hexToBytes(h1);
+    const signatureBytes = toArrayBuffer(hexToBytes(h1));
+    const payloadBytes = toArrayBuffer(encoder.encode(signedPayload));
 
     return await crypto.subtle.verify(
       "HMAC",
       key,
-      sigBytes.buffer as ArrayBuffer,
-      encoder.encode(signedPayload),
+      signatureBytes,
+      payloadBytes
     );
-  } catch (e) {
-    console.error("Paddle webhook signature verification threw:", e);
+  } catch (error) {
+    console.error("Paddle webhook signature verification threw:", error);
     return false;
   }
 }
 
 function hexToBytes(hex: string): Uint8Array {
+  if (hex.length % 2 !== 0) {
+    throw new Error("Invalid hex signature length.");
+  }
+
   const bytes = new Uint8Array(hex.length / 2);
+
   for (let i = 0; i < hex.length; i += 2) {
     bytes[i / 2] = parseInt(hex.slice(i, i + 2), 16);
   }
+
   return bytes;
 }
 
 /** Resolve a Paddle price ID to its plan label. */
 export function resolvePlan(priceId: string): "monthly" | "yearly" | null {
   if (priceId === PRICE_IDS.monthly) return "monthly";
-  if (priceId === PRICE_IDS.yearly)  return "yearly";
+  if (priceId === PRICE_IDS.yearly) return "yearly";
   return null;
 }

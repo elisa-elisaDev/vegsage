@@ -1,9 +1,11 @@
 declare global {
   interface Window {
     Paddle?: {
+      Environment: {
+        set: (environment: "sandbox" | "production") => void;
+      };
       Initialize: (opts: {
         token: string;
-        pwCustomer?: { email: string };
         eventCallback?: (data: { name: string }) => void;
       }) => void;
       Checkout: {
@@ -11,43 +13,91 @@ declare global {
           items: { priceId: string; quantity: number }[];
           customer?: { email: string };
           customData?: Record<string, string>;
+          settings?: {
+            successUrl?: string;
+          };
         }) => void;
       };
     };
   }
 }
 
+const PADDLE_ENV = process.env.NEXT_PUBLIC_PADDLE_ENV;
+const PADDLE_TOKEN = process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN;
 const PRICE_IDS = {
-  monthly: "pri_01kjvxwzppnmmvz44qk306hk22",
-  yearly: "pri_01kjvy0jc2pmeh57v8ympzcjyk",
+  monthly: process.env.NEXT_PUBLIC_PADDLE_PRICE_MONTHLY,
+  yearly: process.env.NEXT_PUBLIC_PADDLE_PRICE_YEARLY,
 } as const;
 
+function getRequiredEnv(value: string | undefined, name: string): string {
+  if (!value) {
+    throw new Error(`Missing required Paddle environment variable: ${name}`);
+  }
+  return value;
+}
+
+function validatePaddleEnv(environment: string | undefined): "production" | "sandbox" {
+  if (environment === "production" || environment === "sandbox") {
+    return environment;
+  }
+
+  throw new Error(
+    "Invalid NEXT_PUBLIC_PADDLE_ENV value. Expected 'production' or 'sandbox'."
+  );
+}
+
 function loadPaddleScript(): Promise<void> {
-  return new Promise((resolve) => {
-    if (document.getElementById("paddle-js")) return resolve();
+  return new Promise((resolve, reject) => {
+    if (document.getElementById("paddle-js")) {
+      resolve();
+      return;
+    }
+
     const script = document.createElement("script");
     script.id = "paddle-js";
     script.src = "https://cdn.paddle.com/paddle/v2/paddle.js";
     script.onload = () => resolve();
+    script.onerror = () => reject(new Error("Failed to load Paddle.js"));
     document.head.appendChild(script);
   });
 }
 
-export async function openPaddleCheckout(plan: "monthly" | "yearly", email?: string, userId?: string) {
+export async function openPaddleCheckout(
+  plan: "monthly" | "yearly",
+  email?: string,
+  userId?: string
+) {
+  const environment = validatePaddleEnv(PADDLE_ENV);
+  const token = getRequiredEnv(
+    PADDLE_TOKEN,
+    "NEXT_PUBLIC_PADDLE_CLIENT_TOKEN"
+  );
+  const priceId = getRequiredEnv(
+    PRICE_IDS[plan],
+    `NEXT_PUBLIC_PADDLE_PRICE_${plan.toUpperCase()}`
+  );
+
   if (!window.Paddle) {
     await loadPaddleScript();
-    window.Paddle!.Initialize({
-      token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN!,
-      ...(email ? { pwCustomer: { email } } : {}),
-      eventCallback(data) {
-        if (data.name === "checkout.completed") {
-          window.location.href = "/settings?upgraded=1";
-        }
-      },
-    });
   }
-  window.Paddle!.Checkout.open({
-    items: [{ priceId: PRICE_IDS[plan], quantity: 1 }],
+
+  if (!window.Paddle) {
+    throw new Error("Paddle failed to initialize.");
+  }
+
+  window.Paddle.Environment.set(environment);
+
+  window.Paddle.Initialize({
+    token,
+    eventCallback(data) {
+      if (data.name === "checkout.completed") {
+        window.location.href = "/settings?upgraded=1";
+      }
+    },
+  });
+
+  window.Paddle.Checkout.open({
+    items: [{ priceId, quantity: 1 }],
     ...(email ? { customer: { email } } : {}),
     ...(userId ? { customData: { userId } } : {}),
   });

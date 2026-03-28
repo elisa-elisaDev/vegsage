@@ -12,16 +12,29 @@ interface PaywallProps {
   userId?: string;
 }
 
-export function Paywall({ feature, features, t, userEmail, userId }: PaywallProps) {
+export function Paywall({
+  feature,
+  features,
+  t,
+  userEmail,
+  userId,
+}: PaywallProps) {
   const [loading, setLoading] = useState<"monthly" | "yearly" | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   async function handleUpgrade(plan: "monthly" | "yearly") {
+    if (!userEmail || !userId) {
+      setError(t.errors.network);
+      return;
+    }
+
     setLoading(plan);
     setError(null);
+
     try {
       await openPaddleCheckout(plan, userEmail, userId);
-    } catch {
+    } catch (error: unknown) {
+      console.error("Paddle checkout error:", error);
       setError(t.errors.network);
     } finally {
       setLoading(null);
@@ -33,19 +46,26 @@ export function Paywall({ feature, features, t, userEmail, userId }: PaywallProp
       <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-2xl">
         🌱
       </div>
+
       <div className="w-full text-left">
         <p className="font-semibold text-gray-900 text-center">{feature}</p>
+
         {features && features.length > 0 ? (
           <ul className="mt-3 flex flex-col gap-1.5">
             {features.map((f) => (
-              <li key={f} className="flex items-center gap-2 text-sm text-gray-600">
+              <li
+                key={f}
+                className="flex items-center gap-2 text-sm text-gray-600"
+              >
                 <span className="text-brand-500 font-bold flex-shrink-0">•</span>
                 {f}
               </li>
             ))}
           </ul>
         ) : (
-          <p className="text-sm text-gray-500 mt-1 text-center">{t.pricing.subtitle}</p>
+          <p className="text-sm text-gray-500 mt-1 text-center">
+            {t.pricing.subtitle}
+          </p>
         )}
       </div>
 
@@ -59,6 +79,7 @@ export function Paywall({ feature, features, t, userEmail, userId }: PaywallProp
             ? t.pricing.processingBtn
             : `${t.pricing.monthlyLabel} — ${t.pricing.monthlyPrice}${t.pricing.perMonth}`}
         </button>
+
         <button
           onClick={() => handleUpgrade("yearly")}
           disabled={loading !== null}
@@ -71,7 +92,9 @@ export function Paywall({ feature, features, t, userEmail, userId }: PaywallProp
       </div>
 
       {error && (
-        <p className="text-sm text-red-600 bg-red-50 rounded-lg px-4 py-2 w-full">{error}</p>
+        <p className="text-sm text-red-600 bg-red-50 rounded-lg px-4 py-2 w-full">
+          {error}
+        </p>
       )}
 
       <p className="text-xs text-gray-400">{t.pricing.paddleNote}</p>
