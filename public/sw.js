@@ -49,6 +49,11 @@ self.addEventListener("fetch", (event) => {
 
   // Cache-first for app shell (HTML pages, manifest, icons)
   event.respondWith(
-    caches.match(request).then((cached) => cached ?? fetch(request))
+    caches.match(request).then((cached) => {
+      if (cached) return cached;
+      return fetch(request).catch(() => {
+        return new Response("Offline", { status: 503 });
+      });
+    })
   );
 });
