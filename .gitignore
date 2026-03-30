@@ -17,7 +17,6 @@
 .DS_Store
 *.pem
 /coverage
-/public/sw.js
 /public/workbox-*.js
 
 # Debug
