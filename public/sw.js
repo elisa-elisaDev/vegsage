@@ -1,10 +1,11 @@
 /**
  * VegSage Service Worker
- * Minimal PWA service worker: cache-first for static assets, network-first for API.
+ * Cache-first for static assets only (icons, manifest).
+ * All HTML navigations and API requests pass through to the network — no fallbacks.
  */
 
-const CACHE_NAME = "vegsage-v1";
-const STATIC_ASSETS = ["/", "/dashboard", "/login", "/signup", "/manifest.json"];
+const CACHE_NAME = "vegsage-v2";
+const STATIC_ASSETS = ["/manifest.json", "/icons/icon-192.png", "/icons/icon-512.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -21,39 +22,32 @@ self.addEventListener("activate", (event) => {
       )
     )
   );
-  self.clients.claim();
+  // No self.clients.claim() — avoids taking control of tabs mid-session
 });
 
 self.addEventListener("fetch", (event) => {
   const { request } = event;
   const url = new URL(request.url);
 
-  // Network-first for API routes
-  if (url.pathname.startsWith("/api/")) {
+  // Never intercept HTML navigations (pages, payment flows, auth)
+  if (request.mode === "navigate") return;
+
+  // Never intercept API routes
+  if (url.pathname.startsWith("/api/")) return;
+
+  // Pass-through for Next.js internal assets
+  if (url.pathname.startsWith("/_next/")) return;
+
+  // Cache-first for static assets only (manifest, icons)
+  if (
+    url.pathname === "/manifest.json" ||
+    url.pathname.startsWith("/icons/")
+  ) {
     event.respondWith(
-      fetch(request).catch(() =>
-        new Response(JSON.stringify({ error: "Offline" }), {
-          status: 503,
-          headers: { "Content-Type": "application/json" },
-        })
-      )
+      caches.match(request).then((cached) => cached ?? fetch(request))
     );
     return;
   }
 
-  // Pass-through for Next.js static assets — already immutable via Cache-Control
-  if (url.pathname.startsWith("/_next/")) {
-    event.respondWith(fetch(request));
-    return;
-  }
-
-  // Cache-first for app shell (HTML pages, manifest, icons)
-  event.respondWith(
-    caches.match(request).then((cached) => {
-      if (cached) return cached;
-      return fetch(request).catch(() => {
-        return new Response("Offline", { status: 503 });
-      });
-    })
-  );
+  // Everything else: pass through to network, no interference
 });
