@@ -85,20 +85,37 @@ export async function openPaddleCheckout(
     throw new Error("Paddle failed to initialize.");
   }
 
+  console.log("[Paddle Debug] plan:", plan);
+  console.log("[Paddle Debug] environment:", environment);
+  console.log("[Paddle Debug] token:", token);
+  console.log("[Paddle Debug] priceId:", priceId);
+  console.log("[Paddle Debug] email:", email ?? null);
+  console.log("[Paddle Debug] userId:", userId ?? null);
+  console.log(
+    "[Paddle Debug] paddle script:",
+    document.querySelector('script[src*="paddle"]')?.getAttribute("src")
+  );
+
   window.Paddle.Environment.set(environment);
 
   window.Paddle.Initialize({
     token,
     eventCallback(data) {
+      console.log("[Paddle Debug] event:", data.name);
+
       if (data.name === "checkout.completed") {
         window.location.href = "/settings?upgraded=1";
       }
     },
   });
 
-  window.Paddle.Checkout.open({
+  const checkoutOptions = {
     items: [{ priceId, quantity: 1 }],
     ...(email ? { customer: { email } } : {}),
     ...(userId ? { customData: { userId } } : {}),
-  });
+  };
+
+  console.log("[Paddle Debug] checkoutOptions:", checkoutOptions);
+
+  window.Paddle.Checkout.open(checkoutOptions);
 }
