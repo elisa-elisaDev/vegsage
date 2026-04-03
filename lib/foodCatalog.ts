@@ -23,7 +23,10 @@ export type FoodCategory =
   | "herb"
   | "condiment"
   | "beverage"
-  | "soup";
+  | "soup"
+  | "snack"
+  | "spread"
+  | "prepared_meal";
 
 export type FoodEntry = {
   canonical: string;
@@ -459,6 +462,536 @@ export const FOOD_CATALOG: FoodEntry[] = [
     canonical: "fennel",
     category: "herb",
     synonyms: { en: ["fennel"], fr: ["fenouil"], de: ["fenchel"] },
+  },
+  // ── Beverages ─────────────────────────────────────────────────────────────────
+  {
+    canonical: "orange juice",
+    category: "beverage",
+    synonyms: {
+      en: ["orange juice"],
+      fr: ["jus d'orange"],
+      de: ["orangensaft"],
+    },
+  },
+  {
+    canonical: "apple juice",
+    category: "beverage",
+    synonyms: {
+      en: ["apple juice"],
+      fr: ["jus de pomme"],
+      de: ["apfelsaft"],
+    },
+  },
+  {
+    canonical: "coffee",
+    category: "beverage",
+    synonyms: {
+      en: ["coffee"],
+      fr: ["café", "cafe"],
+      de: ["kaffee"],
+    },
+  },
+  {
+    canonical: "tea",
+    category: "beverage",
+    synonyms: {
+      en: ["tea"],
+      fr: ["thé", "the"],
+      de: ["tee"],
+    },
+  },
+  {
+    canonical: "green tea",
+    category: "beverage",
+    synonyms: {
+      en: ["green tea"],
+      fr: ["thé vert", "the vert"],
+      de: ["grüner tee", "gruner tee"],
+    },
+  },
+  {
+    canonical: "hot chocolate",
+    category: "beverage",
+    synonyms: {
+      en: ["hot chocolate", "cocoa"],
+      fr: ["chocolat chaud"],
+      de: ["heißer kakao", "heisser kakao", "kakao"],
+    },
+  },
+  {
+    canonical: "ovomaltine",
+    category: "beverage",
+    synonyms: {
+      en: ["ovomaltine", "ovaltine"],
+      fr: ["ovomaltine"],
+      de: ["ovomaltine"],
+    },
+  },
+  {
+    canonical: "almond milk",
+    category: "beverage",
+    synonyms: {
+      en: ["almond milk"],
+      fr: ["lait d'amande"],
+      de: ["mandelmilch"],
+    },
+  },
+  {
+    canonical: "oat milk",
+    category: "beverage",
+    synonyms: {
+      en: ["oat milk"],
+      fr: ["lait d'avoine"],
+      de: ["hafermilch"],
+    },
+  },
+  {
+    canonical: "soy milk",
+    category: "beverage",
+    synonyms: {
+      en: ["soy milk", "soya milk"],
+      fr: ["lait de soja"],
+      de: ["sojamilch"],
+    },
+  },
+  {
+    canonical: "protein drink",
+    category: "beverage",
+    synonyms: {
+      en: ["protein drink", "protein shake"],
+      fr: ["boisson protéinée", "boisson proteïnee", "shake protéiné"],
+      de: ["proteindrink", "eiweißgetränk", "proteinshake"],
+    },
+  },
+  // ── Spreads ───────────────────────────────────────────────────────────────────
+  {
+    canonical: "strawberry jam",
+    category: "spread",
+    synonyms: {
+      en: ["strawberry jam", "strawberry jelly"],
+      fr: ["confiture de fraises"],
+      de: ["erdbeermarmelade", "erdbeerkonfitüre"],
+    },
+  },
+  {
+    canonical: "apricot jam",
+    category: "spread",
+    synonyms: {
+      en: ["apricot jam", "apricot jelly"],
+      fr: ["confiture d'abricots"],
+      de: ["aprikosenmarmelade", "aprikosenkonfitüre"],
+    },
+  },
+  {
+    canonical: "raspberry jam",
+    category: "spread",
+    synonyms: {
+      en: ["raspberry jam", "raspberry jelly"],
+      fr: ["confiture de framboises"],
+      de: ["himbeermarmelade", "himbeerkonfitüre"],
+    },
+  },
+  {
+    canonical: "honey",
+    category: "spread",
+    synonyms: {
+      en: ["honey"],
+      fr: ["miel"],
+      de: ["honig"],
+    },
+  },
+  {
+    canonical: "maple syrup",
+    category: "spread",
+    synonyms: {
+      en: ["maple syrup"],
+      fr: ["sirop d'érable", "sirop d'erable"],
+      de: ["ahornsirup"],
+    },
+  },
+  {
+    canonical: "peanut butter",
+    category: "spread",
+    synonyms: {
+      en: ["peanut butter"],
+      fr: ["beurre de cacahuètes", "beurre d'arachides"],
+      de: ["erdnussbutter"],
+    },
+  },
+  {
+    canonical: "hazelnut spread",
+    category: "spread",
+    synonyms: {
+      en: ["hazelnut spread", "nutella"],
+      fr: ["pâte à tartiner aux noisettes", "pate a tartiner noisettes", "nutella"],
+      de: ["haselnusscreme", "nussnougatcreme", "nutella"],
+    },
+  },
+  // ── Snacks ────────────────────────────────────────────────────────────────────
+  {
+    canonical: "protein bar",
+    category: "snack",
+    synonyms: {
+      en: ["protein bar"],
+      fr: ["barre protéinée", "barre proteinee"],
+      de: ["proteinriegel"],
+    },
+  },
+  {
+    canonical: "cereal bar",
+    category: "snack",
+    synonyms: {
+      en: ["cereal bar", "granola bar"],
+      fr: ["barre de céréales", "barre de cereales"],
+      de: ["müsliriegel", "musli riegel", "getreideriegel"],
+    },
+  },
+  {
+    canonical: "chocolate bar",
+    category: "snack",
+    synonyms: {
+      en: ["chocolate bar"],
+      fr: ["tablette de chocolat", "barre de chocolat"],
+      de: ["schokoladenriegel", "schokolade"],
+    },
+  },
+  {
+    canonical: "dark chocolate",
+    category: "snack",
+    synonyms: {
+      en: ["dark chocolate", "bitter chocolate"],
+      fr: ["chocolat noir"],
+      de: ["dunkle schokolade", "zartbitterschokolade"],
+    },
+  },
+  {
+    canonical: "cookies",
+    category: "snack",
+    synonyms: {
+      en: ["cookies", "cookie"],
+      fr: ["biscuits", "biscuit", "cookies"],
+      de: ["kekse", "keks", "plätzchen"],
+    },
+  },
+  {
+    canonical: "cake",
+    category: "snack",
+    synonyms: {
+      en: ["cake"],
+      fr: ["gâteau", "gateau"],
+      de: ["kuchen"],
+    },
+  },
+  {
+    canonical: "muffin",
+    category: "snack",
+    synonyms: {
+      en: ["muffin"],
+      fr: ["muffin"],
+      de: ["muffin"],
+    },
+  },
+  {
+    canonical: "brownie",
+    category: "snack",
+    synonyms: {
+      en: ["brownie"],
+      fr: ["brownie"],
+      de: ["brownie"],
+    },
+  },
+  {
+    canonical: "chips",
+    category: "snack",
+    synonyms: {
+      en: ["chips", "crisps", "potato chips"],
+      fr: ["chips"],
+      de: ["chips", "kartoffelchips"],
+    },
+  },
+  {
+    canonical: "popcorn",
+    category: "snack",
+    synonyms: {
+      en: ["popcorn"],
+      fr: ["popcorn"],
+      de: ["popcorn"],
+    },
+  },
+  {
+    canonical: "crackers",
+    category: "snack",
+    synonyms: {
+      en: ["crackers", "cracker"],
+      fr: ["crackers", "cracker", "biscuits salés"],
+      de: ["cracker"],
+    },
+  },
+  {
+    canonical: "pretzels",
+    category: "snack",
+    synonyms: {
+      en: ["pretzels", "pretzel"],
+      fr: ["bretzels", "bretzel"],
+      de: ["brezeln", "brezel", "laugenbrezeln"],
+    },
+  },
+  {
+    canonical: "dried fruit",
+    category: "snack",
+    synonyms: {
+      en: ["dried fruit", "dried fruits"],
+      fr: ["fruits secs"],
+      de: ["trockenfrüchte", "trockenfrucht", "dörrfrüchte"],
+    },
+  },
+  {
+    canonical: "raisins",
+    category: "fruit",
+    synonyms: {
+      en: ["raisins", "raisin"],
+      fr: ["raisins secs"],
+      de: ["rosinen", "rosine"],
+    },
+  },
+  {
+    canonical: "dates",
+    category: "fruit",
+    synonyms: {
+      en: ["dates", "date"],
+      fr: ["dattes", "datte"],
+      de: ["datteln", "dattel"],
+    },
+  },
+  // ── Breakfast ────────────────────────────────────────────────────────────────
+  {
+    canonical: "muesli",
+    category: "grain",
+    synonyms: {
+      en: ["muesli", "müesli"],
+      fr: ["müesli", "muesli"],
+      de: ["müsli", "musli"],
+    },
+  },
+  {
+    canonical: "granola",
+    category: "grain",
+    synonyms: {
+      en: ["granola"],
+      fr: ["granola"],
+      de: ["granola"],
+    },
+  },
+  {
+    canonical: "cornflakes",
+    category: "grain",
+    synonyms: {
+      en: ["cornflakes", "corn flakes"],
+      fr: ["corn flakes", "cornflakes"],
+      de: ["cornflakes"],
+    },
+  },
+  // ── Plant / Vegetarian ────────────────────────────────────────────────────────
+  {
+    canonical: "hummus",
+    category: "condiment",
+    synonyms: {
+      en: ["hummus", "houmous"],
+      fr: ["houmous", "hummus"],
+      de: ["hummus"],
+    },
+  },
+  {
+    canonical: "falafel",
+    category: "plant_protein",
+    synonyms: {
+      en: ["falafel"],
+      fr: ["falafel"],
+      de: ["falafel"],
+    },
+  },
+  {
+    canonical: "veggie burger",
+    category: "plant_protein",
+    synonyms: {
+      en: ["veggie burger", "vegetable burger"],
+      fr: ["burger végétarien", "burger vegetarien", "veggie burger"],
+      de: ["veggie burger", "gemüseburger", "vegetarischer burger"],
+    },
+  },
+  // ── Prepared meals ───────────────────────────────────────────────────────────
+  {
+    canonical: "vegetarian lasagna",
+    category: "prepared_meal",
+    synonyms: {
+      en: ["vegetarian lasagna", "veggie lasagna"],
+      fr: ["lasagnes végétariennes", "lasagnes vegetariennes"],
+      de: ["vegetarische lasagne"],
+    },
+  },
+  {
+    canonical: "vegetable soup",
+    category: "soup",
+    synonyms: {
+      en: ["vegetable soup"],
+      fr: ["soupe aux légumes", "soupe de légumes", "soupe aux legumes"],
+      de: ["gemüsesuppe"],
+    },
+  },
+  {
+    canonical: "tomato soup",
+    category: "soup",
+    synonyms: {
+      en: ["tomato soup"],
+      fr: ["soupe à la tomate", "soupe de tomates"],
+      de: ["tomatensuppe"],
+    },
+  },
+  {
+    canonical: "lentil soup",
+    category: "soup",
+    synonyms: {
+      en: ["lentil soup"],
+      fr: ["soupe aux lentilles"],
+      de: ["linsensuppe"],
+    },
+  },
+  {
+    canonical: "pumpkin soup",
+    category: "soup",
+    synonyms: {
+      en: ["pumpkin soup"],
+      fr: ["soupe au potiron", "velouté de courge"],
+      de: ["kürbissuppe"],
+    },
+  },
+  // ── Grains (extended) ─────────────────────────────────────────────────────────
+  {
+    canonical: "brown rice",
+    category: "grain",
+    synonyms: {
+      en: ["brown rice"],
+      fr: ["riz complet", "riz brun"],
+      de: ["vollkornreis", "brauner reis"],
+    },
+  },
+  {
+    canonical: "whole wheat pasta",
+    category: "grain",
+    synonyms: {
+      en: ["whole wheat pasta", "wholemeal pasta"],
+      fr: ["pâtes complètes", "pates completes", "pâtes de blé entier"],
+      de: ["vollkornnudeln", "vollkorn pasta"],
+    },
+  },
+  {
+    canonical: "whole wheat bread",
+    category: "grain",
+    synonyms: {
+      en: ["whole wheat bread", "wholemeal bread", "whole grain bread"],
+      fr: ["pain complet", "pain de blé entier"],
+      de: ["vollkornbrot"],
+    },
+  },
+  {
+    canonical: "couscous",
+    category: "grain",
+    synonyms: {
+      en: ["couscous"],
+      fr: ["couscous"],
+      de: ["couscous"],
+    },
+  },
+  {
+    canonical: "bulgur",
+    category: "grain",
+    synonyms: {
+      en: ["bulgur", "bulghur"],
+      fr: ["boulgour", "bulgur"],
+      de: ["bulgur"],
+    },
+  },
+  // ── Fruits (extended) ─────────────────────────────────────────────────────────
+  {
+    canonical: "orange",
+    category: "fruit",
+    synonyms: {
+      en: ["orange", "oranges"],
+      fr: ["orange", "oranges"],
+      de: ["orange"],
+    },
+  },
+  {
+    canonical: "grapes",
+    category: "fruit",
+    synonyms: {
+      en: ["grapes", "grape"],
+      fr: ["raisin", "raisins"],
+      de: ["trauben", "weintrauben"],
+    },
+  },
+  {
+    canonical: "pear",
+    category: "fruit",
+    synonyms: {
+      en: ["pear", "pears"],
+      fr: ["poire", "poires"],
+      de: ["birne", "birnen"],
+    },
+  },
+  {
+    canonical: "pineapple",
+    category: "fruit",
+    synonyms: {
+      en: ["pineapple"],
+      fr: ["ananas"],
+      de: ["ananas"],
+    },
+  },
+  {
+    canonical: "kiwi",
+    category: "fruit",
+    synonyms: {
+      en: ["kiwi", "kiwifruit"],
+      fr: ["kiwi"],
+      de: ["kiwi"],
+    },
+  },
+  {
+    canonical: "peach",
+    category: "fruit",
+    synonyms: {
+      en: ["peach", "peaches"],
+      fr: ["pêche", "peche", "pêches"],
+      de: ["pfirsich", "pfirsiche"],
+    },
+  },
+  {
+    canonical: "raspberry",
+    category: "fruit",
+    synonyms: {
+      en: ["raspberry", "raspberries"],
+      fr: ["framboise", "framboises"],
+      de: ["himbeere", "himbeeren"],
+    },
+  },
+  {
+    canonical: "lemon",
+    category: "fruit",
+    synonyms: {
+      en: ["lemon", "lemons"],
+      fr: ["citron", "citrons"],
+      de: ["zitrone", "zitronen"],
+    },
+  },
+  {
+    canonical: "watermelon",
+    category: "fruit",
+    synonyms: {
+      en: ["watermelon"],
+      fr: ["pastèque", "pasteque"],
+      de: ["wassermelone"],
+    },
   },
 ];
 
