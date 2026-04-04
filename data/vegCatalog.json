@@ -3000,6 +3000,21 @@
     "note": "fermented", "usda_fdc_id": null
   },
   {
+    "canonical": "ovomaltine",
+    "category": "beverage",
+    "labels": { "en": "Ovomaltine", "fr": "Ovomaltine", "de": "Ovomaltine" },
+    "tokens": {
+      "en": ["ovomaltine", "ovaltine"],
+      "fr": ["ovomaltine"],
+      "de": ["ovomaltine"]
+    },
+    "nutrients": {
+      "calories": 380, "protein": 8.0, "fat": 2.5, "carbs": 76.0, "fiber": 2.5, "sugar": null, "sodium": null,
+      "iron": 6.0, "calcium": 350, "zinc": 1.5, "b12": 0.5, "omega3": 0.1, "vitaminC": null, "vitaminD": null
+    },
+    "note": "powder, per 100g", "usda_fdc_id": null
+  },
+  {
     "canonical": "butter",
     "category": "dairy_eggs",
     "labels": { "en": "Butter", "fr": "Beurre", "de": "Butter" },
@@ -3155,7 +3170,7 @@
     "labels": { "en": "Quark", "fr": "Quark", "de": "Quark" },
     "tokens": {
       "en": ["quark", "fromage frais"],
-      "fr": ["quark"],
+      "fr": ["quark", "fromage blanc", "fromage frais"],
       "de": ["quark", "magerquark"]
     },
     "nutrients": {
@@ -3165,28 +3180,13 @@
     "note": "low fat", "usda_fdc_id": null
   },
   {
-    "canonical": "falafel",
-    "category": "plant_protein",
-    "labels": { "en": "Falafel", "fr": "Falafel", "de": "Falafel" },
-    "tokens": {
-      "en": ["falafel"],
-      "fr": ["falafel"],
-      "de": ["falafel"]
-    },
-    "nutrients": {
-      "calories": 333, "protein": 13.31, "fat": 17.8, "carbs": 31.83, "fiber": 4.9, "sugar": 5.2, "sodium": 294,
-      "iron": 3.4, "calcium": 64, "zinc": 1.2, "b12": 0, "omega3": 0.1, "vitaminC": 2.1, "vitaminD": 0
-    },
-    "note": "fried", "usda_fdc_id": "175188"
-  },
-  {
     "canonical": "granola",
     "category": "grain",
     "labels": { "en": "Granola", "fr": "Granola", "de": "Granola" },
     "tokens": {
       "en": ["granola"],
-      "fr": ["granola"],
-      "de": ["granola"]
+      "fr": ["granola", "muesli croustillant", "céréales croustillantes"],
+      "de": ["granola", "knuspermüsli", "knusper müsli"]
     },
     "nutrients": {
       "calories": 471, "protein": 10.4, "fat": 20.1, "carbs": 64.2, "fiber": 5.3, "sugar": 24.0, "sodium": 40,
