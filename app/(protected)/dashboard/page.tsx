@@ -1,4 +1,4 @@
-import { createServerSupabaseClient } from "@/lib/supabaseServer";
+import { createServerSupabaseClient, createAdminSupabaseClient } from "@/lib/supabaseServer";
 import { cookies } from "next/headers";
 import { getLocaleFromCookie, getT, LOCALE_COOKIE } from "@/lib/i18n";
 import { ScoreCard } from "@/components/ScoreCard";
@@ -54,15 +54,53 @@ export default async function DashboardPage() {
     .eq("summary_date", today)
     .maybeSingle();
 
-  // 7-day history
-  const sevenAgo = new Date();
-  sevenAgo.setDate(sevenAgo.getDate() - 6);
-  const { data: history } = await supabase
+  // History — always fetch 30 days; free users see 7, premium sees 30
+  const lookbackDate = new Date();
+  lookbackDate.setDate(lookbackDate.getDate() - 29);
+  const lookbackStr = lookbackDate.toISOString().slice(0, 10);
+
+  let historyData = await supabase
     .from("daily_summaries")
     .select("summary_date, confidence_score")
     .eq("user_id", user.id)
-    .gte("summary_date", sevenAgo.toISOString().slice(0, 10))
-    .order("summary_date", { ascending: false });
+    .gte("summary_date", lookbackStr)
+    .order("summary_date", { ascending: false })
+    .then((r) => r.data);
+
+  // ── Backfill: find past dates with food_logs but no daily_summary ────────
+  // This repairs summaries that were never created because the compute_daily_summary
+  // RPC previously failed (e.g. missing log_count column before migration 009).
+  const { data: logDateRows } = await supabase
+    .from("food_logs")
+    .select("log_date")
+    .eq("user_id", user.id)
+    .gte("log_date", lookbackStr)
+    .lt("log_date", today);
+
+  const summarizedSet = new Set((historyData ?? []).map((d) => d.summary_date));
+  const logDatesWithData = [...new Set(
+    (logDateRows ?? []).map((r) => (r as { log_date: string }).log_date)
+  )];
+  const missingDates = logDatesWithData.filter((d) => !summarizedSet.has(d));
+
+  if (missingDates.length > 0) {
+    const admin = createAdminSupabaseClient();
+    await Promise.all(
+      missingDates.map((date) =>
+        admin.rpc("compute_daily_summary", { p_user_id: user.id, p_date: date })
+      )
+    );
+    // Re-fetch history now that summaries have been computed
+    historyData = await supabase
+      .from("daily_summaries")
+      .select("summary_date, confidence_score")
+      .eq("user_id", user.id)
+      .gte("summary_date", lookbackStr)
+      .order("summary_date", { ascending: false })
+      .then((r) => r.data);
+  }
+
+  const history = historyData;
 
   // Profile
   const { data: profile, error: profileErr } = await supabase
@@ -355,7 +393,7 @@ export default async function DashboardPage() {
           <p className="text-sm text-gray-400 text-center py-4">{t.dashboard.noData}</p>
         ) : (
           <ul className="flex flex-col gap-1">
-            {displayHistory.slice(0, isPremium ? undefined : 7).map((d) => {
+            {displayHistory.slice(0, isPremium ? 30 : 7).map((d) => {
               if (d.isPending) {
                 return (
                   <li
