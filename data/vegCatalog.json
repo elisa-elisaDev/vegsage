@@ -3733,5 +3733,50 @@
       "iron": 1.2, "calcium": 210, "zinc": 1.3, "b12": 0.6, "omega3": 0.1, "vitaminC": 3, "vitaminD": 0.1
     },
     "note": "prepared, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "mushroom toast",
+    "category": "prepared_dish",
+    "labels": { "en": "Mushroom Toast", "fr": "Croûte aux champignons", "de": "Pilz-Crouton" },
+    "tokens": {
+      "en": ["mushroom toast", "mushroom crust", "mushroom on toast", "mushroom bruschetta"],
+      "fr": ["croûte aux champignons", "croute aux champignons", "croûtes aux champignons", "croutes aux champignons", "champignons sur pain", "tartine champignons"],
+      "de": ["pilz-crouton", "pilztoast", "champignon toast", "pilze auf brot", "pilzbrot"]
+    },
+    "nutrients": {
+      "calories": 200, "protein": 4.0, "fat": 12.0, "carbs": 18.0, "fiber": 2.0, "sugar": 2.0, "sodium": 300,
+      "iron": 1.4, "calcium": 60, "zinc": 0.7, "b12": 0.15, "omega3": 0.15, "vitaminC": 2, "vitaminD": 0.1
+    },
+    "note": "prepared, sans fromage, per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "protein bar",
+    "category": "snack",
+    "labels": { "en": "Protein Bar", "fr": "Barre protéinée", "de": "Proteinriegel" },
+    "tokens": {
+      "en": ["protein bar", "protein bars", "high protein bar", "sports bar", "energy protein bar"],
+      "fr": ["barre protéinée", "barre proteinee", "barre de protéines", "barre de proteines", "barre protéine", "barre proteine"],
+      "de": ["proteinriegel", "protein riegel", "eiweißriegel", "eiweiß riegel", "high protein riegel"]
+    },
+    "nutrients": {
+      "calories": 380, "protein": 30.0, "fat": 12.0, "carbs": 40.0, "fiber": 8.0, "sugar": 10.0, "sodium": 200,
+      "iron": 4.0, "calcium": 200, "zinc": 3.0, "b12": 0.5, "omega3": 0.3, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "indicative values per 100g", "usda_fdc_id": null
+  },
+  {
+    "canonical": "cereal bar",
+    "category": "snack",
+    "labels": { "en": "Cereal Bar", "fr": "Barre de céréales", "de": "Müsliriegel" },
+    "tokens": {
+      "en": ["cereal bar", "cereal bars", "granola bar", "muesli bar", "oat bar"],
+      "fr": ["barre de céréales", "barre de cereales", "barre céréales", "barre cereales", "barre aux céréales", "barre granola"],
+      "de": ["müsliriegel", "musli riegel", "müsli riegel", "getreideriegel", "granola riegel", "hafer riegel"]
+    },
+    "nutrients": {
+      "calories": 420, "protein": 6.0, "fat": 15.0, "carbs": 65.0, "fiber": 5.0, "sugar": 25.0, "sodium": 150,
+      "iron": 2.5, "calcium": 100, "zinc": 1.0, "b12": 0.2, "omega3": 0.2, "vitaminC": 0, "vitaminD": 0
+    },
+    "note": "indicative values per 100g", "usda_fdc_id": null
   }
 ]

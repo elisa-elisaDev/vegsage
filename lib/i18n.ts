@@ -74,6 +74,7 @@ export interface Dict {
       invalid: string;
       emailTaken: string;
       weakPassword: string;
+      passwordMismatch: string;
       network: string;
       generic: string;
       emailNotConfirmed: string;
@@ -392,11 +393,12 @@ const en: Dict = {
     resetPasswordSuccess: "Password updated! Redirecting…",
     resetPasswordError: "Could not update password. The link may have expired.",
     invalidResetLink: "Invalid or expired reset link. Please request a new one.",
-    backToLogin: "Back to sign in",
+    backToLogin: "← Back to sign in",
     errors: {
       invalid: "Invalid email or password.",
       emailTaken: "An account with this email already exists.",
       weakPassword: "Password must be at least 8 characters.",
+      passwordMismatch: "Passwords do not match.",
       network: "Network error. Please check your connection.",
       generic: "Something went wrong. Please try again.",
       emailNotConfirmed: "Please confirm your email before signing in. Check your inbox for a confirmation link.",
@@ -732,11 +734,12 @@ const fr: Dict = {
     resetPasswordSuccess: "Mot de passe mis à jour ! Redirection…",
     resetPasswordError: "Impossible de mettre à jour le mot de passe. Le lien a peut-être expiré.",
     invalidResetLink: "Lien invalide ou expiré. Veuillez en demander un nouveau.",
-    backToLogin: "Retour à la connexion",
+    backToLogin: "← Retour à la connexion",
     errors: {
       invalid: "E-mail ou mot de passe invalide.",
       emailTaken: "Un compte avec cet e-mail existe déjà.",
       weakPassword: "Le mot de passe doit contenir au moins 8 caractères.",
+      passwordMismatch: "Les mots de passe ne correspondent pas.",
       network: "Erreur réseau. Vérifiez votre connexion.",
       generic: "Une erreur est survenue. Veuillez réessayer.",
       emailNotConfirmed: "Veuillez confirmer votre e-mail avant de vous connecter. Vérifiez votre boîte de réception.",
@@ -1072,11 +1075,12 @@ const de: Dict = {
     resetPasswordSuccess: "Passwort aktualisiert! Weiterleitung…",
     resetPasswordError: "Passwort konnte nicht aktualisiert werden. Der Link ist möglicherweise abgelaufen.",
     invalidResetLink: "Ungültiger oder abgelaufener Link. Bitte fordern Sie einen neuen an.",
-    backToLogin: "Zurück zur Anmeldung",
+    backToLogin: "← Zurück zur Anmeldung",
     errors: {
       invalid: "Ungültige E-Mail oder ungültiges Passwort.",
       emailTaken: "Ein Konto mit dieser E-Mail-Adresse existiert bereits.",
       weakPassword: "Das Passwort muss mindestens 8 Zeichen lang sein.",
+      passwordMismatch: "Die Passwörter stimmen nicht überein.",
       network: "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
       generic: "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
       emailNotConfirmed: "Bitte bestätigen Sie Ihre E-Mail vor der Anmeldung. Überprüfen Sie Ihren Posteingang.",
