@@ -15,10 +15,12 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: {
     icon: [
-      { url: "/icons/icon-192.png", type: "image/png" },
+      { url: "/icons/favicon16_16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icons/favicon32_32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
     ],
     apple: "/icons/apple-icon.png",
-    shortcut: "/icons/icon-192.png",
+    shortcut: "/icons/favicon32_32.png",
   },
 };
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Dict, Locale } from "@/lib/i18n";
 import { HeaderAuthSection } from "./HeaderAuthSection";
 
@@ -18,7 +19,13 @@ export function Header({ t, locale, isAuthed = false }: HeaderProps) {
           href="/"
           className="flex items-center gap-2 font-bold text-gray-900 text-lg flex-shrink-0"
         >
-          <span aria-hidden="true">🌿</span>
+          <Image
+            src="/icons/logo48_48.png"
+            alt="VegSage"
+            width={32}
+            height={32}
+            className="w-8 h-8"
+          />
           <span>{t.common.appName}</span>
         </Link>
 
