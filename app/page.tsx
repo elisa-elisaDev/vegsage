@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { cookies } from "next/headers";
 import { getLocaleFromCookie, getT, LOCALE_COOKIE } from "@/lib/i18n";
 import { createServerSupabaseClient } from "@/lib/supabaseServer";
@@ -16,12 +17,14 @@ export default async function LandingPage() {
 <div className="max-w-md mx-auto flex flex-col items-center gap-8">
         {/* Logo */}
         <div className="flex flex-col items-center gap-2">
-          <div
-            className="w-16 h-16 rounded-2xl bg-brand-500 flex items-center justify-center text-3xl"
-            aria-hidden="true"
-          >
-            🌿
-          </div>
+          <Image
+            src="/icons/logo192_192.png"
+            alt="VegSage"
+            width={64}
+            height={64}
+            className="w-16 h-16"
+            priority
+          />
           <h1 className="text-3xl font-bold text-gray-900">{t.common.appName}</h1>
         </div>
 
